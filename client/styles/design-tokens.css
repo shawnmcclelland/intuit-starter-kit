@@ -1816,6 +1816,16 @@
   --color-ui-primary-active: #71d2ff;
   --color-ui-primary-focus: #34bfff;
   --color-ui-primary-hover: #5dccff;
+
+  /* Credit Karma specific font families */
+  --font-family-body: "National2", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-component: "National2", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-display: "National2", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-heading: "National2", Avenir, Helvetica, Arial, sans-serif;
+  --font-name-body: "National2";
+  --font-name-component: "National2";
+  --font-name-display: "National2";
+  --font-name-heading: "National2";
 }
 
 /* Default token values for all themes */
