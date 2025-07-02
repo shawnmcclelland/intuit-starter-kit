@@ -121,69 +121,140 @@
   --ring: 52 191 255; /* #34bfff */
 }
 
-/* Fallback themes using Intuit colors for now until design system expands */
+/* TurboTax Light Theme - Red/Orange brand colors */
 [data-theme="turbotax"] {
-  --background: 255 255 255;
-  --foreground: 33 38 42;
-  --card: 255 255 255;
-  --card-foreground: 33 38 42;
-  --popover: 255 255 255;
-  --popover-foreground: 33 38 42;
-  --primary: 0 119 197; /* Using Intuit blue until TurboTax tokens are defined */
+  --background: 255 255 255; /* #ffffff */
+  --foreground: 33 38 42; /* #21262a */
+  --card: 255 255 255; /* #ffffff */
+  --card-foreground: 33 38 42; /* #21262a */
+  --popover: 255 255 255; /* #ffffff */
+  --popover-foreground: 33 38 42; /* #21262a */
+  --primary: 227 31 38; /* #e31f26 - TurboTax red */
   --primary-foreground: 255 255 255;
-  --secondary: 107 108 114;
+  --secondary: 255 102 0; /* #ff6600 - TurboTax orange */
   --secondary-foreground: 255 255 255;
-  --muted: 244 245 248;
-  --muted-foreground: 107 108 114;
-  --accent: 245 252 255;
-  --accent-foreground: 33 38 42;
-  --destructive: 213 43 30;
+  --muted: 255 248 248; /* very light red tint */
+  --muted-foreground: 107 108 114; /* #6b6c72 */
+  --accent: 255 235 236; /* #ffebec - light red accent */
+  --accent-foreground: 33 38 42; /* #21262a */
+  --destructive: 213 43 30; /* #d52b1e */
   --destructive-foreground: 255 255 255;
-  --border: 212 215 220;
-  --input: 255 255 255;
-  --ring: 0 119 197;
+  --border: 212 215 220; /* #d4d7dc */
+  --input: 255 255 255; /* #ffffff */
+  --ring: 227 31 38; /* #e31f26 */
 }
 
+/* TurboTax Dark Theme */
+[data-theme="turbotax"][data-colorscheme="dark"] {
+  --background: 40 40 40; /* #282828 */
+  --foreground: 236 238 241; /* #eceef1 */
+  --card: 57 58 61; /* #393a3d */
+  --card-foreground: 236 238 241; /* #eceef1 */
+  --popover: 57 58 61; /* #393a3d */
+  --popover-foreground: 236 238 241; /* #eceef1 */
+  --primary: 255 92 95; /* #ff5c5f - lighter red for dark mode */
+  --primary-foreground: 40 40 40; /* #282828 */
+  --secondary: 255 140 0; /* #ff8c00 - lighter orange */
+  --secondary-foreground: 40 40 40; /* #282828 */
+  --muted: 57 58 61; /* #393a3d */
+  --muted-foreground: 186 190 197; /* #babec5 */
+  --accent: 70 71 74; /* #46474a */
+  --accent-foreground: 236 238 241; /* #eceef1 */
+  --destructive: 255 137 121; /* #ff8979 */
+  --destructive-foreground: 40 40 40; /* #282828 */
+  --border: 212 215 220; /* #d4d7dc */
+  --input: 40 40 40; /* #282828 */
+  --ring: 255 92 95; /* #ff5c5f */
+}
+
+/* Mailchimp Light Theme - Yellow/Gold brand colors */
 [data-theme="mailchimp"] {
-  --background: 255 255 255;
-  --foreground: 33 38 42;
-  --card: 255 255 255;
-  --card-foreground: 33 38 42;
-  --popover: 255 255 255;
-  --popover-foreground: 33 38 42;
-  --primary: 0 119 197; /* Using Intuit blue until Mailchimp tokens are defined */
-  --primary-foreground: 255 255 255;
-  --secondary: 107 108 114;
+  --background: 255 255 255; /* #ffffff */
+  --foreground: 33 38 42; /* #21262a */
+  --card: 255 255 255; /* #ffffff */
+  --card-foreground: 33 38 42; /* #21262a */
+  --popover: 255 255 255; /* #ffffff */
+  --popover-foreground: 33 38 42; /* #21262a */
+  --primary: 255 227 79; /* #ffe34f - Mailchimp yellow */
+  --primary-foreground: 33 38 42; /* dark text on yellow */
+  --secondary: 36 28 21; /* #241c15 - Mailchimp brown */
   --secondary-foreground: 255 255 255;
-  --muted: 244 245 248;
-  --muted-foreground: 107 108 114;
-  --accent: 245 252 255;
-  --accent-foreground: 33 38 42;
-  --destructive: 213 43 30;
+  --muted: 255 252 245; /* very light yellow tint */
+  --muted-foreground: 107 108 114; /* #6b6c72 */
+  --accent: 255 248 220; /* #fff8dc - light yellow accent */
+  --accent-foreground: 33 38 42; /* #21262a */
+  --destructive: 213 43 30; /* #d52b1e */
   --destructive-foreground: 255 255 255;
-  --border: 212 215 220;
-  --input: 255 255 255;
-  --ring: 0 119 197;
+  --border: 212 215 220; /* #d4d7dc */
+  --input: 255 255 255; /* #ffffff */
+  --ring: 255 227 79; /* #ffe34f */
 }
 
+/* Mailchimp Dark Theme */
+[data-theme="mailchimp"][data-colorscheme="dark"] {
+  --background: 36 28 21; /* #241c15 - Mailchimp dark brown */
+  --foreground: 255 255 255; /* #ffffff */
+  --card: 57 58 61; /* #393a3d */
+  --card-foreground: 255 255 255; /* #ffffff */
+  --popover: 57 58 61; /* #393a3d */
+  --popover-foreground: 255 255 255; /* #ffffff */
+  --primary: 255 227 79; /* #ffe34f - Mailchimp yellow */
+  --primary-foreground: 36 28 21; /* #241c15 */
+  --secondary: 57 58 61; /* #393a3d */
+  --secondary-foreground: 255 255 255; /* #ffffff */
+  --muted: 57 58 61; /* #393a3d */
+  --muted-foreground: 186 190 197; /* #babec5 */
+  --accent: 57 58 61; /* #393a3d */
+  --accent-foreground: 255 255 255; /* #ffffff */
+  --destructive: 255 137 121; /* #ff8979 */
+  --destructive-foreground: 36 28 21; /* #241c15 */
+  --border: 212 215 220; /* #d4d7dc */
+  --input: 40 40 40; /* #282828 */
+  --ring: 255 227 79; /* #ffe34f */
+}
+
+/* Credit Karma Light Theme - Purple brand colors */
 [data-theme="creditkarma"] {
-  --background: 255 255 255;
-  --foreground: 33 38 42;
-  --card: 255 255 255;
-  --card-foreground: 33 38 42;
-  --popover: 255 255 255;
-  --popover-foreground: 33 38 42;
-  --primary: 0 119 197; /* Using Intuit blue until Credit Karma tokens are defined */
+  --background: 255 255 255; /* #ffffff */
+  --foreground: 33 38 42; /* #21262a */
+  --card: 255 255 255; /* #ffffff */
+  --card-foreground: 33 38 42; /* #21262a */
+  --popover: 255 255 255; /* #ffffff */
+  --popover-foreground: 33 38 42; /* #21262a */
+  --primary: 95 39 205; /* #5f27cd - Credit Karma purple */
   --primary-foreground: 255 255 255;
-  --secondary: 107 108 114;
+  --secondary: 116 185 255; /* #74b9ff - light blue secondary */
   --secondary-foreground: 255 255 255;
-  --muted: 244 245 248;
-  --muted-foreground: 107 108 114;
-  --accent: 245 252 255;
-  --accent-foreground: 33 38 42;
-  --destructive: 213 43 30;
+  --muted: 248 246 255; /* very light purple tint */
+  --muted-foreground: 107 108 114; /* #6b6c72 */
+  --accent: 237 231 246; /* #ede7f6 - light purple accent */
+  --accent-foreground: 33 38 42; /* #21262a */
+  --destructive: 213 43 30; /* #d52b1e */
   --destructive-foreground: 255 255 255;
-  --border: 212 215 220;
-  --input: 255 255 255;
-  --ring: 0 119 197;
+  --border: 212 215 220; /* #d4d7dc */
+  --input: 255 255 255; /* #ffffff */
+  --ring: 95 39 205; /* #5f27cd */
+}
+
+/* Credit Karma Dark Theme */
+[data-theme="creditkarma"][data-colorscheme="dark"] {
+  --background: 40 40 40; /* #282828 */
+  --foreground: 236 238 241; /* #eceef1 */
+  --card: 57 58 61; /* #393a3d */
+  --card-foreground: 236 238 241; /* #eceef1 */
+  --popover: 57 58 61; /* #393a3d */
+  --popover-foreground: 236 238 241; /* #eceef1 */
+  --primary: 142 68 173; /* #8e44ad - lighter purple for dark mode */
+  --primary-foreground: 255 255 255;
+  --secondary: 116 185 255; /* #74b9ff - light blue */
+  --secondary-foreground: 40 40 40; /* #282828 */
+  --muted: 57 58 61; /* #393a3d */
+  --muted-foreground: 186 190 197; /* #babec5 */
+  --accent: 70 71 74; /* #46474a */
+  --accent-foreground: 236 238 241; /* #eceef1 */
+  --destructive: 255 137 121; /* #ff8979 */
+  --destructive-foreground: 40 40 40; /* #282828 */
+  --border: 212 215 220; /* #d4d7dc */
+  --input: 40 40 40; /* #282828 */
+  --ring: 142 68 173; /* #8e44ad */
 }
