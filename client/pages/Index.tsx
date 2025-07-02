@@ -234,7 +234,7 @@ export default function Index() {
       {/* CTA Section */}
       <section className="py-24">
         <div className="container">
-          <Card className="bg-gradient-to-r from-primary to-primary-600 text-primary-foreground border-none">
+          <Card className="bg-gradient-to-r from-primary to-primary text-primary-foreground border-none">
             <CardContent className="py-16 px-8 text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Ready to transform your business?
