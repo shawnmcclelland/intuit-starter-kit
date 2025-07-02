@@ -159,6 +159,12 @@
   --destructive: 182 26 55; /* #B61A37 */
   --border: 226 233 237; /* #E2E9ED */
   --ring: 0 80 86; /* #005056 */
+
+  /* Mailchimp font family overrides */
+  --font-family-body: var(--font-family-body);
+  --font-family-component: var(--font-family-component);
+  --font-family-display: var(--font-family-display);
+  --font-family-heading: var(--font-family-heading);
 }
 
 [data-theme="mailchimp"][data-colorscheme="dark"] {
