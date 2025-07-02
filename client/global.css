@@ -113,12 +113,15 @@ nav a {
   flex-shrink: 0;
 }
 
-/* Stable navigation sizing - fixed width to prevent flexing */
+/* Stable navigation sizing - use grid to lock positions */
 header nav {
   contain: layout style;
   flex-shrink: 0;
   width: 340px; /* Fixed width to accommodate all font variations */
-  justify-content: center;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0;
+  place-items: center;
 }
 
 /* Navigation spacing stability */
