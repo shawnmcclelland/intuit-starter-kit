@@ -22,7 +22,6 @@ export default {
         primary: {
           DEFAULT: "rgb(var(--primary))",
           foreground: "rgb(var(--primary-foreground))",
-          600: "rgb(var(--primary-600))",
         },
         secondary: {
           DEFAULT: "rgb(var(--secondary))",
