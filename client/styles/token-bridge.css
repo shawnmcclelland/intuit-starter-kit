@@ -64,10 +64,14 @@
   --elevation-4: var(--elevation-level-4);
 
   /* Font family tokens - defaults to Intuit fonts */
-  --font-family-body: var(--font-family-body);
-  --font-family-component: var(--font-family-component);
-  --font-family-display: var(--font-family-display);
-  --font-family-heading: var(--font-family-heading);
+  --font-family-body:
+    "Avenir Next forINTUIT", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-component:
+    "Avenir Next forINTUIT", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-display:
+    "Avenir Next forINTUIT", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-heading:
+    "Avenir Next forINTUIT", Avenir, Helvetica, Arial, sans-serif;
 }
 
 /* Theme-specific RGB color overrides */
