@@ -30,13 +30,26 @@ export function ThemeProvider({ children, defaultTheme }: ThemeProviderProps) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    // Debug current state
+    console.log("ThemeProvider initialized", {
+      currentTheme: themeManager.getCurrentTheme(),
+      defaultTheme,
+      themeId: theme.id,
+    });
+
+    // Ensure theme is applied immediately
+    const currentTheme = themeManager.getCurrentTheme();
+    setThemeState(currentTheme);
+
     // Set default theme if provided
     if (defaultTheme && defaultTheme !== theme.id) {
+      console.log("Setting default theme:", defaultTheme);
       themeManager.setTheme(defaultTheme);
     }
 
     // Listen for theme changes
     const handleThemeChange = (event: CustomEvent<{ theme: Theme }>) => {
+      console.log("Theme change event received:", event.detail.theme);
       setThemeState(event.detail.theme);
     };
 
@@ -49,7 +62,7 @@ export function ThemeProvider({ children, defaultTheme }: ThemeProviderProps) {
         handleThemeChange as EventListener,
       );
     };
-  }, [defaultTheme, theme.id]);
+  }, [defaultTheme]);
 
   const setTheme = (themeId: ThemeId) => {
     themeManager.setTheme(themeId);
