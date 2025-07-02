@@ -212,27 +212,27 @@
   --ring: 113 210 255; /* #71D2FF */
 }
 
-/* Credit Karma Light Theme - using exact design system tokens */
+/* Credit Karma Light Theme - using standardized design tokens */
 [data-theme="creditkarma"] {
-  --background: 255 255 255; /* #FFFFFF */
-  --foreground: 0 0 0; /* #000000 - exact from design system */
-  --card: 255 255 255; /* #FFFFFF */
-  --card-foreground: 0 0 0; /* #000000 */
-  --popover: 255 255 255; /* #FFFFFF */
-  --popover-foreground: 0 0 0; /* #000000 */
-  --primary: 0 134 0; /* #008600 - exact from design system */
+  --background: from var(--color-container-background-primary);
+  --foreground: from var(--color-text-primary);
+  --card: from var(--color-container-background-primary);
+  --card-foreground: from var(--color-text-primary);
+  --popover: from var(--color-container-background-primary);
+  --popover-foreground: from var(--color-text-primary);
+  --primary: from var(--color-action-standard);
   --primary-foreground: 255 255 255;
-  --secondary: 85 89 91; /* #55595B */
+  --secondary: from var(--color-text-secondary);
   --secondary-foreground: 255 255 255;
-  --muted: 244 245 248; /* #F4F5F8 */
-  --muted-foreground: 107 108 114; /* #6B6C72 */
-  --accent: 236 238 241; /* #ECEEF1 */
-  --accent-foreground: 0 0 0; /* #000000 */
-  --destructive: 199 73 0; /* #C74900 */
+  --muted: from var(--color-container-background-secondary);
+  --muted-foreground: from var(--color-text-tertiary);
+  --accent: from var(--color-container-background-tertiary);
+  --accent-foreground: from var(--color-text-primary);
+  --destructive: from var(--color-action-negative);
   --destructive-foreground: 255 255 255;
-  --border: 212 215 220; /* #D4D7DC */
-  --input: 255 255 255; /* #FFFFFF */
-  --ring: 0 134 0; /* #008600 */
+  --border: from var(--color-container-border-tertiary);
+  --input: from var(--color-input-background-primary);
+  --ring: from var(--color-focus-indicator);
 }
 
 /* Credit Karma Dark Theme - using exact design system tokens */
