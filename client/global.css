@@ -169,3 +169,9 @@ button,
   text-rendering: optimizeSpeed;
   will-change: auto;
 }
+
+/* Fix theme switcher button width to prevent layout shift */
+[data-loc*="theme-switcher"] button {
+  min-width: 100px !important;
+  text-align: center;
+}
