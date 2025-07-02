@@ -132,11 +132,12 @@ nav a[href="#about"] {
   width: 62px;
 }
 
-/* Stable navigation sizing */
+/* Stable navigation sizing - fixed width to prevent flexing */
 header nav {
   contain: layout style;
   flex-shrink: 0;
-  min-width: max-content;
+  width: 340px; /* Fixed width to accommodate all font variations */
+  justify-content: center;
 }
 
 /* Navigation spacing stability */
