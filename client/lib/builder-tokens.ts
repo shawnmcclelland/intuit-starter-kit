@@ -225,184 +225,177 @@ Builder.register("editor.settings", {
       // Component Inline Padding
       {
         name: "Component Inline Padding XS",
-        value: "var(--space-component-inline-padding-x-small, 8px)",
+        value: "var(--space-component-inline-padding-x-small)",
       },
       {
         name: "Component Inline Padding Small",
-        value: "var(--space-component-inline-padding-small, 12px)",
+        value: "var(--space-component-inline-padding-small)",
       },
       {
         name: "Component Inline Padding Medium",
-        value: "var(--space-component-inline-padding-medium, 16px)",
+        value: "var(--space-component-inline-padding-medium)",
       },
       {
         name: "Component Inline Padding Large",
-        value: "var(--space-component-inline-padding-large, 24px)",
+        value: "var(--space-component-inline-padding-large)",
       },
       {
         name: "Component Inline Padding XL",
-        value: "var(--space-component-inline-padding-x-large, 32px)",
+        value: "var(--space-component-inline-padding-x-large)",
       },
 
       // Row and Column Gaps
-      { name: "Row Gap Small", value: "var(--space-row-gap-small, 8px)" },
-      { name: "Row Gap Medium", value: "var(--space-row-gap-medium, 16px)" },
-      { name: "Row Gap Large", value: "var(--space-row-gap-large, 24px)" },
-      { name: "Row Gap XL", value: "var(--space-row-gap-x-large, 32px)" },
+      { name: "Row Gap Small", value: "var(--space-row-gap-small)" },
+      { name: "Row Gap Medium", value: "var(--space-row-gap-medium)" },
+      { name: "Row Gap Large", value: "var(--space-row-gap-large)" },
+      { name: "Row Gap XL", value: "var(--space-row-gap-x-large)" },
 
-      { name: "Column Gap Small", value: "var(--space-column-gap-small, 8px)" },
+      { name: "Column Gap Small", value: "var(--space-column-gap-small)" },
       {
         name: "Column Gap Medium",
-        value: "var(--space-column-gap-medium, 16px)",
+        value: "var(--space-column-gap-medium)",
       },
       {
         name: "Column Gap Large",
-        value: "var(--space-column-gap-large, 24px)",
+        value: "var(--space-column-gap-large)",
       },
-      { name: "Column Gap XL", value: "var(--space-column-gap-x-large, 32px)" },
+      { name: "Column Gap XL", value: "var(--space-column-gap-x-large)" },
 
       // General Spacing
-      { name: "Space XS", value: "var(--space-x-small, 4px)" },
-      { name: "Space Small", value: "var(--space-small, 8px)" },
-      { name: "Space Medium", value: "var(--space-medium, 16px)" },
-      { name: "Space Large", value: "var(--space-large, 24px)" },
-      { name: "Space XL", value: "var(--space-x-large, 32px)" },
+      { name: "Space XS", value: "var(--space-x-small)" },
+      { name: "Space Small", value: "var(--space-small)" },
+      { name: "Space Medium", value: "var(--space-medium)" },
+      { name: "Space Large", value: "var(--space-large)" },
+      { name: "Space XL", value: "var(--space-x-large)" },
     ],
 
     fontFamily: [
       {
         name: "Body Font",
-        value:
-          "var(--font-family-body, 'Graphik Web', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif)",
+        value: "var(--font-family-body)",
       },
       {
         name: "Heading Font",
-        value:
-          "var(--font-family-heading, 'Graphik Web', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif)",
+        value: "var(--font-family-heading)",
       },
       {
         name: "Display Font",
-        value:
-          "var(--font-family-display, 'Graphik Web', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif)",
+        value: "var(--font-family-display)",
       },
       {
         name: "Component Font",
-        value:
-          "var(--font-family-component, 'Graphik Web', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif)",
+        value: "var(--font-family-component)",
       },
     ],
 
     fontSize: [
       // Action/Button Text
-      { name: "Action XS", value: "var(--font-size-action-x-small, 12px)" },
-      { name: "Action Small", value: "var(--font-size-action-small, 14px)" },
-      { name: "Action Medium", value: "var(--font-size-action-medium, 16px)" },
-      { name: "Action Large", value: "var(--font-size-action-large, 18px)" },
+      { name: "Action XS", value: "var(--font-size-action-x-small)" },
+      { name: "Action Small", value: "var(--font-size-action-small)" },
+      { name: "Action Medium", value: "var(--font-size-action-medium)" },
+      { name: "Action Large", value: "var(--font-size-action-large)" },
 
       // Body Text
-      { name: "Body 1", value: "var(--font-size-body-1, 16px)" },
-      { name: "Body 2", value: "var(--font-size-body-2, 14px)" },
-      { name: "Body 3", value: "var(--font-size-body-3, 12px)" },
-      { name: "Body 4", value: "var(--font-size-body-4, 11px)" },
+      { name: "Body 1", value: "var(--font-size-body-1)" },
+      { name: "Body 2", value: "var(--font-size-body-2)" },
+      { name: "Body 3", value: "var(--font-size-body-3)" },
+      { name: "Body 4", value: "var(--font-size-body-4)" },
 
       // Headings
-      { name: "Heading 1", value: "var(--font-size-heading-1, 32px)" },
-      { name: "Heading 2", value: "var(--font-size-heading-2, 28px)" },
-      { name: "Heading 3", value: "var(--font-size-heading-3, 24px)" },
-      { name: "Heading 4", value: "var(--font-size-heading-4, 20px)" },
-      { name: "Heading 5", value: "var(--font-size-heading-5, 18px)" },
-      { name: "Heading 6", value: "var(--font-size-heading-6, 16px)" },
+      { name: "Heading 1", value: "var(--font-size-heading-1)" },
+      { name: "Heading 2", value: "var(--font-size-heading-2)" },
+      { name: "Heading 3", value: "var(--font-size-heading-3)" },
+      { name: "Heading 4", value: "var(--font-size-heading-4)" },
+      { name: "Heading 5", value: "var(--font-size-heading-5)" },
+      { name: "Heading 6", value: "var(--font-size-heading-6)" },
 
       // Display Text
-      { name: "Display 1", value: "var(--font-size-display-1, 48px)" },
-      { name: "Display 2", value: "var(--font-size-display-2, 40px)" },
-      { name: "Display 3", value: "var(--font-size-display-3, 36px)" },
-      { name: "Display 4", value: "var(--font-size-display-4, 32px)" },
+      { name: "Display 1", value: "var(--font-size-display-1)" },
+      { name: "Display 2", value: "var(--font-size-display-2)" },
+      { name: "Display 3", value: "var(--font-size-display-3)" },
+      { name: "Display 4", value: "var(--font-size-display-4)" },
 
       // Component Text
       {
         name: "Component XS",
-        value: "var(--font-size-component-x-small, 11px)",
+        value: "var(--font-size-component-x-small)",
       },
       {
         name: "Component Small",
-        value: "var(--font-size-component-small, 12px)",
+        value: "var(--font-size-component-small)",
       },
       {
         name: "Component Medium",
-        value: "var(--font-size-component-medium, 14px)",
+        value: "var(--font-size-component-medium)",
       },
       {
         name: "Component Large",
-        value: "var(--font-size-component-large, 16px)",
+        value: "var(--font-size-component-large)",
       },
       {
         name: "Component XL",
-        value: "var(--font-size-component-x-large, 18px)",
+        value: "var(--font-size-component-x-large)",
       },
 
       // Input Text
-      { name: "Input Label", value: "var(--font-size-input-label, 14px)" },
-      { name: "Input Text", value: "var(--font-size-input-text, 16px)" },
+      { name: "Input Label", value: "var(--font-size-input-label)" },
+      { name: "Input Text", value: "var(--font-size-input-text)" },
     ],
 
     fontWeight: [
-      { name: "Body Regular", value: "var(--font-weight-body, 400)" },
-      { name: "Body Semibold", value: "var(--font-weight-body-semibold, 600)" },
-      { name: "Body Bold", value: "var(--font-weight-body-bold, 700)" },
-      { name: "Heading Regular", value: "var(--font-weight-heading, 400)" },
-      { name: "Heading Bold", value: "var(--font-weight-heading-bold, 700)" },
-      { name: "Display Regular", value: "var(--font-weight-display, 400)" },
-      { name: "Display Bold", value: "var(--font-weight-display-bold, 700)" },
-      { name: "Component Regular", value: "var(--font-weight-component, 400)" },
+      { name: "Body Regular", value: "var(--font-weight-body)" },
+      { name: "Body Semibold", value: "var(--font-weight-body-semibold)" },
+      { name: "Body Bold", value: "var(--font-weight-body-bold)" },
+      { name: "Heading Regular", value: "var(--font-weight-heading)" },
+      { name: "Heading Bold", value: "var(--font-weight-heading-bold)" },
+      { name: "Display Regular", value: "var(--font-weight-display)" },
+      { name: "Display Bold", value: "var(--font-weight-display-bold)" },
+      { name: "Component Regular", value: "var(--font-weight-component)" },
       {
         name: "Component Semibold",
-        value: "var(--font-weight-component-semibold, 600)",
+        value: "var(--font-weight-component-semibold)",
       },
       {
         name: "Component Bold",
-        value: "var(--font-weight-component-bold, 700)",
+        value: "var(--font-weight-component-bold)",
       },
     ],
 
     lineHeight: [
-      { name: "Body", value: "var(--line-height-body, 1.5)" },
-      { name: "Heading", value: "var(--line-height-heading, 1.2)" },
-      { name: "Display", value: "var(--line-height-display, 1.1)" },
-      { name: "Component", value: "var(--line-height-component, 1.4)" },
+      { name: "Body", value: "var(--line-height-body)" },
+      { name: "Heading", value: "var(--line-height-heading)" },
+      { name: "Display", value: "var(--line-height-display)" },
+      { name: "Component", value: "var(--line-height-component)" },
     ],
 
     borderRadius: [
-      { name: "None", value: "var(--radius-none, 0px)" },
-      { name: "XS", value: "var(--radius-x-small, 2px)" },
-      { name: "Small", value: "var(--radius-small, 4px)" },
-      { name: "Medium", value: "var(--radius-medium, 6px)" },
-      { name: "Large", value: "var(--radius-large, 8px)" },
-      { name: "XL", value: "var(--radius-x-large, 12px)" },
-      { name: "Action", value: "var(--radius-action, 4px)" },
-      { name: "Full", value: "var(--radius-full, 9999px)" },
+      { name: "None", value: "var(--radius-none)" },
+      { name: "XS", value: "var(--radius-x-small)" },
+      { name: "Small", value: "var(--radius-small)" },
+      { name: "Medium", value: "var(--radius-medium)" },
+      { name: "Large", value: "var(--radius-large)" },
+      { name: "XL", value: "var(--radius-x-large)" },
+      { name: "Action", value: "var(--radius-action)" },
+      { name: "Full", value: "var(--radius-full)" },
     ],
 
     boxShadow: [
-      { name: "None", value: "var(--elevation-level-0, none)" },
+      { name: "None", value: "var(--elevation-level-0)" },
       {
         name: "Level 1",
-        value: "var(--elevation-level-1, 0 1px 3px rgba(0, 0, 0, 0.12))",
+        value: "var(--elevation-level-1)",
       },
       {
         name: "Level 2",
-        value:
-          "var(--elevation-level-2, 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24))",
+        value: "var(--elevation-level-2)",
       },
       {
         name: "Level 3",
-        value:
-          "var(--elevation-level-3, 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23))",
+        value: "var(--elevation-level-3)",
       },
       {
         name: "Level 4",
-        value:
-          "var(--elevation-level-4, 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23))",
+        value: "var(--elevation-level-4)",
       },
     ],
   },
