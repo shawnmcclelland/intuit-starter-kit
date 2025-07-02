@@ -135,6 +135,9 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -144,6 +147,9 @@
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -153,6 +159,9 @@
   font-weight: 400;
   font-style: italic;
   font-display: swap;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -162,6 +171,9 @@
   font-weight: 500;
   font-style: italic;
   font-display: swap;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Mailchimp - Means Web */
