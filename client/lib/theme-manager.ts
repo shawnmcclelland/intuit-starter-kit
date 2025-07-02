@@ -110,8 +110,11 @@ export class ThemeManager {
     // Default to Intuit light theme
     this.currentTheme =
       themes.find((t) => t.id === "intuit-light") || themes[0];
-    this.loadFromStorage();
-    this.applyTheme();
+
+    if (typeof window !== "undefined") {
+      this.loadFromStorage();
+      this.applyTheme();
+    }
   }
 
   /**
