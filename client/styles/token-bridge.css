@@ -214,25 +214,25 @@
 
 /* Credit Karma Light Theme - using standardized design tokens */
 [data-theme="creditkarma"] {
-  --background: from var(--color-container-background-primary);
-  --foreground: from var(--color-text-primary);
-  --card: from var(--color-container-background-primary);
-  --card-foreground: from var(--color-text-primary);
-  --popover: from var(--color-container-background-primary);
-  --popover-foreground: from var(--color-text-primary);
-  --primary: from var(--color-action-standard);
+  --background: 255 255 255; /* from --color-container-background-primary */
+  --foreground: 0 0 0; /* from --color-text-primary */
+  --card: 255 255 255; /* from --color-container-background-primary */
+  --card-foreground: 0 0 0; /* from --color-text-primary */
+  --popover: 255 255 255; /* from --color-container-background-primary */
+  --popover-foreground: 0 0 0; /* from --color-text-primary */
+  --primary: 0 134 0; /* from --color-action-standard: #008600 */
   --primary-foreground: 255 255 255;
-  --secondary: from var(--color-text-secondary);
+  --secondary: 85 89 91; /* from --color-text-secondary: #55595B */
   --secondary-foreground: 255 255 255;
-  --muted: from var(--color-container-background-secondary);
-  --muted-foreground: from var(--color-text-tertiary);
-  --accent: from var(--color-container-background-tertiary);
-  --accent-foreground: from var(--color-text-primary);
-  --destructive: from var(--color-action-negative);
+  --muted: 244 245 248; /* from --color-container-background-secondary: #F4F5F8 */
+  --muted-foreground: 107 108 114; /* from --color-text-tertiary: #6B6C72 */
+  --accent: 236 238 241; /* from --color-container-background-tertiary: #ECEEF1 */
+  --accent-foreground: 0 0 0; /* from --color-text-primary */
+  --destructive: 199 73 0; /* from --color-action-negative: #C74900 */
   --destructive-foreground: 255 255 255;
-  --border: from var(--color-container-border-tertiary);
-  --input: from var(--color-input-background-primary);
-  --ring: from var(--color-focus-indicator);
+  --border: 212 215 220; /* from --color-container-border-tertiary: #D4D7DC */
+  --input: 255 255 255; /* from --color-input-background-primary: #FFFFFF */
+  --ring: 0 134 0; /* from --color-focus-indicator: #008600 */
 }
 
 /* Credit Karma Dark Theme - using exact design system tokens */
