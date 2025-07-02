@@ -170,14 +170,24 @@ button,
   will-change: auto;
 }
 
-/* Fix theme switcher button - size for largest text "Credit Karma" */
-[data-loc*="theme-switcher"] button[aria-haspopup="menu"] {
-  width: 108px !important;
-  min-width: 108px !important;
-  max-width: 108px !important;
-  text-align: center !important;
-  justify-content: center !important;
-  padding-left: 8px !important;
-  padding-right: 8px !important;
-  box-sizing: border-box !important;
+/* Force fixed width on theme switcher button - override all inline styles */
+button[aria-haspopup="menu"][data-loc*="button.tsx"] {
+  width: 120px !important;
+  min-width: 120px !important;
+  max-width: 120px !important;
+  flex-shrink: 0 !important;
+  flex-grow: 0 !important;
+  flex-basis: 120px !important;
+}
+
+/* Additional override for any theme switcher buttons */
+button:has-text("Intuit"),
+button:has-text("QuickBooks"),
+button:has-text("TurboTax"),
+button:has-text("Mailchimp"),
+button:has-text("Credit Karma") {
+  width: 120px !important;
+  min-width: 120px !important;
+  max-width: 120px !important;
+  flex-shrink: 0 !important;
 }
