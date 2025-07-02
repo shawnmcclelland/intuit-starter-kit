@@ -1,309 +1,189 @@
 /**
- * Token Bridge - Maps Intuit Design System hex tokens to Tailwind-compatible RGB format
- * Converting actual hex values from design system to RGB format
- *
- * Key conversions:
- * #FFFFFF -> 255 255 255 (white)
- * #393A3D -> 57 58 61 (dark gray)
- * #0077C5 -> 0 119 197 (Intuit blue)
- * #00892E -> 0 137 46 (QuickBooks green)
+ * Token Bridge - Maps Intuit Design System tokens to Tailwind-compatible RGB format
+ * Using EXACT values from the design system tokens, not custom interpretations
  */
 
-/* Default fallback colors (Intuit Light theme) */
+/* Default/Root theme (Intuit Light) */
 :root {
-  --background: 255 255 255; /* #FFFFFF - white background */
-  --foreground: 57 58 61; /* #393A3D - dark gray text */
-  --card: 255 255 255; /* #FFFFFF - white cards */
-  --card-foreground: 57 58 61; /* #393A3D - dark gray text on cards */
-  --popover: 255 255 255; /* #FFFFFF - white popovers */
-  --popover-foreground: 57 58 61; /* #393A3D - dark gray text in popovers */
-  --primary: 0 119 197; /* #0077C5 - Intuit blue */
-  --primary-foreground: 255 255 255; /* #FFFFFF - white text on blue */
-  --secondary: 57 58 61; /* #393A3D - dark gray secondary */
-  --secondary-foreground: 255 255 255; /* #FFFFFF - white text on gray */
-  --muted: 244 245 248; /* #F4F5F8 - light gray background */
-  --muted-foreground: 107 108 114; /* #6B6C72 - medium gray text */
-  --accent: 236 238 241; /* #ECEEF1 - very light gray accent */
-  --accent-foreground: 57 58 61; /* #393A3D - dark gray text on light accent */
-  --destructive: 213 43 30; /* #D52B1E - red for errors */
-  --destructive-foreground: 255 255 255; /* #FFFFFF - white text on red */
-  --border: 212 215 220; /* #D4D7DC - light gray borders */
-  --input: 255 255 255; /* #FFFFFF - white input backgrounds */
-  --ring: 0 119 197; /* #0077C5 - blue focus rings */
-  --radius: 0.5rem;
-  --sidebar-background: 244 245 248; /* #F4F5F8 - light gray sidebar */
-  --sidebar-foreground: 57 58 61; /* #393A3D - dark gray sidebar text */
-  --sidebar-primary: 0 119 197; /* #0077C5 - blue sidebar accents */
-  --sidebar-primary-foreground: 255 255 255; /* #FFFFFF - white text on blue */
-  --sidebar-accent: 236 238 241; /* #ECEEF1 - light gray sidebar accent */
-  --sidebar-accent-foreground: 57 58 61; /* #393A3D - dark gray text on light */
-  --sidebar-border: 186 190 197; /* #BABEC5 - medium gray borders */
-  --sidebar-ring: 0 119 197; /* #0077C5 - blue focus rings */
-}
-
-/* Dark mode fallback */
-.dark {
-  --background: 40 40 40; /* #282828 - dark background */
-  --foreground: 236 238 241; /* #ECEEF1 - light gray text */
-  --card: 57 58 61; /* #393A3D - dark gray cards */
-  --card-foreground: 236 238 241; /* #ECEEF1 - light text on dark cards */
-  --popover: 57 58 61; /* #393A3D - dark gray popovers */
-  --popover-foreground: 236 238 241; /* #ECEEF1 - light text in popovers */
-  --primary: 52 191 255; /* #34BFFF - light blue in dark mode */
-  --primary-foreground: 40 40 40; /* #282828 - dark text on light blue */
-  --secondary: 57 58 61; /* #393A3D - dark gray secondary */
-  --secondary-foreground: 236 238 241; /* #ECEEF1 - light text on dark gray */
-  --muted: 57 58 61; /* #393A3D - dark gray muted areas */
-  --muted-foreground: 186 190 197; /* #BABEC5 - medium light gray text */
-  --accent: 57 58 61; /* #393A3D - dark gray accent */
-  --accent-foreground: 236 238 241; /* #ECEEF1 - light text on dark accent */
-  --destructive: 255 137 121; /* #FF8979 - light red for errors in dark mode */
-  --destructive-foreground: 40 40 40; /* #282828 - dark text on light red */
-  --border: 107 108 114; /* #6B6C72 - medium gray borders in dark mode */
-  --input: 40 40 40; /* #282828 - dark input backgrounds */
-  --ring: 52 191 255; /* #34BFFF - light blue focus rings */
-  --sidebar-background: 57 58 61; /* #393A3D - dark gray sidebar */
-  --sidebar-foreground: 236 238 241; /* #ECEEF1 - light text in sidebar */
-  --sidebar-primary: 52 191 255; /* #34BFFF - light blue sidebar accents */
-  --sidebar-primary-foreground: 40 40 40; /* #282828 - dark text on light blue */
-  --sidebar-accent: 70 71 74; /* #46474A - medium dark gray accent */
-  --sidebar-accent-foreground: 236 238 241; /* #ECEEF1 - light text */
-  --sidebar-border: 107 108 114; /* #6B6C72 - medium gray borders */
-  --sidebar-ring: 52 191 255; /* #34BFFF - light blue focus rings */
-}
-
-/* QuickBooks Light Theme - Green primary colors */
-[data-theme="quickbooks"] {
-  --background: 255 255 255; /* #FFFFFF - white background */
-  --foreground: 57 58 61; /* #393A3D - dark gray text */
-  --card: 255 255 255; /* #FFFFFF - white cards */
-  --card-foreground: 57 58 61; /* #393A3D - dark gray text */
-  --popover: 255 255 255; /* #FFFFFF - white popovers */
-  --popover-foreground: 57 58 61; /* #393A3D - dark gray text */
-  --primary: 0 137 46; /* #00892E - QuickBooks green */
-  --primary-foreground: 255 255 255; /* #FFFFFF - white text on green */
-  --primary-600: 0 108 35; /* #006C23 - darker green for gradients */
-  --secondary: 83 183 0; /* #53B700 - lighter green secondary */
-  --secondary-foreground: 255 255 255; /* #FFFFFF - white text */
-  --muted: 240 248 241; /* #F0F8F1 - very light green tint */
-  --muted-foreground: 107 108 114; /* #6B6C72 - medium gray text */
-  --accent: 220 245 223; /* #DCF5DF - light green accent */
-  --accent-foreground: 0 137 46; /* #00892E - green text on light accent */
-  --destructive: 213 43 30; /* #D52B1E - red errors */
-  --destructive-foreground: 255 255 255; /* #FFFFFF - white text on red */
-  --border: 141 144 150; /* #8D9096 - medium gray borders */
-  --input: 255 255 255; /* #FFFFFF - white inputs */
-  --ring: 0 137 46; /* #00892E - green focus rings */
+  /* Using exact values from design system for Intuit theme */
+  --background: 255 255 255; /* --color-container-background-primary: #ffffff */
+  --foreground: 33 38 42; /* --color-text-primary: #21262a */
+  --card: 255 255 255; /* --color-container-background-primary: #ffffff */
+  --card-foreground: 33 38 42; /* --color-text-primary: #21262a */
+  --popover: 255 255 255; /* --color-container-background-primary: #ffffff */
+  --popover-foreground: 33 38 42; /* --color-text-primary: #21262a */
+  --primary: 0 119 197; /* --color-action-standard: #0077c5 */
+  --primary-foreground: 255 255 255; /* white text on primary */
+  --secondary: 107 108 114; /* --color-action-complementary: #6b6c72 */
+  --secondary-foreground: 255 255 255; /* white text on secondary */
+  --muted: 244 245 248; /* --color-container-background-secondary: #f4f5f8 */
+  --muted-foreground: 107 108 114; /* --color-text-secondary: #6b6c72 */
+  --accent: 245 252 255; /* --color-container-background-accent: #f5fcff */
+  --accent-foreground: 33 38 42; /* --color-text-primary: #21262a */
+  --destructive: 213 43 30; /* --color-action-negative: #d52b1e */
+  --destructive-foreground: 255 255 255; /* white text on destructive */
+  --border: 212 215 220; /* --color-divider-primary: #d4d7dc */
+  --input: 255 255 255; /* --color-input-background-primary: #ffffff */
+  --ring: 0 119 197; /* --color-action-standard: #0077c5 */
   --radius: 0.5rem;
 }
 
-/* QuickBooks Dark Theme */
-[data-theme="quickbooks"][data-colorscheme="dark"] {
-  --background: 57 58 61; /* #393A3D - dark background */
-  --foreground: 236 238 241; /* #ECEEF1 - light text */
-  --card: 57 58 61; /* #393A3D - dark cards */
-  --card-foreground: 236 238 241; /* #ECEEF1 - light text */
-  --popover: 57 58 61; /* #393A3D - dark popovers */
-  --popover-foreground: 236 238 241; /* #ECEEF1 - light text */
-  --primary: 59 216 94; /* #3BD85E - bright green in dark mode */
-  --primary-foreground: 40 40 40; /* #282828 - dark text on bright green */
-  --secondary: 83 183 0; /* #53B700 - medium green */
-  --secondary-foreground: 40 40 40; /* #282828 - dark text */
-  --muted: 45 45 46; /* #2D2D2E - dark muted areas */
-  --muted-foreground: 186 190 197; /* #BABEC5 - light gray text */
-  --accent: 57 58 61; /* #393A3D - dark accent */
-  --accent-foreground: 236 238 241; /* #ECEEF1 - light text */
-  --destructive: 255 137 121; /* #FF8979 - light red */
-  --destructive-foreground: 40 40 40; /* #282828 - dark text */
-  --border: 212 215 220; /* #D4D7DC - borders */
-  --input: 40 40 40; /* #282828 - dark inputs */
-  --ring: 52 191 255; /* #34BFFF - blue focus rings */
-}
-
-/* TurboTax Light Theme - Navy blue primary */
-[data-theme="turbotax"] {
-  --background: 255 255 255; /* #FFFFFF */
-  --foreground: 33 38 42; /* #21262A */
-  --card: 255 255 255; /* #FFFFFF */
-  --card-foreground: 33 38 42; /* #21262A */
-  --popover: 255 255 255; /* #FFFFFF */
-  --popover-foreground: 33 38 42; /* #21262A */
-  --primary: 32 94 163; /* #205EA3 - TurboTax navy */
-  --primary-foreground: 255 255 255; /* #FFFFFF */
-  --primary-600: 26 75 130; /* #1A4B82 - darker navy for gradients */
-  --secondary: 70 130 180; /* #4682B4 - steel blue secondary */
-  --secondary-foreground: 255 255 255; /* #FFFFFF */
-  --muted: 240 244 250; /* #F0F4FA - light blue tint */
-  --muted-foreground: 133 146 153; /* #859299 */
-  --accent: 224 237 255; /* #E0EDFF - light blue accent */
-  --accent-foreground: 32 94 163; /* #205EA3 - navy text on light accent */
-  --destructive: 219 51 77; /* #DB334D */
-  --destructive-foreground: 255 255 255; /* #FFFFFF */
-  --border: 195 206 213; /* #C3CED5 */
-  --input: 255 255 255; /* #FFFFFF */
-  --ring: 32 94 163; /* #205EA3 - navy focus rings */
-}
-
-/* TurboTax Dark Theme */
-[data-theme="turbotax"][data-colorscheme="dark"] {
-  --background: 40 40 40; /* #282828 */
-  --foreground: 236 238 241; /* #ECEEF1 */
-  --card: 49 49 51; /* #313133 */
-  --card-foreground: 236 238 241; /* #ECEEF1 */
-  --popover: 49 49 51; /* #313133 */
-  --popover-foreground: 236 238 241; /* #ECEEF1 */
-  --primary: 52 191 255; /* #34BFFF */
-  --primary-foreground: 40 40 40; /* #282828 */
-  --secondary: 57 58 61; /* #393A3D */
-  --secondary-foreground: 236 238 241; /* #ECEEF1 */
-  --muted: 57 58 61; /* #393A3D */
-  --muted-foreground: 186 190 197; /* #BABEC5 */
-  --accent: 57 58 61; /* #393A3D */
-  --accent-foreground: 236 238 241; /* #ECEEF1 */
-  --destructive: 255 137 121; /* #FF8979 */
-  --destructive-foreground: 40 40 40; /* #282828 */
-  --border: 212 215 220; /* #D4D7DC */
-  --input: 40 40 40; /* #282828 */
-  --ring: 52 191 255; /* #34BFFF */
-}
-
-/* Mailchimp Light Theme - Teal primary */
-[data-theme="mailchimp"] {
-  --background: 255 255 255; /* #FFFFFF */
-  --foreground: 33 38 42; /* #21262A */
-  --card: 255 255 255; /* #FFFFFF */
-  --card-foreground: 33 38 42; /* #21262A */
-  --popover: 255 255 255; /* #FFFFFF */
-  --popover-foreground: 33 38 42; /* #21262A */
-  --primary: 0 130 141; /* #00828D - Mailchimp teal */
-  --primary-foreground: 255 255 255; /* #FFFFFF */
-  --primary-600: 0 104 113; /* #006871 - darker teal for gradients */
-  --secondary: 0 166 156; /* #00A69C - lighter teal secondary */
-  --secondary-foreground: 255 255 255; /* #FFFFFF */
-  --muted: 240 251 252; /* #F0FBFC - very light teal tint */
-  --muted-foreground: 60 104 111; /* #3C686F */
-  --accent: 204 248 248; /* #CCF8F8 - light teal accent */
-  --accent-foreground: 0 130 141; /* #00828D - teal text on light accent */
-  --destructive: 182 26 55; /* #B61A37 */
-  --destructive-foreground: 255 255 255; /* #FFFFFF */
-  --border: 226 233 237; /* #E2E9ED */
-  --input: 255 255 255; /* #FFFFFF */
-  --ring: 0 130 141; /* #00828D - teal focus rings */
-}
-
-/* Mailchimp Dark Theme */
-[data-theme="mailchimp"][data-colorscheme="dark"] {
-  --background: 36 28 21; /* #241C15 */
-  --foreground: 255 255 255; /* #FFFFFF */
-  --card: 57 58 61; /* #393A3D */
-  --card-foreground: 255 255 255; /* #FFFFFF */
-  --popover: 57 58 61; /* #393A3D */
-  --popover-foreground: 255 255 255; /* #FFFFFF */
-  --primary: 75 196 194; /* #4BC4C2 */
-  --primary-foreground: 36 28 21; /* #241C15 */
-  --secondary: 57 58 61; /* #393A3D */
-  --secondary-foreground: 255 255 255; /* #FFFFFF */
-  --muted: 57 58 61; /* #393A3D */
-  --muted-foreground: 186 190 197; /* #BABEC5 */
-  --accent: 57 58 61; /* #393A3D */
-  --accent-foreground: 255 255 255; /* #FFFFFF */
-  --destructive: 255 137 121; /* #FF8979 */
-  --destructive-foreground: 36 28 21; /* #241C15 */
-  --border: 212 215 220; /* #D4D7DC */
-  --input: 40 40 40; /* #282828 */
-  --ring: 113 210 255; /* #71D2FF */
-}
-
-/* Credit Karma Light Theme - Bright green primary */
-[data-theme="creditkarma"] {
-  --background: 255 255 255; /* #FFFFFF */
-  --foreground: 0 0 0; /* #000000 */
-  --card: 255 255 255; /* #FFFFFF */
-  --card-foreground: 0 0 0; /* #000000 */
-  --popover: 255 255 255; /* #FFFFFF */
-  --popover-foreground: 0 0 0; /* #000000 */
-  --primary: 0 134 0; /* #008600 - Credit Karma green */
-  --primary-foreground: 255 255 255; /* #FFFFFF */
-  --primary-600: 0 107 0; /* #006B00 - darker green for gradients */
-  --secondary: 76 175 80; /* #4CAF50 - material green secondary */
-  --secondary-foreground: 255 255 255; /* #FFFFFF */
-  --muted: 248 255 248; /* #F8FFF8 - very light green tint */
-  --muted-foreground: 107 108 114; /* #6B6C72 */
-  --accent: 232 245 233; /* #E8F5E9 - light green accent */
-  --accent-foreground: 0 134 0; /* #008600 - green text on light accent */
-  --destructive: 199 73 0; /* #C74900 */
-  --destructive-foreground: 255 255 255; /* #FFFFFF */
-  --border: 212 215 220; /* #D4D7DC */
-  --input: 255 255 255; /* #FFFFFF */
-  --ring: 0 134 0; /* #008600 - green focus rings */
-}
-
-/* Credit Karma Dark Theme */
-[data-theme="creditkarma"][data-colorscheme="dark"] {
-  --background: 40 40 40; /* #282828 */
-  --foreground: 236 238 241; /* #ECEEF1 */
-  --card: 57 58 61; /* #393A3D */
-  --card-foreground: 236 238 241; /* #ECEEF1 */
-  --popover: 57 58 61; /* #393A3D */
-  --popover-foreground: 236 238 241; /* #ECEEF1 */
-  --primary: 0 134 0; /* #008600 */
-  --primary-foreground: 40 40 40; /* #282828 */
-  --secondary: 57 58 61; /* #393A3D */
-  --secondary-foreground: 236 238 241; /* #ECEEF1 */
-  --muted: 57 58 61; /* #393A3D */
-  --muted-foreground: 186 190 197; /* #BABEC5 */
-  --accent: 57 58 61; /* #393A3D */
-  --accent-foreground: 236 238 241; /* #ECEEF1 */
-  --destructive: 255 137 121; /* #FF8979 */
-  --destructive-foreground: 40 40 40; /* #282828 */
-  --border: 212 215 220; /* #D4D7DC */
-  --input: 40 40 40; /* #282828 */
-  --ring: 52 191 255; /* #34BFFF */
-}
-
-/* Default Intuit Light Theme */
+/* Intuit Light Theme (explicit) */
 [data-theme="intuit"] {
-  --background: 255 255 255; /* #FFFFFF - professional white */
-  --foreground: 57 58 61; /* #393A3D - professional dark gray */
-  --card: 255 255 255; /* #FFFFFF - white cards */
-  --card-foreground: 57 58 61; /* #393A3D - dark text */
-  --popover: 255 255 255; /* #FFFFFF - white popovers */
-  --popover-foreground: 57 58 61; /* #393A3D - dark text */
-  --primary: 0 119 197; /* #0077C5 - Intuit signature blue */
-  --primary-foreground: 255 255 255; /* #FFFFFF - white text on blue */
-  --primary-600: 0 95 157; /* #005F9D - darker blue for gradients */
-  --secondary: 52 191 255; /* #34BFFF - lighter blue secondary */
-  --secondary-foreground: 57 58 61; /* #393A3D - dark text */
-  --muted: 244 245 248; /* #F4F5F8 - very light gray */
-  --muted-foreground: 107 108 114; /* #6B6C72 - medium gray */
-  --accent: 236 238 241; /* #ECEEF1 - light gray accent */
-  --accent-foreground: 57 58 61; /* #393A3D - dark text */
-  --destructive: 213 43 30; /* #D52B1E - error red */
-  --destructive-foreground: 255 255 255; /* #FFFFFF - white text */
-  --border: 212 215 220; /* #D4D7DC - light borders */
-  --input: 255 255 255; /* #FFFFFF - white inputs */
-  --ring: 0 119 197; /* #0077C5 - blue focus rings */
+  /* Same as root - using exact design system tokens */
+  --background: 255 255 255; /* #ffffff */
+  --foreground: 33 38 42; /* #21262a */
+  --card: 255 255 255; /* #ffffff */
+  --card-foreground: 33 38 42; /* #21262a */
+  --popover: 255 255 255; /* #ffffff */
+  --popover-foreground: 33 38 42; /* #21262a */
+  --primary: 0 119 197; /* #0077c5 - exact from design system */
+  --primary-foreground: 255 255 255;
+  --secondary: 107 108 114; /* #6b6c72 */
+  --secondary-foreground: 255 255 255;
+  --muted: 244 245 248; /* #f4f5f8 */
+  --muted-foreground: 107 108 114; /* #6b6c72 */
+  --accent: 245 252 255; /* #f5fcff */
+  --accent-foreground: 33 38 42; /* #21262a */
+  --destructive: 213 43 30; /* #d52b1e */
+  --destructive-foreground: 255 255 255;
+  --border: 212 215 220; /* #d4d7dc */
+  --input: 255 255 255; /* #ffffff */
+  --ring: 0 119 197; /* #0077c5 */
+}
+
+/* QuickBooks Light Theme - using exact design system tokens */
+[data-theme="quickbooks"] {
+  --background: 255 255 255; /* #ffffff */
+  --foreground: 33 38 42; /* #21262a */
+  --card: 255 255 255; /* #ffffff */
+  --card-foreground: 33 38 42; /* #21262a */
+  --popover: 255 255 255; /* #ffffff */
+  --popover-foreground: 33 38 42; /* #21262a */
+  --primary: 0 137 46; /* #00892e - exact from design system */
+  --primary-foreground: 255 255 255;
+  --secondary: 107 108 114; /* #6b6c72 */
+  --secondary-foreground: 255 255 255;
+  --muted: 234 255 235; /* #eaffeb - exact from design system */
+  --muted-foreground: 107 108 114; /* #6b6c72 */
+  --accent: 234 255 235; /* #eaffeb */
+  --accent-foreground: 33 38 42; /* #21262a */
+  --destructive: 213 43 30; /* #d52b1e */
+  --destructive-foreground: 255 255 255;
+  --border: 212 215 220; /* #d4d7dc */
+  --input: 255 255 255; /* #ffffff */
+  --ring: 0 137 46; /* #00892e */
+}
+
+/* QuickBooks Dark Theme - using exact design system tokens */
+[data-theme="quickbooks"][data-colorscheme="dark"] {
+  --background: 40 40 40; /* #282828 */
+  --foreground: 236 238 241; /* #eceef1 */
+  --card: 57 58 61; /* #393a3d */
+  --card-foreground: 236 238 241; /* #eceef1 */
+  --popover: 57 58 61; /* #393a3d */
+  --popover-foreground: 236 238 241; /* #eceef1 */
+  --primary: 59 216 94; /* #3bd85e - exact from design system */
+  --primary-foreground: 40 40 40; /* #282828 */
+  --secondary: 107 108 114; /* #6b6c72 */
+  --secondary-foreground: 236 238 241; /* #eceef1 */
+  --muted: 57 58 61; /* #393a3d */
+  --muted-foreground: 186 190 197; /* #babec5 */
+  --accent: 70 71 74; /* #46474a */
+  --accent-foreground: 236 238 241; /* #eceef1 */
+  --destructive: 255 137 121; /* #ff8979 */
+  --destructive-foreground: 40 40 40; /* #282828 */
+  --border: 212 215 220; /* #d4d7dc */
+  --input: 40 40 40; /* #282828 */
+  --ring: 59 216 94; /* #3bd85e */
 }
 
 /* Intuit Dark Theme */
 [data-theme="intuit"][data-colorscheme="dark"] {
-  --background: 40 40 40; /* #282828 - dark professional background */
-  --foreground: 236 238 241; /* #ECEEF1 - light text */
-  --card: 40 40 40; /* #282828 - dark cards */
-  --card-foreground: 236 238 241; /* #ECEEF1 - light text */
-  --popover: 40 40 40; /* #282828 - dark popovers */
-  --popover-foreground: 236 238 241; /* #ECEEF1 - light text */
-  --primary: 52 191 255; /* #34BFFF - bright blue for dark mode */
-  --primary-foreground: 40 40 40; /* #282828 - dark text on bright blue */
-  --secondary: 57 58 61; /* #393A3D - medium gray */
-  --secondary-foreground: 236 238 241; /* #ECEEF1 - light text */
-  --muted: 49 49 51; /* #313133 - dark muted areas */
-  --muted-foreground: 186 190 197; /* #BABEC5 - medium light text */
-  --accent: 49 49 51; /* #313133 - dark accent */
-  --accent-foreground: 236 238 241; /* #ECEEF1 - light text */
-  --destructive: 255 137 121; /* #FF8979 - light red for dark mode */
-  --destructive-foreground: 40 40 40; /* #282828 - dark text */
-  --border: 212 215 220; /* #D4D7DC - borders */
-  --input: 40 40 40; /* #282828 - dark inputs */
-  --ring: 52 191 255; /* #34BFFF - bright blue focus */
+  --background: 40 40 40; /* #282828 */
+  --foreground: 236 238 241; /* #eceef1 */
+  --card: 57 58 61; /* #393a3d */
+  --card-foreground: 236 238 241; /* #eceef1 */
+  --popover: 57 58 61; /* #393a3d */
+  --popover-foreground: 236 238 241; /* #eceef1 */
+  --primary: 52 191 255; /* #34bfff - blue for dark mode */
+  --primary-foreground: 40 40 40; /* #282828 */
+  --secondary: 107 108 114; /* #6b6c72 */
+  --secondary-foreground: 236 238 241; /* #eceef1 */
+  --muted: 57 58 61; /* #393a3d */
+  --muted-foreground: 186 190 197; /* #babec5 */
+  --accent: 70 71 74; /* #46474a */
+  --accent-foreground: 236 238 241; /* #eceef1 */
+  --destructive: 255 137 121; /* #ff8979 */
+  --destructive-foreground: 40 40 40; /* #282828 */
+  --border: 212 215 220; /* #d4d7dc */
+  --input: 40 40 40; /* #282828 */
+  --ring: 52 191 255; /* #34bfff */
+}
+
+/* Fallback themes using Intuit colors for now until design system expands */
+[data-theme="turbotax"] {
+  --background: 255 255 255;
+  --foreground: 33 38 42;
+  --card: 255 255 255;
+  --card-foreground: 33 38 42;
+  --popover: 255 255 255;
+  --popover-foreground: 33 38 42;
+  --primary: 0 119 197; /* Using Intuit blue until TurboTax tokens are defined */
+  --primary-foreground: 255 255 255;
+  --secondary: 107 108 114;
+  --secondary-foreground: 255 255 255;
+  --muted: 244 245 248;
+  --muted-foreground: 107 108 114;
+  --accent: 245 252 255;
+  --accent-foreground: 33 38 42;
+  --destructive: 213 43 30;
+  --destructive-foreground: 255 255 255;
+  --border: 212 215 220;
+  --input: 255 255 255;
+  --ring: 0 119 197;
+}
+
+[data-theme="mailchimp"] {
+  --background: 255 255 255;
+  --foreground: 33 38 42;
+  --card: 255 255 255;
+  --card-foreground: 33 38 42;
+  --popover: 255 255 255;
+  --popover-foreground: 33 38 42;
+  --primary: 0 119 197; /* Using Intuit blue until Mailchimp tokens are defined */
+  --primary-foreground: 255 255 255;
+  --secondary: 107 108 114;
+  --secondary-foreground: 255 255 255;
+  --muted: 244 245 248;
+  --muted-foreground: 107 108 114;
+  --accent: 245 252 255;
+  --accent-foreground: 33 38 42;
+  --destructive: 213 43 30;
+  --destructive-foreground: 255 255 255;
+  --border: 212 215 220;
+  --input: 255 255 255;
+  --ring: 0 119 197;
+}
+
+[data-theme="creditkarma"] {
+  --background: 255 255 255;
+  --foreground: 33 38 42;
+  --card: 255 255 255;
+  --card-foreground: 33 38 42;
+  --popover: 255 255 255;
+  --popover-foreground: 33 38 42;
+  --primary: 0 119 197; /* Using Intuit blue until Credit Karma tokens are defined */
+  --primary-foreground: 255 255 255;
+  --secondary: 107 108 114;
+  --secondary-foreground: 255 255 255;
+  --muted: 244 245 248;
+  --muted-foreground: 107 108 114;
+  --accent: 245 252 255;
+  --accent-foreground: 33 38 42;
+  --destructive: 213 43 30;
+  --destructive-foreground: 255 255 255;
+  --border: 212 215 220;
+  --input: 255 255 255;
+  --ring: 0 119 197;
 }
