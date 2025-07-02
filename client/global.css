@@ -5,15 +5,13 @@
 @tailwind utilities;
 
 @layer base {
-  /**
-   * Base styling and typography improvements
-   */
   * {
     @apply border-border;
   }
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-family-body);
     font-feature-settings:
       "rlig" 1,
       "calt" 1;
@@ -23,47 +21,45 @@
     scroll-behavior: smooth;
   }
 
-  /* Typography improvements */
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    @apply font-semibold tracking-tight;
+    font-family: var(--font-family-heading);
+    font-weight: var(--font-weight-heading);
+    line-height: var(--line-height-heading);
   }
 
   h1 {
-    @apply scroll-m-20 text-4xl lg:text-5xl;
+    font-size: var(--font-size-heading-1);
   }
 
   h2 {
-    @apply scroll-m-20 text-3xl lg:text-4xl;
+    font-size: var(--font-size-heading-2);
   }
 
   h3 {
-    @apply scroll-m-20 text-2xl lg:text-3xl;
+    font-size: var(--font-size-heading-3);
   }
 
   h4 {
-    @apply scroll-m-20 text-xl lg:text-2xl;
+    font-size: var(--font-size-heading-4);
   }
 
   p {
-    @apply leading-7;
+    line-height: var(--line-height-body);
   }
 
-  /* Focus improvements */
   :focus-visible {
     @apply outline-2 outline-offset-2 outline-ring;
   }
 
-  /* Selection styles */
   ::selection {
     @apply bg-primary/20 text-primary-foreground;
   }
 
-  /* Ensure theme transitions are smooth */
   *,
   *::before,
   *::after {
