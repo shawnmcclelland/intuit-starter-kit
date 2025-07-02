@@ -37,9 +37,13 @@ export function ThemeProvider({ children, defaultTheme }: ThemeProviderProps) {
       themeId: theme.id,
     });
 
-    // Ensure theme is applied immediately
-    const currentTheme = themeManager.getCurrentTheme();
-    setThemeState(currentTheme);
+    // Ensure theme is applied immediately on client
+    if (typeof window !== "undefined") {
+      // Force theme application since it might not have happened during SSR
+      themeManager.setTheme(themeManager.getCurrentTheme().id);
+      const currentTheme = themeManager.getCurrentTheme();
+      setThemeState(currentTheme);
+    }
 
     // Set default theme if provided
     if (defaultTheme && defaultTheme !== theme.id) {
