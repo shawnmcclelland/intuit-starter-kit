@@ -1678,6 +1678,16 @@
   --color-ui-primary-active: #71d2ff;
   --color-ui-primary-focus: #34bfff;
   --color-ui-primary-hover: #000000;
+
+  /* Mailchimp specific font families */
+  --font-family-body: "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-component: "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-display: "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-heading: "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
+  --font-name-body: "Graphik Web";
+  --font-name-component: "Graphik Web";
+  --font-name-display: "Graphik Web";
+  --font-name-heading: "Graphik Web";
 }
 
 /* Credit Karma Light Theme */
