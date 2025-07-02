@@ -1,17 +1,17 @@
-/* Button variants using design tokens directly */
+/* Button variants using design tokens directly - higher specificity */
 .button-base {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-component-gap-small);
-  white-space: nowrap;
-  border-radius: var(--radius-medium);
-  font-family: var(--font-family-component);
-  font-weight: var(--font-weight-component-semibold);
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  text-decoration: none;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: var(--space-component-gap-small) !important;
+  white-space: nowrap !important;
+  border-radius: var(--radius-medium) !important;
+  font-family: var(--font-family-component) !important;
+  font-weight: var(--font-weight-component-semibold) !important;
+  border: 1px solid transparent !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease !important;
+  text-decoration: none !important;
 }
 
 .button-base:focus-visible {
@@ -24,16 +24,16 @@
   opacity: 0.5;
 }
 
-/* Variant styles */
+/* Variant styles with high specificity */
 .button-default {
-  background-color: var(--color-action-standard);
-  color: var(--color-text-inverse);
-  border-color: var(--color-action-standard);
+  background-color: var(--color-action-standard) !important;
+  color: var(--color-text-inverse) !important;
+  border-color: var(--color-action-standard) !important;
 }
 
 .button-default:hover {
-  background-color: var(--color-action-standard-hover);
-  border-color: var(--color-action-standard-hover);
+  background-color: var(--color-action-standard-hover) !important;
+  border-color: var(--color-action-standard-hover) !important;
 }
 
 .button-destructive {

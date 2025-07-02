@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import UI component styles with design tokens */
+@import "./components/ui/button.css";
+
 @layer base {
   * {
     @apply border-border;
