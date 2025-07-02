@@ -55,8 +55,8 @@ export function ModeToggle({ className, size = "md" }: ModeToggleProps) {
           "transition-all duration-300 ease-in-out",
           size === "sm" ? "w-4 h-4" : size === "lg" ? "w-6 h-6" : "w-5 h-5",
           !isDark
-            ? "text-amber-500 scale-110 drop-shadow-md"
-            : "text-slate-400 scale-90 opacity-60",
+            ? "text-warning scale-110 drop-shadow-md"
+            : "text-muted-foreground scale-90 opacity-60",
         )}
       />
 
@@ -67,8 +67,8 @@ export function ModeToggle({ className, size = "md" }: ModeToggleProps) {
           "relative rounded-full transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background group",
           sizeClasses[size],
           isDark
-            ? "bg-gradient-to-r from-slate-700 to-slate-800 border border-slate-600 shadow-inner"
-            : "bg-gradient-to-r from-amber-100 to-orange-100 border border-amber-200 shadow-sm",
+            ? "bg-muted border border-border shadow-inner"
+            : "bg-accent border border-border shadow-sm",
           "hover:shadow-md active:scale-95",
         )}
         aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
@@ -77,21 +77,19 @@ export function ModeToggle({ className, size = "md" }: ModeToggleProps) {
         <div
           className={cn(
             "absolute inset-0 rounded-full transition-opacity duration-300",
-            isDark
-              ? "bg-gradient-to-r from-blue-900/20 to-indigo-900/20 opacity-100"
-              : "bg-gradient-to-r from-yellow-200/30 to-amber-200/30 opacity-100",
+            isDark ? "bg-primary/20 opacity-100" : "bg-warning/30 opacity-100",
           )}
         />
 
         {/* Switch knob */}
         <div
           className={cn(
-            "absolute top-0.5 rounded-full transition-all duration-300 ease-in-out shadow-lg ring-1 ring-black/5",
+            "absolute top-0.5 rounded-full transition-all duration-300 ease-in-out shadow-lg ring-1 ring-border/20",
             knobSizeClasses[size],
             knobOffset[size],
             isDark
-              ? "bg-gradient-to-b from-slate-200 to-slate-300 shadow-blue-500/20"
-              : "bg-gradient-to-b from-white to-amber-50 shadow-amber-500/20",
+              ? "bg-card shadow-primary/20"
+              : "bg-background shadow-warning/20",
             "group-hover:shadow-xl group-active:scale-95",
           )}
         >
@@ -100,8 +98,8 @@ export function ModeToggle({ className, size = "md" }: ModeToggleProps) {
             className={cn(
               "absolute inset-0.5 rounded-full transition-opacity duration-300",
               isDark
-                ? "bg-gradient-to-br from-white/40 to-transparent opacity-60"
-                : "bg-gradient-to-br from-white/80 to-transparent opacity-90",
+                ? "bg-gradient-to-br from-foreground/20 to-transparent opacity-60"
+                : "bg-gradient-to-br from-background/80 to-transparent opacity-90",
             )}
           />
         </div>
@@ -113,8 +111,8 @@ export function ModeToggle({ className, size = "md" }: ModeToggleProps) {
           "transition-all duration-300 ease-in-out",
           size === "sm" ? "w-4 h-4" : size === "lg" ? "w-6 h-6" : "w-5 h-5",
           isDark
-            ? "text-blue-400 scale-110 drop-shadow-md"
-            : "text-slate-400 scale-90 opacity-60",
+            ? "text-info scale-110 drop-shadow-md"
+            : "text-muted-foreground scale-90 opacity-60",
         )}
       />
     </div>
