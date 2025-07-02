@@ -74,3 +74,32 @@
       color 0.3s ease;
   }
 }
+
+/* Fix for Mailchimp font rendering issues */
+[data-theme="mailchimp"] h1,
+[data-theme="mailchimp"] h2,
+[data-theme="mailchimp"] h3,
+[data-theme="mailchimp"] h4,
+[data-theme="mailchimp"] h5,
+[data-theme="mailchimp"] h6 {
+  text-shadow: none;
+  -webkit-text-stroke: 0;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
+  text-rendering: geometricPrecision;
+}
+
+[data-theme="mailchimp"][data-colorscheme="dark"] h1,
+[data-theme="mailchimp"][data-colorscheme="dark"] h2,
+[data-theme="mailchimp"][data-colorscheme="dark"] h3,
+[data-theme="mailchimp"][data-colorscheme="dark"] h4,
+[data-theme="mailchimp"][data-colorscheme="dark"] h5,
+[data-theme="mailchimp"][data-colorscheme="dark"] h6 {
+  text-shadow: none;
+  -webkit-text-stroke: 0;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
+  text-rendering: geometricPrecision;
+}
