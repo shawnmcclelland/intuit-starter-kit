@@ -1,0 +1,267 @@
+/**
+ * Token Bridge - Converts Intuit Design System tokens to Tailwind-compatible RGB format
+ * This file creates the mapping layer between hex-based design tokens and RGB values expected by Tailwind
+ */
+
+/* Helper function to extract RGB values from hex colors */
+@supports (color: color(display-p3 1 1 1)) {
+  :root {
+    color-scheme: light dark;
+  }
+}
+
+/* Convert design system color tokens to RGB format for Tailwind */
+[data-theme] {
+  /* Page backgrounds */
+  --background: from var(--color-page-background-primary);
+  --foreground: from var(--color-text-primary);
+
+  /* Container backgrounds */
+  --card: from var(--color-container-background-primary);
+  --card-foreground: from var(--color-text-primary);
+
+  --popover: from var(--color-container-background-primary);
+  --popover-foreground: from var(--color-text-primary);
+
+  /* Action colors */
+  --primary: from var(--color-action-standard);
+  --primary-foreground: from var(--color-text-complementary);
+
+  --secondary: from var(--color-ui-positive);
+  --secondary-foreground: from var(--color-text-complementary);
+
+  /* Muted states */
+  --muted: from var(--color-container-background-secondary);
+  --muted-foreground: from var(--color-text-secondary);
+
+  /* Accent states */
+  --accent: from var(--color-container-background-tertiary);
+  --accent-foreground: from var(--color-text-primary);
+
+  /* Error states */
+  --destructive: from var(--color-action-negative);
+  --destructive-foreground: from var(--color-text-complementary);
+
+  /* Interactive elements */
+  --border: from var(--color-container-border-primary);
+  --input: from var(--color-input-background-primary);
+  --ring: from var(--color-focus-indicator);
+
+  /* Layout tokens */
+  --radius: var(--radius-medium);
+
+  /* Sidebar tokens */
+  --sidebar-background: from var(--color-container-background-secondary);
+  --sidebar-foreground: from var(--color-text-primary);
+  --sidebar-primary: from var(--color-action-standard);
+  --sidebar-primary-foreground: from var(--color-text-complementary);
+  --sidebar-accent: from var(--color-container-background-tertiary);
+  --sidebar-accent-foreground: from var(--color-text-primary);
+  --sidebar-border: from var(--color-container-border-secondary);
+  --sidebar-ring: from var(--color-focus-indicator);
+}
+
+/* QuickBooks theme specific mappings */
+[data-theme="quickbooks"] {
+  --background: 255 255 255;
+  --foreground: 57 58 61;
+  --card: 255 255 255;
+  --card-foreground: 57 58 61;
+  --primary: 0 137 46;
+  --primary-foreground: 255 255 255;
+  --secondary: 0 119 197;
+  --secondary-foreground: 255 255 255;
+  --muted: 236 238 241;
+  --muted-foreground: 107 108 114;
+  --accent: 227 229 232;
+  --accent-foreground: 57 58 61;
+  --destructive: 213 43 30;
+  --destructive-foreground: 255 255 255;
+  --border: 141 144 150;
+  --input: 255 255 255;
+  --ring: 0 119 197;
+}
+
+[data-theme="quickbooks"][data-colorscheme="dark"] {
+  --background: 40 40 40;
+  --foreground: 236 238 241;
+  --card: 57 58 61;
+  --card-foreground: 236 238 241;
+  --primary: 59 216 94;
+  --primary-foreground: 40 40 40;
+  --secondary: 52 191 255;
+  --secondary-foreground: 40 40 40;
+  --muted: 57 58 61;
+  --muted-foreground: 186 190 197;
+  --accent: 57 58 61;
+  --accent-foreground: 236 238 241;
+  --destructive: 255 137 121;
+  --destructive-foreground: 40 40 40;
+  --border: 212 215 220;
+  --input: 40 40 40;
+  --ring: 52 191 255;
+}
+
+/* TurboTax theme specific mappings */
+[data-theme="turbotax"] {
+  --background: 255 255 255;
+  --foreground: 33 38 42;
+  --card: 255 255 255;
+  --card-foreground: 33 38 42;
+  --primary: 32 94 163;
+  --primary-foreground: 255 255 255;
+  --secondary: 33 38 42;
+  --secondary-foreground: 255 255 255;
+  --muted: 240 244 246;
+  --muted-foreground: 133 146 153;
+  --accent: 240 244 246;
+  --accent-foreground: 33 38 42;
+  --destructive: 219 51 77;
+  --destructive-foreground: 255 255 255;
+  --border: 195 206 213;
+  --input: 255 255 255;
+  --ring: 33 38 42;
+}
+
+[data-theme="turbotax"][data-colorscheme="dark"] {
+  --background: 40 40 40;
+  --foreground: 236 238 241;
+  --card: 49 49 51;
+  --card-foreground: 236 238 241;
+  --primary: 52 191 255;
+  --primary-foreground: 40 40 40;
+  --secondary: 57 58 61;
+  --secondary-foreground: 236 238 241;
+  --muted: 57 58 61;
+  --muted-foreground: 186 190 197;
+  --accent: 57 58 61;
+  --accent-foreground: 236 238 241;
+  --destructive: 255 137 121;
+  --destructive-foreground: 40 40 40;
+  --border: 212 215 220;
+  --input: 40 40 40;
+  --ring: 52 191 255;
+}
+
+/* Mailchimp theme specific mappings */
+[data-theme="mailchimp"] {
+  --background: 255 255 255;
+  --foreground: 33 38 42;
+  --card: 255 255 255;
+  --card-foreground: 33 38 42;
+  --primary: 0 130 141;
+  --primary-foreground: 255 255 255;
+  --secondary: 43 49 53;
+  --secondary-foreground: 255 255 255;
+  --muted: 240 244 246;
+  --muted-foreground: 60 104 111;
+  --accent: 240 244 246;
+  --accent-foreground: 33 38 42;
+  --destructive: 182 26 55;
+  --destructive-foreground: 255 255 255;
+  --border: 226 233 237;
+  --input: 255 255 255;
+  --ring: 0 80 86;
+}
+
+[data-theme="mailchimp"][data-colorscheme="dark"] {
+  --background: 36 28 21;
+  --foreground: 255 255 255;
+  --card: 57 58 61;
+  --card-foreground: 255 255 255;
+  --primary: 75 196 194;
+  --primary-foreground: 36 28 21;
+  --secondary: 57 58 61;
+  --secondary-foreground: 255 255 255;
+  --muted: 57 58 61;
+  --muted-foreground: 186 190 197;
+  --accent: 57 58 61;
+  --accent-foreground: 255 255 255;
+  --destructive: 255 137 121;
+  --destructive-foreground: 36 28 21;
+  --border: 212 215 220;
+  --input: 40 40 40;
+  --ring: 113 210 255;
+}
+
+/* Credit Karma theme specific mappings */
+[data-theme="creditkarma"] {
+  --background: 255 255 255;
+  --foreground: 0 0 0;
+  --card: 255 255 255;
+  --card-foreground: 0 0 0;
+  --primary: 0 134 0;
+  --primary-foreground: 255 255 255;
+  --secondary: 85 89 91;
+  --secondary-foreground: 255 255 255;
+  --muted: 244 245 248;
+  --muted-foreground: 107 108 114;
+  --accent: 236 238 241;
+  --accent-foreground: 0 0 0;
+  --destructive: 199 73 0;
+  --destructive-foreground: 255 255 255;
+  --border: 212 215 220;
+  --input: 255 255 255;
+  --ring: 0 134 0;
+}
+
+[data-theme="creditkarma"][data-colorscheme="dark"] {
+  --background: 40 40 40;
+  --foreground: 236 238 241;
+  --card: 57 58 61;
+  --card-foreground: 236 238 241;
+  --primary: 0 134 0;
+  --primary-foreground: 40 40 40;
+  --secondary: 57 58 61;
+  --secondary-foreground: 236 238 241;
+  --muted: 57 58 61;
+  --muted-foreground: 186 190 197;
+  --accent: 57 58 61;
+  --accent-foreground: 236 238 241;
+  --destructive: 255 137 121;
+  --destructive-foreground: 40 40 40;
+  --border: 212 215 220;
+  --input: 40 40 40;
+  --ring: 52 191 255;
+}
+
+/* Default Intuit theme specific mappings */
+[data-theme="intuit"] {
+  --background: 255 255 255;
+  --foreground: 57 58 61;
+  --card: 255 255 255;
+  --card-foreground: 57 58 61;
+  --primary: 0 119 197;
+  --primary-foreground: 255 255 255;
+  --secondary: 57 58 61;
+  --secondary-foreground: 255 255 255;
+  --muted: 244 245 248;
+  --muted-foreground: 107 108 114;
+  --accent: 236 238 241;
+  --accent-foreground: 57 58 61;
+  --destructive: 213 43 30;
+  --destructive-foreground: 255 255 255;
+  --border: 212 215 220;
+  --input: 255 255 255;
+  --ring: 0 119 197;
+}
+
+[data-theme="intuit"][data-colorscheme="dark"] {
+  --background: 40 40 40;
+  --foreground: 236 238 241;
+  --card: 40 40 40;
+  --card-foreground: 236 238 241;
+  --primary: 52 191 255;
+  --primary-foreground: 40 40 40;
+  --secondary: 57 58 61;
+  --secondary-foreground: 236 238 241;
+  --muted: 49 49 51;
+  --muted-foreground: 186 190 197;
+  --accent: 49 49 51;
+  --accent-foreground: 236 238 241;
+  --destructive: 255 137 121;
+  --destructive-foreground: 40 40 40;
+  --border: 212 215 220;
+  --input: 40 40 40;
+  --ring: 52 191 255;
+}
