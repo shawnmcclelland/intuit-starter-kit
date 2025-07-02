@@ -107,33 +107,37 @@
 /* Prevent layout shift during theme changes */
 nav a {
   display: inline-block;
-  min-width: fit-content;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
   text-rendering: optimizeSpeed;
-  width: max-content;
   flex-shrink: 0;
+  /* Force consistent font for navigation to prevent shifts */
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  text-align: center;
 }
 
-/* Specific width constraints for navigation items to prevent shift */
+/* Fixed width constraints for navigation items to prevent shift */
 nav a[href="#features"] {
-  min-width: 80px;
-  text-align: center;
+  width: 72px;
 }
 
 nav a[href="#solutions"] {
-  min-width: 95px;
-  text-align: center;
+  width: 82px;
 }
 
 nav a[href="#pricing"] {
-  min-width: 70px;
-  text-align: center;
+  width: 60px;
 }
 
 nav a[href="#about"] {
-  min-width: 60px;
-  text-align: center;
+  width: 52px;
 }
 
 /* Stable navigation sizing */
