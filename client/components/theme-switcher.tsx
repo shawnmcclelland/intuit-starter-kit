@@ -27,12 +27,12 @@ interface ModeToggleProps {
 
 export function ModeToggle({ className, size = "md" }: ModeToggleProps) {
   const { theme, toggleMode } = useTheme();
-  const isLight = theme.mode === "light";
+  const isDark = theme.mode === "dark";
 
   const sizeClasses = {
-    sm: "w-10 h-6",
-    md: "w-12 h-7",
-    lg: "w-14 h-8",
+    sm: "w-12 h-6",
+    md: "w-14 h-7",
+    lg: "w-16 h-8",
   };
 
   const knobSizeClasses = {
@@ -41,14 +41,22 @@ export function ModeToggle({ className, size = "md" }: ModeToggleProps) {
     lg: "w-6 h-6",
   };
 
+  const knobOffset = {
+    sm: isDark ? "translate-x-6" : "translate-x-1",
+    md: isDark ? "translate-x-7" : "translate-x-1",
+    lg: isDark ? "translate-x-8" : "translate-x-1",
+  };
+
   return (
     <div className={cn("flex items-center gap-3", className)}>
       {/* Sun icon */}
       <Sun
         className={cn(
-          "transition-colors duration-200",
+          "transition-all duration-300 ease-in-out",
           size === "sm" ? "w-4 h-4" : size === "lg" ? "w-6 h-6" : "w-5 h-5",
-          isLight ? "text-amber-500" : "text-muted-foreground",
+          !isDark
+            ? "text-amber-500 scale-110 drop-shadow-md"
+            : "text-slate-400 scale-90 opacity-60",
         )}
       />
 
@@ -56,36 +64,57 @@ export function ModeToggle({ className, size = "md" }: ModeToggleProps) {
       <button
         onClick={toggleMode}
         className={cn(
-          "relative rounded-full transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+          "relative rounded-full transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background group",
           sizeClasses[size],
-          isLight
-            ? "bg-muted border-2 border-border"
-            : "bg-primary border-2 border-primary",
+          isDark
+            ? "bg-gradient-to-r from-slate-700 to-slate-800 border border-slate-600 shadow-inner"
+            : "bg-gradient-to-r from-amber-100 to-orange-100 border border-amber-200 shadow-sm",
+          "hover:shadow-md active:scale-95",
         )}
-        aria-label={`Switch to ${isLight ? "dark" : "light"} mode`}
+        aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
       >
+        {/* Background gradient overlay */}
+        <div
+          className={cn(
+            "absolute inset-0 rounded-full transition-opacity duration-300",
+            isDark
+              ? "bg-gradient-to-r from-blue-900/20 to-indigo-900/20 opacity-100"
+              : "bg-gradient-to-r from-yellow-200/30 to-amber-200/30 opacity-100",
+          )}
+        />
+
         {/* Switch knob */}
         <div
           className={cn(
-            "absolute top-0.5 bg-white rounded-full shadow-md transition-transform duration-200 ease-in-out",
+            "absolute top-0.5 rounded-full transition-all duration-300 ease-in-out shadow-lg ring-1 ring-black/5",
             knobSizeClasses[size],
-            isLight
-              ? "translate-x-0.5"
-              : size === "sm"
-                ? "translate-x-4"
-                : size === "lg"
-                  ? "translate-x-6"
-                  : "translate-x-5",
+            knobOffset[size],
+            isDark
+              ? "bg-gradient-to-b from-slate-200 to-slate-300 shadow-blue-500/20"
+              : "bg-gradient-to-b from-white to-amber-50 shadow-amber-500/20",
+            "group-hover:shadow-xl group-active:scale-95",
           )}
-        />
+        >
+          {/* Inner highlight */}
+          <div
+            className={cn(
+              "absolute inset-0.5 rounded-full transition-opacity duration-300",
+              isDark
+                ? "bg-gradient-to-br from-white/40 to-transparent opacity-60"
+                : "bg-gradient-to-br from-white/80 to-transparent opacity-90",
+            )}
+          />
+        </div>
       </button>
 
       {/* Moon icon */}
       <Moon
         className={cn(
-          "transition-colors duration-200",
+          "transition-all duration-300 ease-in-out",
           size === "sm" ? "w-4 h-4" : size === "lg" ? "w-6 h-6" : "w-5 h-5",
-          !isLight ? "text-blue-400" : "text-muted-foreground",
+          isDark
+            ? "text-blue-400 scale-110 drop-shadow-md"
+            : "text-slate-400 scale-90 opacity-60",
         )}
       />
     </div>
