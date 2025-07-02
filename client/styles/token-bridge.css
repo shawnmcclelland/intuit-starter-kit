@@ -62,6 +62,12 @@
   --elevation-2: var(--elevation-level-2);
   --elevation-3: var(--elevation-level-3);
   --elevation-4: var(--elevation-level-4);
+
+  /* Font family tokens - defaults to Intuit fonts */
+  --font-family-body: var(--font-family-body);
+  --font-family-component: var(--font-family-component);
+  --font-family-display: var(--font-family-display);
+  --font-family-heading: var(--font-family-heading);
 }
 
 /* Theme-specific RGB color overrides */
