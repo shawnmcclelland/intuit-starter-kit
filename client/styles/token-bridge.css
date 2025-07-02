@@ -1,7 +1,7 @@
 /**
  * Token Bridge - Maps Intuit Design System hex tokens to Tailwind-compatible RGB format
  * Converting actual hex values from design system to RGB format
- * 
+ *
  * Key conversions:
  * #FFFFFF -> 255 255 255 (white)
  * #393A3D -> 57 58 61 (dark gray)
@@ -82,17 +82,18 @@
   --popover-foreground: 57 58 61; /* #393A3D - dark gray text */
   --primary: 0 137 46; /* #00892E - QuickBooks green */
   --primary-foreground: 255 255 255; /* #FFFFFF - white text on green */
-  --secondary: 0 137 46; /* #00892E - green secondary */
+  --primary-600: 0 108 35; /* #006C23 - darker green for gradients */
+  --secondary: 83 183 0; /* #53B700 - lighter green secondary */
   --secondary-foreground: 255 255 255; /* #FFFFFF - white text */
-  --muted: 236 238 241; /* #ECEEF1 - light gray background */
+  --muted: 240 248 241; /* #F0F8F1 - very light green tint */
   --muted-foreground: 107 108 114; /* #6B6C72 - medium gray text */
-  --accent: 227 229 232; /* #E3E5E8 - light gray accent */
-  --accent-foreground: 57 58 61; /* #393A3D - dark gray text */
+  --accent: 220 245 223; /* #DCF5DF - light green accent */
+  --accent-foreground: 0 137 46; /* #00892E - green text on light accent */
   --destructive: 213 43 30; /* #D52B1E - red errors */
   --destructive-foreground: 255 255 255; /* #FFFFFF - white text on red */
   --border: 141 144 150; /* #8D9096 - medium gray borders */
   --input: 255 255 255; /* #FFFFFF - white inputs */
-  --ring: 0 119 197; /* #0077C5 - blue focus (keep blue for accessibility) */
+  --ring: 0 137 46; /* #00892E - green focus rings */
   --radius: 0.5rem;
 }
 
@@ -129,17 +130,18 @@
   --popover-foreground: 33 38 42; /* #21262A */
   --primary: 32 94 163; /* #205EA3 - TurboTax navy */
   --primary-foreground: 255 255 255; /* #FFFFFF */
-  --secondary: 33 38 42; /* #21262A */
+  --primary-600: 26 75 130; /* #1A4B82 - darker navy for gradients */
+  --secondary: 70 130 180; /* #4682B4 - steel blue secondary */
   --secondary-foreground: 255 255 255; /* #FFFFFF */
-  --muted: 240 244 246; /* #F0F4F6 */
+  --muted: 240 244 250; /* #F0F4FA - light blue tint */
   --muted-foreground: 133 146 153; /* #859299 */
-  --accent: 240 244 246; /* #F0F4F6 */
-  --accent-foreground: 33 38 42; /* #21262A */
+  --accent: 224 237 255; /* #E0EDFF - light blue accent */
+  --accent-foreground: 32 94 163; /* #205EA3 - navy text on light accent */
   --destructive: 219 51 77; /* #DB334D */
   --destructive-foreground: 255 255 255; /* #FFFFFF */
   --border: 195 206 213; /* #C3CED5 */
   --input: 255 255 255; /* #FFFFFF */
-  --ring: 33 38 42; /* #21262A */
+  --ring: 32 94 163; /* #205EA3 - navy focus rings */
 }
 
 /* TurboTax Dark Theme */
@@ -175,17 +177,18 @@
   --popover-foreground: 33 38 42; /* #21262A */
   --primary: 0 130 141; /* #00828D - Mailchimp teal */
   --primary-foreground: 255 255 255; /* #FFFFFF */
-  --secondary: 43 49 53; /* #2B3135 */
+  --primary-600: 0 104 113; /* #006871 - darker teal for gradients */
+  --secondary: 0 166 156; /* #00A69C - lighter teal secondary */
   --secondary-foreground: 255 255 255; /* #FFFFFF */
-  --muted: 240 244 246; /* #F0F4F6 */
+  --muted: 240 251 252; /* #F0FBFC - very light teal tint */
   --muted-foreground: 60 104 111; /* #3C686F */
-  --accent: 240 244 246; /* #F0F4F6 */
-  --accent-foreground: 33 38 42; /* #21262A */
+  --accent: 204 248 248; /* #CCF8F8 - light teal accent */
+  --accent-foreground: 0 130 141; /* #00828D - teal text on light accent */
   --destructive: 182 26 55; /* #B61A37 */
   --destructive-foreground: 255 255 255; /* #FFFFFF */
   --border: 226 233 237; /* #E2E9ED */
   --input: 255 255 255; /* #FFFFFF */
-  --ring: 0 80 86; /* #005056 */
+  --ring: 0 130 141; /* #00828D - teal focus rings */
 }
 
 /* Mailchimp Dark Theme */
@@ -211,7 +214,7 @@
   --ring: 113 210 255; /* #71D2FF */
 }
 
-/* Credit Karma Light Theme - Green primary */
+/* Credit Karma Light Theme - Bright green primary */
 [data-theme="creditkarma"] {
   --background: 255 255 255; /* #FFFFFF */
   --foreground: 0 0 0; /* #000000 */
@@ -221,17 +224,18 @@
   --popover-foreground: 0 0 0; /* #000000 */
   --primary: 0 134 0; /* #008600 - Credit Karma green */
   --primary-foreground: 255 255 255; /* #FFFFFF */
-  --secondary: 85 89 91; /* #55595B */
+  --primary-600: 0 107 0; /* #006B00 - darker green for gradients */
+  --secondary: 76 175 80; /* #4CAF50 - material green secondary */
   --secondary-foreground: 255 255 255; /* #FFFFFF */
-  --muted: 244 245 248; /* #F4F5F8 */
+  --muted: 248 255 248; /* #F8FFF8 - very light green tint */
   --muted-foreground: 107 108 114; /* #6B6C72 */
-  --accent: 236 238 241; /* #ECEEF1 */
-  --accent-foreground: 0 0 0; /* #000000 */
+  --accent: 232 245 233; /* #E8F5E9 - light green accent */
+  --accent-foreground: 0 134 0; /* #008600 - green text on light accent */
   --destructive: 199 73 0; /* #C74900 */
   --destructive-foreground: 255 255 255; /* #FFFFFF */
   --border: 212 215 220; /* #D4D7DC */
   --input: 255 255 255; /* #FFFFFF */
-  --ring: 0 134 0; /* #008600 */
+  --ring: 0 134 0; /* #008600 - green focus rings */
 }
 
 /* Credit Karma Dark Theme */
@@ -267,8 +271,9 @@
   --popover-foreground: 57 58 61; /* #393A3D - dark text */
   --primary: 0 119 197; /* #0077C5 - Intuit signature blue */
   --primary-foreground: 255 255 255; /* #FFFFFF - white text on blue */
-  --secondary: 57 58 61; /* #393A3D - professional gray */
-  --secondary-foreground: 255 255 255; /* #FFFFFF - white text */
+  --primary-600: 0 95 157; /* #005F9D - darker blue for gradients */
+  --secondary: 52 191 255; /* #34BFFF - lighter blue secondary */
+  --secondary-foreground: 57 58 61; /* #393A3D - dark text */
   --muted: 244 245 248; /* #F4F5F8 - very light gray */
   --muted-foreground: 107 108 114; /* #6B6C72 - medium gray */
   --accent: 236 238 241; /* #ECEEF1 - light gray accent */
