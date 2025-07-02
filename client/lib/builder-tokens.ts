@@ -173,19 +173,19 @@ Builder.register("editor.settings", {
       // Component Spacing
       {
         name: "Component Gap XS",
-        value: "var(--space-component-gap-x-small, 4px)",
+        value: "var(--space-component-gap-x-small)",
       },
       {
         name: "Component Gap Small",
-        value: "var(--space-component-gap-small, 8px)",
+        value: "var(--space-component-gap-small)",
       },
       {
         name: "Component Gap Medium",
-        value: "var(--space-component-gap-medium, 16px)",
+        value: "var(--space-component-gap-medium)",
       },
       {
         name: "Component Gap Large",
-        value: "var(--space-component-gap-large, 24px)",
+        value: "var(--space-component-gap-large)",
       },
 
       // Container Padding
