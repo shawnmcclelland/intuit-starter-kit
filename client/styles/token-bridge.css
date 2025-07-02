@@ -225,4 +225,10 @@
   --destructive-foreground: 40 40 40; /* #282828 */
   --input: 40 40 40; /* #282828 */
   --ring: 52 191 255; /* #34BFFF */
+
+  /* Credit Karma font family overrides */
+  --font-family-body: var(--font-family-body);
+  --font-family-component: var(--font-family-component);
+  --font-family-display: var(--font-family-display);
+  --font-family-heading: var(--font-family-heading);
 }
