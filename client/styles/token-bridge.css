@@ -219,8 +219,8 @@
   --ring: 52 191 255; /* #34BFFF */
 
   /* Credit Karma font family overrides */
-  --font-family-body: var(--font-family-body);
-  --font-family-component: var(--font-family-component);
-  --font-family-display: var(--font-family-display);
-  --font-family-heading: var(--font-family-heading);
+  --font-family-body: "National2", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-component: "National2", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-display: "National2", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-heading: "National2", Avenir, Helvetica, Arial, sans-serif;
 }
