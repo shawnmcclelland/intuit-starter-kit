@@ -117,19 +117,23 @@ nav a {
 
 /* Specific width constraints for navigation items to prevent shift */
 nav a[href="#features"] {
-  min-width: 65px;
+  min-width: 80px;
+  text-align: center;
 }
 
 nav a[href="#solutions"] {
-  min-width: 75px;
+  min-width: 95px;
+  text-align: center;
 }
 
 nav a[href="#pricing"] {
-  min-width: 55px;
+  min-width: 70px;
+  text-align: center;
 }
 
 nav a[href="#about"] {
-  min-width: 50px;
+  min-width: 60px;
+  text-align: center;
 }
 
 /* Stable navigation sizing */
