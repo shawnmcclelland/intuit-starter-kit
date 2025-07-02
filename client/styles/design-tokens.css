@@ -127,39 +127,6 @@
   font-display: swap;
 }
 
-/* Mailchimp - Graphik Web */
-@font-face {
-  font-family: "Graphik Web";
-  src: url("./woff2/GraphikMailchimp-Regular-Web.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Graphik Web";
-  src: url("./woff2/GraphikMailchimp-Medium-Web.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Graphik Web";
-  src: url("./woff2/GraphikMailchimp-RegularItalic-Web.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Graphik Web";
-  src: url("./woff2/GraphikMailchimp-MediumItalic-Web.woff2") format("woff2");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
 /* Credit Karma - National2 */
 @font-face {
   font-family: "National2";
