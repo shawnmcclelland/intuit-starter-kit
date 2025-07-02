@@ -33,6 +33,100 @@ const buttonVariants = cva(
   },
 );
 
+// Design token style mapping for Builder.io
+const getDesignTokenStyles = (variant?: string, size?: string) => {
+  const baseStyles = {
+    fontFamily: "var(--font-family-component)",
+    borderRadius: "var(--radius-action)",
+    border: "1px solid transparent",
+    cursor: "pointer",
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "var(--space-component-gap-small)",
+    whiteSpace: "nowrap",
+    transition: "all 0.2s ease",
+    textDecoration: "none",
+  };
+
+  const variantStyles = (() => {
+    switch (variant) {
+      case "destructive":
+        return {
+          backgroundColor: "var(--color-action-negative)",
+          color: "var(--color-text-inverse)",
+          borderColor: "var(--color-action-negative)",
+        };
+      case "outline":
+        return {
+          backgroundColor: "transparent",
+          color: "var(--color-action-standard)",
+          borderColor: "var(--color-action-standard)",
+        };
+      case "secondary":
+        return {
+          backgroundColor: "var(--color-action-passive)",
+          color: "var(--color-text-primary)",
+          borderColor: "var(--color-action-passive)",
+        };
+      case "ghost":
+        return {
+          backgroundColor: "transparent",
+          color: "var(--color-text-primary)",
+          borderColor: "transparent",
+        };
+      case "link":
+        return {
+          backgroundColor: "transparent",
+          color: "var(--color-action-standard)",
+          borderColor: "transparent",
+          textDecoration: "underline",
+        };
+      default: // default variant
+        return {
+          backgroundColor: "var(--color-action-standard)",
+          color: "var(--color-text-inverse)",
+          borderColor: "var(--color-action-standard)",
+        };
+    }
+  })();
+
+  const sizeStyles = (() => {
+    switch (size) {
+      case "sm":
+        return {
+          padding:
+            "var(--space-component-inline-padding-x-small) var(--space-component-inline-padding-small)",
+          fontSize: "var(--font-size-component-small)",
+          height: "36px",
+        };
+      case "lg":
+        return {
+          padding:
+            "var(--space-component-inline-padding-medium) var(--space-component-inline-padding-x-large)",
+          fontSize: "var(--font-size-component-large)",
+          height: "44px",
+        };
+      case "icon":
+        return {
+          width: "40px",
+          height: "40px",
+          padding: "0",
+          fontSize: "var(--font-size-component-medium)",
+        };
+      default:
+        return {
+          padding:
+            "var(--space-component-inline-padding-small) var(--space-component-inline-padding-medium)",
+          fontSize: "var(--font-size-component-medium)",
+          height: "40px",
+        };
+    }
+  })();
+
+  return { ...baseStyles, ...variantStyles, ...sizeStyles };
+};
+
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
