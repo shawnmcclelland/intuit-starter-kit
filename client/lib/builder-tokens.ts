@@ -167,22 +167,6 @@ Builder.register("editor.settings", {
       },
       { name: "Icon Inverse", value: "var(--color-icon-inverse, #ffffff)" },
       { name: "Icon Disabled", value: "var(--color-icon-disabled, #babec5)" },
-
-      // Brand Colors (Primary actions for each brand)
-      {
-        name: "QuickBooks Green",
-        value: "var(--color-action-standard, #00892e)",
-      },
-      { name: "TurboTax Blue", value: "var(--color-action-standard, #205ea3)" },
-      {
-        name: "Mailchimp Teal",
-        value: "var(--color-action-standard, #00828d)",
-      },
-      {
-        name: "Credit Karma Green",
-        value: "var(--color-action-standard, #008600)",
-      },
-      { name: "Intuit Blue", value: "var(--color-action-standard, #0077c5)" },
     ],
 
     spacing: [
