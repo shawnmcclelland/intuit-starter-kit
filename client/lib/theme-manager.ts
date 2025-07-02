@@ -233,7 +233,15 @@ export class ThemeManager {
       dataColorScheme: this.currentTheme.dataColorScheme,
       mode: this.currentTheme.mode,
       classes: html.className,
+      htmlDataTheme: html.getAttribute("data-theme"),
+      htmlDataColorScheme: html.getAttribute("data-colorscheme"),
     });
+
+    // Log computed primary color to verify changes
+    const primaryColor = getComputedStyle(html)
+      .getPropertyValue("--primary")
+      .trim();
+    console.log(`Primary color after theme change: rgb(${primaryColor})`);
   }
 
   /**
