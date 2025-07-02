@@ -48,32 +48,32 @@ Builder.register("editor.settings", {
       },
 
       // Passive/Secondary Actions
-      { name: "Action Passive", value: "var(--color-action-passive, #e3e5e8)" },
+      { name: "Action Passive", value: "var(--color-action-passive)" },
       {
         name: "Action Passive Hover",
-        value: "var(--color-action-passive-hover, #d4d7dc)",
+        value: "var(--color-action-passive-hover)",
       },
       {
         name: "Action Complementary",
-        value: "var(--color-action-complementary, #6b6c72)",
+        value: "var(--color-action-complementary)",
       },
 
       // Text Colors
-      { name: "Text Primary", value: "var(--color-text-primary, #393a3d)" },
-      { name: "Text Secondary", value: "var(--color-text-secondary, #6b6c72)" },
-      { name: "Text Tertiary", value: "var(--color-text-tertiary, #859299)" },
+      { name: "Text Primary", value: "var(--color-text-primary)" },
+      { name: "Text Secondary", value: "var(--color-text-secondary)" },
+      { name: "Text Tertiary", value: "var(--color-text-tertiary)" },
       {
         name: "Text Quaternary",
-        value: "var(--color-text-quaternary, #babec5)",
+        value: "var(--color-text-quaternary)",
       },
-      { name: "Text Accent", value: "var(--color-text-accent, #0077c5)" },
+      { name: "Text Accent", value: "var(--color-text-accent)" },
       {
         name: "Text Complementary",
-        value: "var(--color-text-complementary, #6b6c72)",
+        value: "var(--color-text-complementary)",
       },
-      { name: "Text Inverse", value: "var(--color-text-inverse, #ffffff)" },
-      { name: "Text Disabled", value: "var(--color-text-disabled, #babec5)" },
-      { name: "Text Highlight", value: "var(--color-text-highlight, #fffe88)" },
+      { name: "Text Inverse", value: "var(--color-text-inverse)" },
+      { name: "Text Disabled", value: "var(--color-text-disabled)" },
+      { name: "Text Highlight", value: "var(--color-text-highlight)" },
 
       // Background Colors
       {
