@@ -135,6 +135,13 @@ nav a[href="#about"] {
 /* Stable navigation sizing */
 header nav {
   contain: layout style;
+  flex-shrink: 0;
+  min-width: max-content;
+}
+
+/* Navigation spacing stability */
+header nav.space-x-6 > * + * {
+  margin-left: 1.5rem !important;
 }
 
 /* Brand logo text stability */
