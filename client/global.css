@@ -111,33 +111,25 @@ nav a {
   font-variant-numeric: tabular-nums;
   text-rendering: optimizeSpeed;
   flex-shrink: 0;
-  /* Force consistent font for navigation to prevent shifts */
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif !important;
-  font-weight: 400 !important;
-  letter-spacing: 0 !important;
   text-align: center;
+  overflow: hidden;
 }
 
-/* Fixed width constraints for navigation items to prevent shift */
+/* Fixed width constraints for navigation items to prevent shift - increased for all fonts */
 nav a[href="#features"] {
-  width: 72px;
+  width: 85px;
 }
 
 nav a[href="#solutions"] {
-  width: 82px;
+  width: 95px;
 }
 
 nav a[href="#pricing"] {
-  width: 60px;
+  width: 72px;
 }
 
 nav a[href="#about"] {
-  width: 52px;
+  width: 62px;
 }
 
 /* Stable navigation sizing */
