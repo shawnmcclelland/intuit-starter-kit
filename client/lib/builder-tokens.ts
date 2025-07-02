@@ -8,43 +8,43 @@ Builder.register("editor.settings", {
       // Primary Action Colors
       {
         name: "Action Standard",
-        value: "var(--color-action-standard, #0077c5)",
+        value: "var(--color-action-standard)",
       },
       {
         name: "Action Standard Hover",
-        value: "var(--color-action-standard-hover, #0066a9)",
+        value: "var(--color-action-standard-hover)",
       },
       {
         name: "Action Standard Active",
-        value: "var(--color-action-standard-active, #055393)",
+        value: "var(--color-action-standard-active)",
       },
       {
         name: "Action Standard Focus",
-        value: "var(--color-action-standard-focus, #0077c5)",
+        value: "var(--color-action-standard-focus)",
       },
 
       // Negative/Error Colors
       {
         name: "Action Negative",
-        value: "var(--color-action-negative, #d52b1e)",
+        value: "var(--color-action-negative)",
       },
       {
         name: "Action Negative Hover",
-        value: "var(--color-action-negative-hover, #c6160f)",
+        value: "var(--color-action-negative-hover)",
       },
       {
         name: "Action Negative Active",
-        value: "var(--color-action-negative-active, #b80000)",
+        value: "var(--color-action-negative-active)",
       },
 
       // Special Use Colors
       {
         name: "Action Special Use",
-        value: "var(--color-action-special-use, #0077c5)",
+        value: "var(--color-action-special-use)",
       },
       {
         name: "Action Special Use Hover",
-        value: "var(--color-action-special-use-hover, #0066a9)",
+        value: "var(--color-action-special-use-hover)",
       },
 
       // Passive/Secondary Actions
