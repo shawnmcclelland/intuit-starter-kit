@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ThemeSwitcher } from "@/components/theme-switcher";
+import { DesignTokenShowcase } from "@/components/design-token-showcase";
 import {
   ArrowRight,
   BarChart3,
@@ -257,6 +258,13 @@ export default function Index() {
               </div>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      {/* Design Token Showcase */}
+      <section className="py-24 bg-muted/50">
+        <div className="container">
+          <DesignTokenShowcase />
         </div>
       </section>
 
