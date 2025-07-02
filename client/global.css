@@ -171,7 +171,21 @@ button,
 }
 
 /* Fix theme switcher button width to prevent layout shift */
-[data-loc*="theme-switcher"] button {
-  min-width: 100px !important;
+button[data-state*="closed"],
+button:has(+ [role="menu"]),
+.theme-switcher button,
+button:contains("Intuit"),
+button:contains("QuickBooks"),
+button:contains("TurboTax"),
+button:contains("Mailchimp"),
+button:contains("Credit Karma") {
+  min-width: 120px !important;
   text-align: center;
+  justify-content: center;
+}
+
+/* Target the dropdown trigger button specifically */
+[data-radix-dropdown-trigger] {
+  min-width: 120px !important;
+  justify-content: center;
 }
