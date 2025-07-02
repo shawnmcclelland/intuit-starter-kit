@@ -191,35 +191,35 @@ Builder.register("editor.settings", {
       // Container Padding
       {
         name: "Container Padding XXS",
-        value: "var(--space-container-padding-xx-small, 4px)",
+        value: "var(--space-container-padding-xx-small)",
       },
       {
         name: "Container Padding XS",
-        value: "var(--space-container-padding-x-small, 8px)",
+        value: "var(--space-container-padding-x-small)",
       },
       {
         name: "Container Padding Small",
-        value: "var(--space-container-padding-small, 12px)",
+        value: "var(--space-container-padding-small)",
       },
       {
         name: "Container Padding Medium",
-        value: "var(--space-container-padding-medium, 16px)",
+        value: "var(--space-container-padding-medium)",
       },
       {
         name: "Container Padding Large",
-        value: "var(--space-container-padding-large, 24px)",
+        value: "var(--space-container-padding-large)",
       },
       {
         name: "Container Padding XL",
-        value: "var(--space-container-padding-x-large, 32px)",
+        value: "var(--space-container-padding-x-large)",
       },
       {
         name: "Container Padding XXL",
-        value: "var(--space-container-padding-xx-large, 48px)",
+        value: "var(--space-container-padding-xx-large)",
       },
       {
         name: "Container Padding XXXL",
-        value: "var(--space-container-padding-xxx-large, 64px)",
+        value: "var(--space-container-padding-xxx-large)",
       },
 
       // Component Inline Padding
