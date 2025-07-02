@@ -127,6 +127,62 @@
   font-display: swap;
 }
 
+/* Mailchimp - Graphik Web */
+@font-face {
+  font-family: "Graphik Web";
+  src: url("/fonts/mailchimp/graphik/1.0.0/GraphikMailchimp-Regular-Web.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik Web";
+  src: url("/fonts/mailchimp/graphik/1.0.0/GraphikMailchimp-Medium-Web.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik Web";
+  src: url("/fonts/mailchimp/graphik/1.0.0/GraphikMailchimp-RegularItalic-Web.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik Web";
+  src: url("/fonts/mailchimp/graphik/1.0.0/GraphikMailchimp-MediumItalic-Web.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Mailchimp - Means Web */
+@font-face {
+  font-family: "Means Web";
+  src: url("/fonts/mailchimp/means/1.0.0/Means-Regular-Web.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Means Web";
+  src: url("/fonts/mailchimp/means/1.0.0/Means-RegularItalic-Web.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 /* Credit Karma - National2 */
 @font-face {
   font-family: "National2";
