@@ -188,10 +188,11 @@ export class ThemeManager {
     const html = document.documentElement;
 
     // Remove existing theme attributes
-    themes.forEach((theme) => {
-      html.removeAttribute(`data-theme`);
-      html.removeAttribute(`data-colorscheme`);
-    });
+    html.removeAttribute("data-theme");
+    html.removeAttribute("data-colorscheme");
+
+    // Remove existing theme classes
+    html.className = html.className.replace(/theme-\w+/g, "");
 
     // Apply new theme attributes
     html.setAttribute("data-theme", this.currentTheme.dataTheme);
@@ -199,14 +200,28 @@ export class ThemeManager {
       html.setAttribute("data-colorscheme", this.currentTheme.dataColorScheme);
     }
 
-    // Update class for CSS-in-JS libraries
-    html.className = html.className.replace(/theme-\w+/g, "");
+    // Update class for CSS-in-JS libraries and dark mode detection
     html.classList.add(`theme-${this.currentTheme.id}`);
+
+    // Add/remove dark class for compatibility
+    if (this.currentTheme.mode === "dark") {
+      html.classList.add("dark");
+    } else {
+      html.classList.remove("dark");
+    }
 
     // Set Builder.io theme context
     if (typeof window !== "undefined" && (window as any).builderContext) {
       (window as any).builderContext.theme = this.currentTheme.id;
     }
+
+    // Debug logging
+    console.log(`Applied theme: ${this.currentTheme.name}`, {
+      dataTheme: this.currentTheme.dataTheme,
+      dataColorScheme: this.currentTheme.dataColorScheme,
+      mode: this.currentTheme.mode,
+      classes: html.className,
+    });
   }
 
   /**
