@@ -134,39 +134,39 @@ Builder.register("editor.settings", {
       // Border Colors
       {
         name: "Container Border Primary",
-        value: "var(--color-container-border-primary, #d4d7dc)",
+        value: "var(--color-container-border-primary)",
       },
       {
         name: "Container Border Secondary",
-        value: "var(--color-container-border-secondary, #e3e5e8)",
+        value: "var(--color-container-border-secondary)",
       },
       {
         name: "Container Border Tertiary",
-        value: "var(--color-container-border-tertiary, #babec5)",
+        value: "var(--color-container-border-tertiary)",
       },
       {
         name: "Container Border Accent",
-        value: "var(--color-container-border-accent, #0077c5)",
+        value: "var(--color-container-border-accent)",
       },
       {
         name: "Container Border Positive",
-        value: "var(--color-container-border-positive, #00892e)",
+        value: "var(--color-container-border-positive)",
       },
       {
         name: "Container Border Negative",
-        value: "var(--color-container-border-negative, #d52b1e)",
+        value: "var(--color-container-border-negative)",
       },
 
       // Icon Colors
-      { name: "Icon Primary", value: "var(--color-icon-primary, #393a3d)" },
-      { name: "Icon Secondary", value: "var(--color-icon-secondary, #6b6c72)" },
-      { name: "Icon Accent", value: "var(--color-icon-accent, #0077c5)" },
+      { name: "Icon Primary", value: "var(--color-icon-primary)" },
+      { name: "Icon Secondary", value: "var(--color-icon-secondary)" },
+      { name: "Icon Accent", value: "var(--color-icon-accent)" },
       {
         name: "Icon Complementary",
-        value: "var(--color-icon-complementary, #6b6c72)",
+        value: "var(--color-icon-complementary)",
       },
-      { name: "Icon Inverse", value: "var(--color-icon-inverse, #ffffff)" },
-      { name: "Icon Disabled", value: "var(--color-icon-disabled, #babec5)" },
+      { name: "Icon Inverse", value: "var(--color-icon-inverse)" },
+      { name: "Icon Disabled", value: "var(--color-icon-disabled)" },
     ],
 
     spacing: [
