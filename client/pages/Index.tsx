@@ -261,13 +261,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Design Token Showcase */}
-      <section className="py-24 bg-muted/50">
-        <div className="container">
-          <DesignTokenShowcase />
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="bg-sidebar text-sidebar-foreground py-16">
         <div className="container">
