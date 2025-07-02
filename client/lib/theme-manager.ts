@@ -176,7 +176,19 @@ export class ThemeManager {
    */
   setBrand(brand: string): void {
     const currentMode = this.currentTheme.mode;
-    const targetId = `${brand.toLowerCase()}-${currentMode}` as ThemeId;
+
+    // Map brand names to their theme ID prefixes
+    const brandToIdMap: Record<string, string> = {
+      Intuit: "intuit",
+      QuickBooks: "quickbooks",
+      TurboTax: "turbotax",
+      Mailchimp: "mailchimp",
+      "Credit Karma": "creditkarma",
+    };
+
+    const brandId =
+      brandToIdMap[brand] || brand.toLowerCase().replace(/\s+/g, "");
+    const targetId = `${brandId}-${currentMode}` as ThemeId;
 
     this.setTheme(targetId);
   }
