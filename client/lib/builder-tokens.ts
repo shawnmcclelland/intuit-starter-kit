@@ -78,57 +78,57 @@ Builder.register("editor.settings", {
       // Background Colors
       {
         name: "Page Background Primary",
-        value: "var(--color-page-background-primary, #ffffff)",
+        value: "var(--color-page-background-primary)",
       },
       {
         name: "Page Background Secondary",
-        value: "var(--color-page-background-secondary, #f0f4f6)",
+        value: "var(--color-page-background-secondary)",
       },
       {
         name: "Page Background Tertiary",
-        value: "var(--color-page-background-tertiary, #e3e5e8)",
+        value: "var(--color-page-background-tertiary)",
       },
       {
         name: "Page Background Accent",
-        value: "var(--color-page-background-accent, #0077c5)",
+        value: "var(--color-page-background-accent)",
       },
 
       // Container Colors
       {
         name: "Container Background Primary",
-        value: "var(--color-container-background-primary, #ffffff)",
+        value: "var(--color-container-background-primary)",
       },
       {
         name: "Container Background Secondary",
-        value: "var(--color-container-background-secondary, #f0f4f6)",
+        value: "var(--color-container-background-secondary)",
       },
       {
         name: "Container Background Tertiary",
-        value: "var(--color-container-background-tertiary, #e3e5e8)",
+        value: "var(--color-container-background-tertiary)",
       },
       {
         name: "Container Background Accent",
-        value: "var(--color-container-background-accent, #0077c5)",
+        value: "var(--color-container-background-accent)",
       },
       {
         name: "Container Background Positive",
-        value: "var(--color-container-background-positive, #e3f4e5)",
+        value: "var(--color-container-background-positive)",
       },
       {
         name: "Container Background Negative",
-        value: "var(--color-container-background-negative, #fbeaea)",
+        value: "var(--color-container-background-negative)",
       },
       {
         name: "Container Background Attention",
-        value: "var(--color-container-background-attention, #fff6e3)",
+        value: "var(--color-container-background-attention)",
       },
       {
         name: "Container Background Info",
-        value: "var(--color-container-background-info, #e3f1f9)",
+        value: "var(--color-container-background-info)",
       },
       {
         name: "Container Background Neutral",
-        value: "var(--color-container-background-neutral, #f0f4f6)",
+        value: "var(--color-container-background-neutral)",
       },
 
       // Border Colors
