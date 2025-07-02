@@ -1,0 +1,425 @@
+import { Builder } from "@builder.io/react";
+
+// Register Intuit Design System tokens with Builder.io
+Builder.register("editor.settings", {
+  styleStrictMode: true,
+  designTokens: {
+    colors: [
+      // Primary Action Colors
+      {
+        name: "Action Standard",
+        value: "var(--color-action-standard, #0077c5)",
+      },
+      {
+        name: "Action Standard Hover",
+        value: "var(--color-action-standard-hover, #0066a9)",
+      },
+      {
+        name: "Action Standard Active",
+        value: "var(--color-action-standard-active, #055393)",
+      },
+      {
+        name: "Action Standard Focus",
+        value: "var(--color-action-standard-focus, #0077c5)",
+      },
+
+      // Negative/Error Colors
+      {
+        name: "Action Negative",
+        value: "var(--color-action-negative, #d52b1e)",
+      },
+      {
+        name: "Action Negative Hover",
+        value: "var(--color-action-negative-hover, #c6160f)",
+      },
+      {
+        name: "Action Negative Active",
+        value: "var(--color-action-negative-active, #b80000)",
+      },
+
+      // Special Use Colors
+      {
+        name: "Action Special Use",
+        value: "var(--color-action-special-use, #0077c5)",
+      },
+      {
+        name: "Action Special Use Hover",
+        value: "var(--color-action-special-use-hover, #0066a9)",
+      },
+
+      // Passive/Secondary Actions
+      { name: "Action Passive", value: "var(--color-action-passive, #e3e5e8)" },
+      {
+        name: "Action Passive Hover",
+        value: "var(--color-action-passive-hover, #d4d7dc)",
+      },
+      {
+        name: "Action Complementary",
+        value: "var(--color-action-complementary, #6b6c72)",
+      },
+
+      // Text Colors
+      { name: "Text Primary", value: "var(--color-text-primary, #393a3d)" },
+      { name: "Text Secondary", value: "var(--color-text-secondary, #6b6c72)" },
+      { name: "Text Tertiary", value: "var(--color-text-tertiary, #859299)" },
+      {
+        name: "Text Quaternary",
+        value: "var(--color-text-quaternary, #babec5)",
+      },
+      { name: "Text Accent", value: "var(--color-text-accent, #0077c5)" },
+      {
+        name: "Text Complementary",
+        value: "var(--color-text-complementary, #6b6c72)",
+      },
+      { name: "Text Inverse", value: "var(--color-text-inverse, #ffffff)" },
+      { name: "Text Disabled", value: "var(--color-text-disabled, #babec5)" },
+      { name: "Text Highlight", value: "var(--color-text-highlight, #fffe88)" },
+
+      // Background Colors
+      {
+        name: "Page Background Primary",
+        value: "var(--color-page-background-primary, #ffffff)",
+      },
+      {
+        name: "Page Background Secondary",
+        value: "var(--color-page-background-secondary, #f0f4f6)",
+      },
+      {
+        name: "Page Background Tertiary",
+        value: "var(--color-page-background-tertiary, #e3e5e8)",
+      },
+      {
+        name: "Page Background Accent",
+        value: "var(--color-page-background-accent, #0077c5)",
+      },
+
+      // Container Colors
+      {
+        name: "Container Background Primary",
+        value: "var(--color-container-background-primary, #ffffff)",
+      },
+      {
+        name: "Container Background Secondary",
+        value: "var(--color-container-background-secondary, #f0f4f6)",
+      },
+      {
+        name: "Container Background Tertiary",
+        value: "var(--color-container-background-tertiary, #e3e5e8)",
+      },
+      {
+        name: "Container Background Accent",
+        value: "var(--color-container-background-accent, #0077c5)",
+      },
+      {
+        name: "Container Background Positive",
+        value: "var(--color-container-background-positive, #e3f4e5)",
+      },
+      {
+        name: "Container Background Negative",
+        value: "var(--color-container-background-negative, #fbeaea)",
+      },
+      {
+        name: "Container Background Attention",
+        value: "var(--color-container-background-attention, #fff6e3)",
+      },
+      {
+        name: "Container Background Info",
+        value: "var(--color-container-background-info, #e3f1f9)",
+      },
+      {
+        name: "Container Background Neutral",
+        value: "var(--color-container-background-neutral, #f0f4f6)",
+      },
+
+      // Border Colors
+      {
+        name: "Container Border Primary",
+        value: "var(--color-container-border-primary, #d4d7dc)",
+      },
+      {
+        name: "Container Border Secondary",
+        value: "var(--color-container-border-secondary, #e3e5e8)",
+      },
+      {
+        name: "Container Border Tertiary",
+        value: "var(--color-container-border-tertiary, #babec5)",
+      },
+      {
+        name: "Container Border Accent",
+        value: "var(--color-container-border-accent, #0077c5)",
+      },
+      {
+        name: "Container Border Positive",
+        value: "var(--color-container-border-positive, #00892e)",
+      },
+      {
+        name: "Container Border Negative",
+        value: "var(--color-container-border-negative, #d52b1e)",
+      },
+
+      // Icon Colors
+      { name: "Icon Primary", value: "var(--color-icon-primary, #393a3d)" },
+      { name: "Icon Secondary", value: "var(--color-icon-secondary, #6b6c72)" },
+      { name: "Icon Accent", value: "var(--color-icon-accent, #0077c5)" },
+      {
+        name: "Icon Complementary",
+        value: "var(--color-icon-complementary, #6b6c72)",
+      },
+      { name: "Icon Inverse", value: "var(--color-icon-inverse, #ffffff)" },
+      { name: "Icon Disabled", value: "var(--color-icon-disabled, #babec5)" },
+
+      // Brand Colors (Primary actions for each brand)
+      {
+        name: "QuickBooks Green",
+        value: "var(--color-action-standard, #00892e)",
+      },
+      { name: "TurboTax Blue", value: "var(--color-action-standard, #205ea3)" },
+      {
+        name: "Mailchimp Teal",
+        value: "var(--color-action-standard, #00828d)",
+      },
+      {
+        name: "Credit Karma Green",
+        value: "var(--color-action-standard, #008600)",
+      },
+      { name: "Intuit Blue", value: "var(--color-action-standard, #0077c5)" },
+    ],
+
+    spacing: [
+      // Component Spacing
+      {
+        name: "Component Gap XS",
+        value: "var(--space-component-gap-x-small, 4px)",
+      },
+      {
+        name: "Component Gap Small",
+        value: "var(--space-component-gap-small, 8px)",
+      },
+      {
+        name: "Component Gap Medium",
+        value: "var(--space-component-gap-medium, 16px)",
+      },
+      {
+        name: "Component Gap Large",
+        value: "var(--space-component-gap-large, 24px)",
+      },
+
+      // Container Padding
+      {
+        name: "Container Padding XXS",
+        value: "var(--space-container-padding-xx-small, 4px)",
+      },
+      {
+        name: "Container Padding XS",
+        value: "var(--space-container-padding-x-small, 8px)",
+      },
+      {
+        name: "Container Padding Small",
+        value: "var(--space-container-padding-small, 12px)",
+      },
+      {
+        name: "Container Padding Medium",
+        value: "var(--space-container-padding-medium, 16px)",
+      },
+      {
+        name: "Container Padding Large",
+        value: "var(--space-container-padding-large, 24px)",
+      },
+      {
+        name: "Container Padding XL",
+        value: "var(--space-container-padding-x-large, 32px)",
+      },
+      {
+        name: "Container Padding XXL",
+        value: "var(--space-container-padding-xx-large, 48px)",
+      },
+      {
+        name: "Container Padding XXXL",
+        value: "var(--space-container-padding-xxx-large, 64px)",
+      },
+
+      // Component Inline Padding
+      {
+        name: "Component Inline Padding XS",
+        value: "var(--space-component-inline-padding-x-small, 8px)",
+      },
+      {
+        name: "Component Inline Padding Small",
+        value: "var(--space-component-inline-padding-small, 12px)",
+      },
+      {
+        name: "Component Inline Padding Medium",
+        value: "var(--space-component-inline-padding-medium, 16px)",
+      },
+      {
+        name: "Component Inline Padding Large",
+        value: "var(--space-component-inline-padding-large, 24px)",
+      },
+      {
+        name: "Component Inline Padding XL",
+        value: "var(--space-component-inline-padding-x-large, 32px)",
+      },
+
+      // Row and Column Gaps
+      { name: "Row Gap Small", value: "var(--space-row-gap-small, 8px)" },
+      { name: "Row Gap Medium", value: "var(--space-row-gap-medium, 16px)" },
+      { name: "Row Gap Large", value: "var(--space-row-gap-large, 24px)" },
+      { name: "Row Gap XL", value: "var(--space-row-gap-x-large, 32px)" },
+
+      { name: "Column Gap Small", value: "var(--space-column-gap-small, 8px)" },
+      {
+        name: "Column Gap Medium",
+        value: "var(--space-column-gap-medium, 16px)",
+      },
+      {
+        name: "Column Gap Large",
+        value: "var(--space-column-gap-large, 24px)",
+      },
+      { name: "Column Gap XL", value: "var(--space-column-gap-x-large, 32px)" },
+
+      // General Spacing
+      { name: "Space XS", value: "var(--space-x-small, 4px)" },
+      { name: "Space Small", value: "var(--space-small, 8px)" },
+      { name: "Space Medium", value: "var(--space-medium, 16px)" },
+      { name: "Space Large", value: "var(--space-large, 24px)" },
+      { name: "Space XL", value: "var(--space-x-large, 32px)" },
+    ],
+
+    fontFamily: [
+      {
+        name: "Body Font",
+        value:
+          "var(--font-family-body, 'Graphik Web', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif)",
+      },
+      {
+        name: "Heading Font",
+        value:
+          "var(--font-family-heading, 'Graphik Web', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif)",
+      },
+      {
+        name: "Display Font",
+        value:
+          "var(--font-family-display, 'Graphik Web', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif)",
+      },
+      {
+        name: "Component Font",
+        value:
+          "var(--font-family-component, 'Graphik Web', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif)",
+      },
+    ],
+
+    fontSize: [
+      // Action/Button Text
+      { name: "Action XS", value: "var(--font-size-action-x-small, 12px)" },
+      { name: "Action Small", value: "var(--font-size-action-small, 14px)" },
+      { name: "Action Medium", value: "var(--font-size-action-medium, 16px)" },
+      { name: "Action Large", value: "var(--font-size-action-large, 18px)" },
+
+      // Body Text
+      { name: "Body 1", value: "var(--font-size-body-1, 16px)" },
+      { name: "Body 2", value: "var(--font-size-body-2, 14px)" },
+      { name: "Body 3", value: "var(--font-size-body-3, 12px)" },
+      { name: "Body 4", value: "var(--font-size-body-4, 11px)" },
+
+      // Headings
+      { name: "Heading 1", value: "var(--font-size-heading-1, 32px)" },
+      { name: "Heading 2", value: "var(--font-size-heading-2, 28px)" },
+      { name: "Heading 3", value: "var(--font-size-heading-3, 24px)" },
+      { name: "Heading 4", value: "var(--font-size-heading-4, 20px)" },
+      { name: "Heading 5", value: "var(--font-size-heading-5, 18px)" },
+      { name: "Heading 6", value: "var(--font-size-heading-6, 16px)" },
+
+      // Display Text
+      { name: "Display 1", value: "var(--font-size-display-1, 48px)" },
+      { name: "Display 2", value: "var(--font-size-display-2, 40px)" },
+      { name: "Display 3", value: "var(--font-size-display-3, 36px)" },
+      { name: "Display 4", value: "var(--font-size-display-4, 32px)" },
+
+      // Component Text
+      {
+        name: "Component XS",
+        value: "var(--font-size-component-x-small, 11px)",
+      },
+      {
+        name: "Component Small",
+        value: "var(--font-size-component-small, 12px)",
+      },
+      {
+        name: "Component Medium",
+        value: "var(--font-size-component-medium, 14px)",
+      },
+      {
+        name: "Component Large",
+        value: "var(--font-size-component-large, 16px)",
+      },
+      {
+        name: "Component XL",
+        value: "var(--font-size-component-x-large, 18px)",
+      },
+
+      // Input Text
+      { name: "Input Label", value: "var(--font-size-input-label, 14px)" },
+      { name: "Input Text", value: "var(--font-size-input-text, 16px)" },
+    ],
+
+    fontWeight: [
+      { name: "Body Regular", value: "var(--font-weight-body, 400)" },
+      { name: "Body Semibold", value: "var(--font-weight-body-semibold, 600)" },
+      { name: "Body Bold", value: "var(--font-weight-body-bold, 700)" },
+      { name: "Heading Regular", value: "var(--font-weight-heading, 400)" },
+      { name: "Heading Bold", value: "var(--font-weight-heading-bold, 700)" },
+      { name: "Display Regular", value: "var(--font-weight-display, 400)" },
+      { name: "Display Bold", value: "var(--font-weight-display-bold, 700)" },
+      { name: "Component Regular", value: "var(--font-weight-component, 400)" },
+      {
+        name: "Component Semibold",
+        value: "var(--font-weight-component-semibold, 600)",
+      },
+      {
+        name: "Component Bold",
+        value: "var(--font-weight-component-bold, 700)",
+      },
+    ],
+
+    lineHeight: [
+      { name: "Body", value: "var(--line-height-body, 1.5)" },
+      { name: "Heading", value: "var(--line-height-heading, 1.2)" },
+      { name: "Display", value: "var(--line-height-display, 1.1)" },
+      { name: "Component", value: "var(--line-height-component, 1.4)" },
+    ],
+
+    borderRadius: [
+      { name: "None", value: "var(--radius-none, 0px)" },
+      { name: "XS", value: "var(--radius-x-small, 2px)" },
+      { name: "Small", value: "var(--radius-small, 4px)" },
+      { name: "Medium", value: "var(--radius-medium, 6px)" },
+      { name: "Large", value: "var(--radius-large, 8px)" },
+      { name: "XL", value: "var(--radius-x-large, 12px)" },
+      { name: "Action", value: "var(--radius-action, 4px)" },
+      { name: "Full", value: "var(--radius-full, 9999px)" },
+    ],
+
+    boxShadow: [
+      { name: "None", value: "var(--elevation-level-0, none)" },
+      {
+        name: "Level 1",
+        value: "var(--elevation-level-1, 0 1px 3px rgba(0, 0, 0, 0.12))",
+      },
+      {
+        name: "Level 2",
+        value:
+          "var(--elevation-level-2, 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24))",
+      },
+      {
+        name: "Level 3",
+        value:
+          "var(--elevation-level-3, 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23))",
+      },
+      {
+        name: "Level 4",
+        value:
+          "var(--elevation-level-4, 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23))",
+      },
+    ],
+  },
+});
