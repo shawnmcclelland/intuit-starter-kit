@@ -134,11 +134,23 @@ export interface ButtonProps
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
+  ({ className, variant, size, asChild = false, style, ...props }, ref) => {
     const Comp = asChild ? Slot : "button";
+
+    // Check if we're in Builder.io context and use design token styles
+    const isBuilderContext =
+      (typeof window !== "undefined" && (window as any).builderContext) ||
+      (typeof document !== "undefined" &&
+        document.querySelector("[data-builder-context]"));
+
+    const designTokenStyles = isBuilderContext
+      ? getDesignTokenStyles(variant, size)
+      : {};
+
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
+        style={{ ...designTokenStyles, ...style }}
         ref={ref}
         {...props}
       />
