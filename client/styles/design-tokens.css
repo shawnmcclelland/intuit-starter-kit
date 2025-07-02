@@ -1633,19 +1633,17 @@
   --color-ui-primary-focus: #006771;
   --color-ui-primary-hover: #006771;
 
-  /* Mailchimp specific font families - using Avenir Next */
-  --font-family-body:
-    "Avenir Next forINTUIT", Avenir, Helvetica, Arial, sans-serif;
-  --font-family-component:
-    "Avenir Next forINTUIT", Avenir, Helvetica, Arial, sans-serif;
+  /* Mailchimp specific font families - using Graphik Web and Means Web */
+  --font-family-body: "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-component: "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
   --font-family-display:
-    "Avenir Next forINTUIT", Avenir, Helvetica, Arial, sans-serif;
+    "Means Web", "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
   --font-family-heading:
-    "Avenir Next forINTUIT", Avenir, Helvetica, Arial, sans-serif;
-  --font-name-body: "Avenir Next forINTUIT";
-  --font-name-component: "Avenir Next forINTUIT";
-  --font-name-display: "Avenir Next forINTUIT";
-  --font-name-heading: "Avenir Next forINTUIT";
+    "Means Web", "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
+  --font-name-body: "Graphik Web";
+  --font-name-component: "Graphik Web";
+  --font-name-display: "Means Web";
+  --font-name-heading: "Means Web";
 }
 
 /* Mailchimp Dark Theme */
