@@ -1,4 +1,5 @@
 @import "./styles/design-tokens.css";
+@import "./styles/token-bridge.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -70,62 +71,5 @@
       background-color 0.3s ease,
       border-color 0.3s ease,
       color 0.3s ease;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-    font-feature-settings:
-      "rlig" 1,
-      "calt" 1;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  /* Typography improvements */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-semibold tracking-tight;
-  }
-
-  h1 {
-    @apply scroll-m-20 text-4xl lg:text-5xl;
-  }
-
-  h2 {
-    @apply scroll-m-20 text-3xl lg:text-4xl;
-  }
-
-  h3 {
-    @apply scroll-m-20 text-2xl lg:text-3xl;
-  }
-
-  h4 {
-    @apply scroll-m-20 text-xl lg:text-2xl;
-  }
-
-  p {
-    @apply leading-7;
-  }
-
-  /* Focus improvements */
-  :focus-visible {
-    @apply outline-2 outline-offset-2 outline-ring;
-  }
-
-  /* Selection styles */
-  ::selection {
-    @apply bg-primary/20 text-primary-foreground;
   }
 }
