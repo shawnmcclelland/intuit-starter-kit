@@ -109,6 +109,7 @@ export function BrandSelector({
   const brands = Array.from(new Set(themes.map((t) => t.brand)));
 
   const handleBrandSelect = (brand: string) => {
+    console.log("Brand selected:", brand, "current theme:", theme);
     setBrand(brand);
     setIsOpen(false);
   };
