@@ -111,6 +111,25 @@ nav a {
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
   text-rendering: optimizeSpeed;
+  width: max-content;
+  flex-shrink: 0;
+}
+
+/* Specific width constraints for navigation items to prevent shift */
+nav a[href="#features"] {
+  min-width: 65px;
+}
+
+nav a[href="#solutions"] {
+  min-width: 75px;
+}
+
+nav a[href="#pricing"] {
+  min-width: 55px;
+}
+
+nav a[href="#about"] {
+  min-width: 50px;
 }
 
 /* Stable navigation sizing */
