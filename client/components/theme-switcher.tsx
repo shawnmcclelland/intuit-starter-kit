@@ -147,7 +147,11 @@ export function BrandSelector({
         <span className="text-sm text-muted-foreground">Theme:</span>
         <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
           <DropdownMenuTrigger asChild>
-            <Button variant="outline" size="sm">
+            <Button
+              variant="outline"
+              size="sm"
+              className="w-24 min-w-24 max-w-24 justify-center"
+            >
               {theme.brand}
             </Button>
           </DropdownMenuTrigger>
