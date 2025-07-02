@@ -170,22 +170,14 @@ button,
   will-change: auto;
 }
 
-/* Fix theme switcher button width to prevent layout shift */
-button[data-state*="closed"],
-button:has(+ [role="menu"]),
-.theme-switcher button,
-button:contains("Intuit"),
-button:contains("QuickBooks"),
-button:contains("TurboTax"),
-button:contains("Mailchimp"),
-button:contains("Credit Karma") {
-  min-width: 120px !important;
-  text-align: center;
-  justify-content: center;
-}
-
-/* Target the dropdown trigger button specifically */
-[data-radix-dropdown-trigger] {
-  min-width: 120px !important;
-  justify-content: center;
+/* Fix theme switcher button - size for largest text "Credit Karma" */
+[data-loc*="theme-switcher"] button[aria-haspopup="menu"] {
+  width: 108px !important;
+  min-width: 108px !important;
+  max-width: 108px !important;
+  text-align: center !important;
+  justify-content: center !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  box-sizing: border-box !important;
 }
