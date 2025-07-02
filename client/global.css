@@ -111,25 +111,6 @@ nav a {
   font-variant-numeric: tabular-nums;
   text-rendering: optimizeSpeed;
   flex-shrink: 0;
-  text-align: center;
-  overflow: hidden;
-}
-
-/* Fixed width constraints for navigation items to prevent shift - increased for all fonts */
-nav a[href="#features"] {
-  width: 85px;
-}
-
-nav a[href="#solutions"] {
-  width: 95px;
-}
-
-nav a[href="#pricing"] {
-  width: 72px;
-}
-
-nav a[href="#about"] {
-  width: 62px;
 }
 
 /* Stable navigation sizing - fixed width to prevent flexing */
