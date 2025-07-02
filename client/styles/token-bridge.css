@@ -3,34 +3,34 @@
  * Uses actual CSS variables from design-tokens.css
  */
 
-/* Map semantic tokens to design system tokens */
+/* Map semantic tokens to design system tokens - using RGB values for Tailwind opacity */
 :root {
-  /* Core semantic tokens mapped to design system */
-  --background: var(--color-container-background-primary);
-  --foreground: var(--color-text-primary);
-  --card: var(--color-container-background-primary);
-  --card-foreground: var(--color-text-primary);
-  --popover: var(--color-container-background-primary);
-  --popover-foreground: var(--color-text-primary);
-  --primary: var(--color-action-standard);
-  --primary-foreground: var(--color-text-inverse);
-  --secondary: var(--color-action-complementary);
-  --secondary-foreground: var(--color-text-inverse);
-  --muted: var(--color-container-background-secondary);
-  --muted-foreground: var(--color-text-secondary);
-  --accent: var(--color-container-background-accent);
-  --accent-foreground: var(--color-text-primary);
-  --destructive: var(--color-action-negative);
-  --destructive-foreground: var(--color-text-inverse);
-  --border: var(--color-container-border-tertiary);
-  --input: var(--color-container-background-primary);
-  --ring: var(--color-action-standard);
-  --success: var(--color-ui-positive);
-  --success-foreground: var(--color-text-inverse);
-  --warning: var(--color-ui-attention);
-  --warning-foreground: var(--color-text-primary);
-  --info: var(--color-ui-info);
-  --info-foreground: var(--color-text-inverse);
+  /* Core semantic tokens mapped to design system - defaults to Intuit light */
+  --background: 255 255 255; /* white */
+  --foreground: 57 58 61; /* #393A3D */
+  --card: 255 255 255; /* white */
+  --card-foreground: 57 58 61; /* #393A3D */
+  --popover: 255 255 255; /* white */
+  --popover-foreground: 57 58 61; /* #393A3D */
+  --primary: 0 119 197; /* #0077C5 */
+  --primary-foreground: 255 255 255; /* white */
+  --secondary: 107 108 114; /* #6B6C72 */
+  --secondary-foreground: 255 255 255; /* white */
+  --muted: 244 245 248; /* #F4F5F8 */
+  --muted-foreground: 107 108 114; /* #6B6C72 */
+  --accent: 245 252 255; /* #F5FCFF */
+  --accent-foreground: 57 58 61; /* #393A3D */
+  --destructive: 213 43 30; /* #D52B1E */
+  --destructive-foreground: 255 255 255; /* white */
+  --border: 212 215 220; /* #D4D7DC */
+  --input: 255 255 255; /* white */
+  --ring: 0 119 197; /* #0077C5 */
+  --success: 0 137 46; /* #00892E */
+  --success-foreground: 255 255 255; /* white */
+  --warning: 255 128 0; /* #FF8000 */
+  --warning-foreground: 255 255 255; /* white */
+  --info: 0 151 230; /* #0097E6 */
+  --info-foreground: 255 255 255; /* white */
 
   /* Typography tokens */
   --font-size-xs: var(--font-size-component-x-small);
@@ -62,4 +62,143 @@
   --elevation-2: var(--elevation-level-2);
   --elevation-3: var(--elevation-level-3);
   --elevation-4: var(--elevation-level-4);
+}
+
+/* Theme-specific RGB color overrides */
+[data-theme="intuit"][data-colorscheme="dark"] {
+  --background: 40 40 40; /* #282828 */
+  --foreground: 236 238 241; /* #ECEEF1 */
+  --card: 40 40 40; /* #282828 */
+  --card-foreground: 236 238 241; /* #ECEEF1 */
+  --popover: 40 40 40; /* #282828 */
+  --popover-foreground: 236 238 241; /* #ECEEF1 */
+  --primary: 52 191 255; /* #34BFFF */
+  --primary-foreground: 40 40 40; /* #282828 */
+  --muted: 49 49 51; /* #313133 */
+  --muted-foreground: 186 190 197; /* #BABEC5 */
+  --accent: 70 71 74; /* #46474A */
+  --accent-foreground: 236 238 241; /* #ECEEF1 */
+  --destructive: 255 137 121; /* #FF8979 */
+  --destructive-foreground: 40 40 40; /* #282828 */
+  --input: 40 40 40; /* #282828 */
+  --ring: 52 191 255; /* #34BFFF */
+  --info: 52 191 255; /* #34BFFF */
+}
+
+[data-theme="quickbooks"] {
+  --primary: 0 137 46; /* #00892E */
+  --accent: 234 255 235; /* #EAFFEB */
+  --success: 0 137 46; /* #00892E */
+}
+
+[data-theme="quickbooks"][data-colorscheme="dark"] {
+  --background: 40 40 40; /* #282828 */
+  --foreground: 236 238 241; /* #ECEEF1 */
+  --card: 57 58 61; /* #393A3D */
+  --card-foreground: 236 238 241; /* #ECEEF1 */
+  --primary: 59 216 94; /* #3BD85E */
+  --primary-foreground: 40 40 40; /* #282828 */
+  --muted: 57 58 61; /* #393A3D */
+  --muted-foreground: 186 190 197; /* #BABEC5 */
+  --accent: 70 71 74; /* #46474A */
+  --accent-foreground: 236 238 241; /* #ECEEF1 */
+  --destructive: 255 137 121; /* #FF8979 */
+  --destructive-foreground: 40 40 40; /* #282828 */
+  --input: 40 40 40; /* #282828 */
+  --ring: 59 216 94; /* #3BD85E */
+}
+
+[data-theme="turbotax"] {
+  --foreground: 33 38 42; /* #21262A */
+  --card-foreground: 33 38 42; /* #21262A */
+  --popover-foreground: 33 38 42; /* #21262A */
+  --primary: 32 94 163; /* #205EA3 */
+  --secondary: 33 38 42; /* #21262A */
+  --muted: 240 244 246; /* #F0F4F6 */
+  --muted-foreground: 133 146 153; /* #859299 */
+  --accent: 240 244 246; /* #F0F4F6 */
+  --accent-foreground: 33 38 42; /* #21262A */
+  --destructive: 219 51 77; /* #DB334D */
+  --border: 195 206 213; /* #C3CED5 */
+  --ring: 33 38 42; /* #21262A */
+}
+
+[data-theme="turbotax"][data-colorscheme="dark"] {
+  --background: 40 40 40; /* #282828 */
+  --foreground: 236 238 241; /* #ECEEF1 */
+  --card: 49 49 51; /* #313133 */
+  --card-foreground: 236 238 241; /* #ECEEF1 */
+  --primary: 52 191 255; /* #34BFFF */
+  --primary-foreground: 40 40 40; /* #282828 */
+  --muted: 57 58 61; /* #393A3D */
+  --muted-foreground: 186 190 197; /* #BABEC5 */
+  --accent: 57 58 61; /* #393A3D */
+  --accent-foreground: 236 238 241; /* #ECEEF1 */
+  --destructive: 255 137 121; /* #FF8979 */
+  --destructive-foreground: 40 40 40; /* #282828 */
+  --input: 40 40 40; /* #282828 */
+  --ring: 52 191 255; /* #34BFFF */
+}
+
+[data-theme="mailchimp"] {
+  --foreground: 33 38 42; /* #21262A */
+  --card-foreground: 33 38 42; /* #21262A */
+  --popover-foreground: 33 38 42; /* #21262A */
+  --primary: 0 130 141; /* #00828D */
+  --secondary: 43 49 53; /* #2B3135 */
+  --muted: 240 244 246; /* #F0F4F6 */
+  --muted-foreground: 60 104 111; /* #3C686F */
+  --accent: 240 244 246; /* #F0F4F6 */
+  --accent-foreground: 33 38 42; /* #21262A */
+  --destructive: 182 26 55; /* #B61A37 */
+  --border: 226 233 237; /* #E2E9ED */
+  --ring: 0 80 86; /* #005056 */
+}
+
+[data-theme="mailchimp"][data-colorscheme="dark"] {
+  --background: 36 28 21; /* #241C15 */
+  --foreground: 255 255 255; /* #FFFFFF */
+  --card: 57 58 61; /* #393A3D */
+  --card-foreground: 255 255 255; /* #FFFFFF */
+  --primary: 75 196 194; /* #4BC4C2 */
+  --primary-foreground: 36 28 21; /* #241C15 */
+  --muted: 57 58 61; /* #393A3D */
+  --muted-foreground: 186 190 197; /* #BABEC5 */
+  --accent: 57 58 61; /* #393A3D */
+  --accent-foreground: 255 255 255; /* #FFFFFF */
+  --destructive: 255 137 121; /* #FF8979 */
+  --destructive-foreground: 36 28 21; /* #241C15 */
+  --input: 40 40 40; /* #282828 */
+  --ring: 113 210 255; /* #71D2FF */
+}
+
+[data-theme="creditkarma"] {
+  --foreground: 0 0 0; /* #000000 */
+  --card-foreground: 0 0 0; /* #000000 */
+  --popover-foreground: 0 0 0; /* #000000 */
+  --primary: 0 134 0; /* #008600 */
+  --secondary: 85 89 91; /* #55595B */
+  --muted: 244 245 248; /* #F4F5F8 */
+  --muted-foreground: 107 108 114; /* #6B6C72 */
+  --accent: 236 238 241; /* #ECEEF1 */
+  --accent-foreground: 0 0 0; /* #000000 */
+  --destructive: 199 73 0; /* #C74900 */
+  --ring: 0 134 0; /* #008600 */
+}
+
+[data-theme="creditkarma"][data-colorscheme="dark"] {
+  --background: 40 40 40; /* #282828 */
+  --foreground: 236 238 241; /* #ECEEF1 */
+  --card: 57 58 61; /* #393A3D */
+  --card-foreground: 236 238 241; /* #ECEEF1 */
+  --primary: 0 134 0; /* #008600 */
+  --primary-foreground: 40 40 40; /* #282828 */
+  --muted: 57 58 61; /* #393A3D */
+  --muted-foreground: 186 190 197; /* #BABEC5 */
+  --accent: 57 58 61; /* #393A3D */
+  --accent-foreground: 236 238 241; /* #ECEEF1 */
+  --destructive: 255 137 121; /* #FF8979 */
+  --destructive-foreground: 40 40 40; /* #282828 */
+  --input: 40 40 40; /* #282828 */
+  --ring: 52 191 255; /* #34BFFF */
 }
