@@ -124,3 +124,37 @@ header span {
   letter-spacing: -0.01em;
   white-space: nowrap;
 }
+
+/* Theme switcher stability */
+[data-radix-dropdown-content] {
+  min-width: 200px;
+}
+
+/* Navigation container stability */
+header > div {
+  contain: layout;
+}
+
+/* Prevent font-based width changes */
+nav a,
+header span,
+button {
+  font-feature-settings:
+    "tnum" 1,
+    "kern" 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Dropdown menu consistency */
+[role="menuitem"] {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Stabilize all interactive elements */
+button,
+[role="button"] {
+  font-variant-numeric: tabular-nums;
+  text-rendering: optimizeSpeed;
+  will-change: auto;
+}
