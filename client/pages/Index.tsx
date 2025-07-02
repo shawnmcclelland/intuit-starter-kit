@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ThemeSwitcher } from "@/components/theme-switcher";
 import {
   ArrowRight,
   BarChart3,
@@ -58,6 +59,7 @@ export default function Index() {
           </nav>
 
           <div className="flex items-center space-x-3">
+            <ThemeSwitcher variant="compact" />
             <Button variant="ghost" size="sm">
               Sign In
             </Button>
