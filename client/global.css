@@ -124,9 +124,9 @@ header nav {
   place-items: center;
 }
 
-/* Navigation spacing stability */
-header nav.space-x-6 > * + * {
-  margin-left: 1.5rem !important;
+/* Override flex spacing since we're using grid */
+header nav > * {
+  margin: 0 !important;
 }
 
 /* Brand logo text stability */
