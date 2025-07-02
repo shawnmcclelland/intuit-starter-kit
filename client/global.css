@@ -103,3 +103,24 @@
   will-change: transform;
   text-rendering: geometricPrecision;
 }
+
+/* Prevent layout shift during theme changes */
+nav a {
+  display: inline-block;
+  min-width: fit-content;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  text-rendering: optimizeSpeed;
+}
+
+/* Stable navigation sizing */
+header nav {
+  contain: layout style;
+}
+
+/* Brand logo text stability */
+header span {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
