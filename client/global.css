@@ -192,14 +192,18 @@ button:has-text("Credit Karma") {
   flex-shrink: 0 !important;
 }
 
-/* Fix double border on dropdown trigger */
+/* Fix double border on dropdown trigger - complete reset */
 [data-radix-dropdown-trigger] {
+  border: 2px solid rgb(var(--primary)) !important;
   outline: none !important;
   box-shadow: none !important;
+  background: transparent !important;
 }
 
 /* Ensure only one border on theme switcher */
 button[aria-haspopup="menu"] {
+  border: 2px solid rgb(var(--primary)) !important;
   outline: none !important;
   box-shadow: none !important;
+  background: transparent !important;
 }
