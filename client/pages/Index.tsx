@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ThemeSwitcher } from "@/components/theme-switcher";
-import { DesignTokenShowcase } from "@/components/design-token-showcase";
 import {
   ArrowRight,
   BarChart3,
