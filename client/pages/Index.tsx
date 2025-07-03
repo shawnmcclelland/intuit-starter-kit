@@ -23,6 +23,7 @@ export default function Index() {
   const { theme } = useTheme();
   const isTurboTax = theme.brand === "TurboTax";
   const isCreditKarma = theme.brand === "Credit Karma";
+  const isQuickBooks = theme.brand === "QuickBooks";
 
   return (
     <div className="min-h-screen bg-background">
