@@ -372,11 +372,26 @@ export const builderConfig: BuilderConfig = {
       { name: "Column Gap XL", value: "var(--space-column-gap-x-large, 32px)" },
 
       // General Spacing
-      { name: "Space XS", value: "var(--space-x-small, 4px)" },
-      { name: "Space Small", value: "var(--space-small, 8px)" },
-      { name: "Space Medium", value: "var(--space-medium, 16px)" },
-      { name: "Space Large", value: "var(--space-large, 24px)" },
-      { name: "Space XL", value: "var(--space-x-large, 32px)" },
+      {
+        name: "Space XS",
+        value: "var(--space-x-small, 4px)",
+      },
+      {
+        name: "Space Small",
+        value: "var(--space-small, 8px)",
+      },
+      {
+        name: "Space Medium",
+        value: "var(--space-medium, 16px)",
+      },
+      {
+        name: "Space Large",
+        value: "var(--space-large, 24px)",
+      },
+      {
+        name: "Space XL",
+        value: "var(--space-x-large, 32px)",
+      },
     ],
 
     fontSizes: [
