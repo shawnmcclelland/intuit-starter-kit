@@ -247,9 +247,7 @@ export default function Index() {
                   size="lg"
                   variant="secondary"
                   className="h-12 px-8"
-                  style={{
-                    backgroundColor: "var(--color-action-complementary)",
-                  }}
+                  style={{ backgroundColor: "var(--color-action-passive)" }}
                 >
                   Start Free Trial
                   <ArrowRight className="w-4 h-4 ml-2" />
