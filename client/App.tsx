@@ -1,7 +1,4 @@
 import "./global.css";
-import "./lib/builder-tokens";
-import "./lib/builder-components";
-import "./lib/builder-tailwind-plugin";
 
 import { Toaster } from "@/components/ui/toaster";
 import { createRoot } from "react-dom/client";
