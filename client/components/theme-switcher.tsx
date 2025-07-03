@@ -148,6 +148,7 @@ export function BrandSelector({
         <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
           <DropdownMenuTrigger asChild>
             <Button
+              key={theme.id}
               variant="ghost"
               size="sm"
               className="w-24 min-w-24 max-w-24 justify-center text-primary hover:bg-primary/10"
