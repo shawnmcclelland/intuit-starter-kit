@@ -147,6 +147,15 @@ header > div {
 }
 
 /* Prevent font-based width changes */
+
+/* Fix Credit Karma logo clipping */
+header .flex.items-center {
+  overflow: visible !important;
+}
+
+header svg {
+  overflow: visible !important;
+}
 nav a,
 header span,
 button {
