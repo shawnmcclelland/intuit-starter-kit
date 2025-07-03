@@ -181,27 +181,66 @@ export const builderConfig: BuilderConfig = {
       },
 
       // Icon Colors
-      { name: "Icon Primary", value: "var(--color-icon-primary, #393A3D)" },
-      { name: "Icon Secondary", value: "var(--color-icon-secondary, #6B6C72)" },
-      { name: "Icon Accent", value: "var(--color-icon-accent, #0077C5)" },
+      {
+        name: "Icon Primary",
+        value: "var(--color-icon-primary, #393A3D)",
+      },
+      {
+        name: "Icon Secondary",
+        value: "var(--color-icon-secondary, #6B6C72)",
+      },
+      {
+        name: "Icon Accent",
+        value: "var(--color-icon-accent, #0077C5)",
+      },
       {
         name: "Icon Complementary",
         value: "var(--color-icon-complementary, #6B6C72)",
       },
-      { name: "Icon Inverse", value: "var(--color-icon-inverse, #FFFFFF)" },
-      { name: "Icon Disabled", value: "var(--color-icon-disabled, #BABEC5)" },
+      {
+        name: "Icon Inverse",
+        value: "var(--color-icon-inverse, #FFFFFF)",
+      },
+      {
+        name: "Icon Disabled",
+        value: "var(--color-icon-disabled, #BABEC5)",
+      },
 
       // Data Visualization Colors
-      { name: "Data Primary", value: "var(--color-data-primary, #0077C5)" },
-      { name: "Data Secondary", value: "var(--color-data-secondary, #00A6A4)" },
-      { name: "Data Tertiary", value: "var(--color-data-tertiary, #FF8000)" },
-      { name: "Data Positive", value: "var(--color-data-positive, #53B700)" },
-      { name: "Data Negative", value: "var(--color-data-negative, #E43834)" },
-      { name: "Data Neutral", value: "var(--color-data-neutral, #8D9096)" },
-      { name: "Data Attention", value: "var(--color-data-attention, #FF8000)" },
+      {
+        name: "Data Primary",
+        value: "var(--color-data-primary, #0077C5)",
+      },
+      {
+        name: "Data Secondary",
+        value: "var(--color-data-secondary, #00A6A4)",
+      },
+      {
+        name: "Data Tertiary",
+        value: "var(--color-data-tertiary, #FF8000)",
+      },
+      {
+        name: "Data Positive",
+        value: "var(--color-data-positive, #53B700)",
+      },
+      {
+        name: "Data Negative",
+        value: "var(--color-data-negative, #E43834)",
+      },
+      {
+        name: "Data Neutral",
+        value: "var(--color-data-neutral, #8D9096)",
+      },
+      {
+        name: "Data Attention",
+        value: "var(--color-data-attention, #FF8000)",
+      },
 
       // UI State Colors
-      { name: "UI Primary", value: "var(--color-ui-primary, #0077C5)" },
+      {
+        name: "UI Primary",
+        value: "var(--color-ui-primary, #0077C5)",
+      },
       {
         name: "UI Primary Hover",
         value: "var(--color-ui-primary-hover, #0066A9)",
@@ -210,13 +249,34 @@ export const builderConfig: BuilderConfig = {
         name: "UI Primary Active",
         value: "var(--color-ui-primary-active, #055393)",
       },
-      { name: "UI Secondary", value: "var(--color-ui-secondary, #6B6C72)" },
-      { name: "UI Tertiary", value: "var(--color-ui-tertiary, #8D9096)" },
-      { name: "UI Positive", value: "var(--color-ui-positive, #53B700)" },
-      { name: "UI Negative", value: "var(--color-ui-negative, #E43834)" },
-      { name: "UI Attention", value: "var(--color-ui-attention, #FF8000)" },
-      { name: "UI Info", value: "var(--color-ui-info, #0097E6)" },
-      { name: "UI Neutral", value: "var(--color-ui-neutral, #8D9096)" },
+      {
+        name: "UI Secondary",
+        value: "var(--color-ui-secondary, #6B6C72)",
+      },
+      {
+        name: "UI Tertiary",
+        value: "var(--color-ui-tertiary, #8D9096)",
+      },
+      {
+        name: "UI Positive",
+        value: "var(--color-ui-positive, #53B700)",
+      },
+      {
+        name: "UI Negative",
+        value: "var(--color-ui-negative, #E43834)",
+      },
+      {
+        name: "UI Attention",
+        value: "var(--color-ui-attention, #FF8000)",
+      },
+      {
+        name: "UI Info",
+        value: "var(--color-ui-info, #0097E6)",
+      },
+      {
+        name: "UI Neutral",
+        value: "var(--color-ui-neutral, #8D9096)",
+      },
     ],
 
     spacing: [
