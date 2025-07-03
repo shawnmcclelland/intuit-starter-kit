@@ -47,7 +47,10 @@ export const builderConfig: BuilderConfig = {
       },
 
       // Passive/Secondary Actions
-      { name: "Action Passive", value: "var(--color-action-passive, #E3E5E8)" },
+      {
+        name: "Action Passive",
+        value: "var(--color-action-passive, #E3E5E8)",
+      },
       {
         name: "Action Passive Hover",
         value: "var(--color-action-passive-hover, #D4D7DC)",
@@ -58,21 +61,42 @@ export const builderConfig: BuilderConfig = {
       },
 
       // Text Colors
-      { name: "Text Primary", value: "var(--color-text-primary, #393A3D)" },
-      { name: "Text Secondary", value: "var(--color-text-secondary, #6B6C72)" },
-      { name: "Text Tertiary", value: "var(--color-text-tertiary, #8D9096)" },
+      {
+        name: "Text Primary",
+        value: "var(--color-text-primary, #393A3D)",
+      },
+      {
+        name: "Text Secondary",
+        value: "var(--color-text-secondary, #6B6C72)",
+      },
+      {
+        name: "Text Tertiary",
+        value: "var(--color-text-tertiary, #8D9096)",
+      },
       {
         name: "Text Quaternary",
         value: "var(--color-text-quaternary, #BABEC5)",
       },
-      { name: "Text Accent", value: "var(--color-text-accent, #0077C5)" },
+      {
+        name: "Text Accent",
+        value: "var(--color-text-accent, #0077C5)",
+      },
       {
         name: "Text Complementary",
         value: "var(--color-text-complementary, #6B6C72)",
       },
-      { name: "Text Inverse", value: "var(--color-text-inverse, #FFFFFF)" },
-      { name: "Text Disabled", value: "var(--color-text-disabled, #BABEC5)" },
-      { name: "Text Highlight", value: "var(--color-text-highlight, #0077C5)" },
+      {
+        name: "Text Inverse",
+        value: "var(--color-text-inverse, #FFFFFF)",
+      },
+      {
+        name: "Text Disabled",
+        value: "var(--color-text-disabled, #BABEC5)",
+      },
+      {
+        name: "Text Highlight",
+        value: "var(--color-text-highlight, #0077C5)",
+      },
 
       // Background Colors
       {
