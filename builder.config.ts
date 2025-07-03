@@ -571,25 +571,64 @@ export const builderConfig: BuilderConfig = {
     ],
 
     lineHeights: [
-      { name: "Body", value: "var(--line-height-body, 1.5)" },
-      { name: "Heading", value: "var(--line-height-heading, 1.2)" },
-      { name: "Display", value: "var(--line-height-display, 1.1)" },
-      { name: "Component", value: "var(--line-height-component, 1.4)" },
+      {
+        name: "Body",
+        value: "var(--line-height-body, 1.5)",
+      },
+      {
+        name: "Heading",
+        value: "var(--line-height-heading, 1.2)",
+      },
+      {
+        name: "Display",
+        value: "var(--line-height-display, 1.1)",
+      },
+      {
+        name: "Component",
+        value: "var(--line-height-component, 1.4)",
+      },
     ],
 
     borderRadius: [
-      { name: "None", value: "var(--radius-none, 0px)" },
-      { name: "XS", value: "var(--radius-x-small, 2px)" },
-      { name: "Small", value: "var(--radius-small, 4px)" },
-      { name: "Medium", value: "var(--radius-medium, 6px)" },
-      { name: "Large", value: "var(--radius-large, 8px)" },
-      { name: "XL", value: "var(--radius-x-large, 12px)" },
-      { name: "Action", value: "var(--radius-action, 6px)" },
-      { name: "Full", value: "var(--radius-full, 9999px)" },
+      {
+        name: "None",
+        value: "var(--radius-none, 0px)",
+      },
+      {
+        name: "XS",
+        value: "var(--radius-x-small, 2px)",
+      },
+      {
+        name: "Small",
+        value: "var(--radius-small, 4px)",
+      },
+      {
+        name: "Medium",
+        value: "var(--radius-medium, 6px)",
+      },
+      {
+        name: "Large",
+        value: "var(--radius-large, 8px)",
+      },
+      {
+        name: "XL",
+        value: "var(--radius-x-large, 12px)",
+      },
+      {
+        name: "Action",
+        value: "var(--radius-action, 6px)",
+      },
+      {
+        name: "Full",
+        value: "var(--radius-full, 9999px)",
+      },
     ],
 
     shadows: [
-      { name: "None", value: "var(--elevation-level-0, none)" },
+      {
+        name: "None",
+        value: "var(--elevation-level-0, none)",
+      },
       {
         name: "Level 1",
         value:
