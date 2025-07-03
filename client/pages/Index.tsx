@@ -34,7 +34,7 @@ export default function Index() {
               <svg
                 width="162"
                 height="27"
-                viewBox="-20 -5 667 117"
+                viewBox="-50 -10 700 130"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="text-primary"
