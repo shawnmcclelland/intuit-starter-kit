@@ -396,30 +396,84 @@ export const builderConfig: BuilderConfig = {
 
     fontSizes: [
       // Action/Button Text
-      { name: "Action XS", value: "var(--font-size-action-x-small, 12px)" },
-      { name: "Action Small", value: "var(--font-size-action-small, 14px)" },
-      { name: "Action Medium", value: "var(--font-size-action-medium, 16px)" },
-      { name: "Action Large", value: "var(--font-size-action-large, 18px)" },
+      {
+        name: "Action XS",
+        value: "var(--font-size-action-x-small, 12px)",
+      },
+      {
+        name: "Action Small",
+        value: "var(--font-size-action-small, 14px)",
+      },
+      {
+        name: "Action Medium",
+        value: "var(--font-size-action-medium, 16px)",
+      },
+      {
+        name: "Action Large",
+        value: "var(--font-size-action-large, 18px)",
+      },
 
       // Body Text
-      { name: "Body 1", value: "var(--font-size-body-1, 16px)" },
-      { name: "Body 2", value: "var(--font-size-body-2, 18px)" },
-      { name: "Body 3", value: "var(--font-size-body-3, 14px)" },
-      { name: "Body 4", value: "var(--font-size-body-4, 12px)" },
+      {
+        name: "Body 1",
+        value: "var(--font-size-body-1, 16px)",
+      },
+      {
+        name: "Body 2",
+        value: "var(--font-size-body-2, 18px)",
+      },
+      {
+        name: "Body 3",
+        value: "var(--font-size-body-3, 14px)",
+      },
+      {
+        name: "Body 4",
+        value: "var(--font-size-body-4, 12px)",
+      },
 
       // Headings
-      { name: "Heading 1", value: "var(--font-size-heading-1, 48px)" },
-      { name: "Heading 2", value: "var(--font-size-heading-2, 40px)" },
-      { name: "Heading 3", value: "var(--font-size-heading-3, 32px)" },
-      { name: "Heading 4", value: "var(--font-size-heading-4, 24px)" },
-      { name: "Heading 5", value: "var(--font-size-heading-5, 20px)" },
-      { name: "Heading 6", value: "var(--font-size-heading-6, 18px)" },
+      {
+        name: "Heading 1",
+        value: "var(--font-size-heading-1, 48px)",
+      },
+      {
+        name: "Heading 2",
+        value: "var(--font-size-heading-2, 40px)",
+      },
+      {
+        name: "Heading 3",
+        value: "var(--font-size-heading-3, 32px)",
+      },
+      {
+        name: "Heading 4",
+        value: "var(--font-size-heading-4, 24px)",
+      },
+      {
+        name: "Heading 5",
+        value: "var(--font-size-heading-5, 20px)",
+      },
+      {
+        name: "Heading 6",
+        value: "var(--font-size-heading-6, 18px)",
+      },
 
       // Display Text
-      { name: "Display 1", value: "var(--font-size-display-1, 64px)" },
-      { name: "Display 2", value: "var(--font-size-display-2, 56px)" },
-      { name: "Display 3", value: "var(--font-size-display-3, 48px)" },
-      { name: "Display 4", value: "var(--font-size-display-4, 40px)" },
+      {
+        name: "Display 1",
+        value: "var(--font-size-display-1, 64px)",
+      },
+      {
+        name: "Display 2",
+        value: "var(--font-size-display-2, 56px)",
+      },
+      {
+        name: "Display 3",
+        value: "var(--font-size-display-3, 48px)",
+      },
+      {
+        name: "Display 4",
+        value: "var(--font-size-display-4, 40px)",
+      },
 
       // Component Text
       {
