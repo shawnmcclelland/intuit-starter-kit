@@ -249,13 +249,10 @@ export default function Index() {
                   className="h-12 px-8"
                   style={{ backgroundColor: "var(--color-icon-inverse)" }}
                 >
-                  <span style={{ color: "var(--color-action-standard)" }}>
+                  <span className="text-[var(--color-action-standard)]">
                     Start Free Trial
                   </span>
-                  <ArrowRight
-                    className="w-4 h-4 ml-2"
-                    style={{ color: "var(--color-action-standard)" }}
-                  />
+                  <ArrowRight className="w-4 h-4 ml-2 text-[var(--color-action-standard)]" />
                 </Button>
                 <Button
                   size="lg"
