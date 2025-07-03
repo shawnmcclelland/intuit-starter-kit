@@ -147,7 +147,7 @@ export function BrandSelector({
         <span className="text-sm text-muted-foreground">Theme:</span>
         <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
           <DropdownMenuTrigger
-            className="w-24 min-w-24 max-w-24 h-8 px-3 text-sm font-medium justify-center inline-flex items-center rounded-md text-primary hover:bg-primary/10 transition-colors"
+            className="w-32 min-w-32 max-w-32 h-8 px-3 text-sm font-medium justify-center inline-flex items-center rounded-md text-primary hover:bg-primary/10 transition-colors"
             style={{
               border: "2px solid rgb(var(--primary))",
               background: "transparent",
