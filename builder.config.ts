@@ -498,19 +498,49 @@ export const builderConfig: BuilderConfig = {
       },
 
       // Input Text
-      { name: "Input Label", value: "var(--font-size-input-label, 14px)" },
-      { name: "Input Text", value: "var(--font-size-input-text, 16px)" },
+      {
+        name: "Input Label",
+        value: "var(--font-size-input-label, 14px)",
+      },
+      {
+        name: "Input Text",
+        value: "var(--font-size-input-text, 16px)",
+      },
     ],
 
     fontWeights: [
-      { name: "Body Regular", value: "var(--font-weight-body, 400)" },
-      { name: "Body Semibold", value: "var(--font-weight-body-semibold, 600)" },
-      { name: "Body Bold", value: "var(--font-weight-body-bold, 700)" },
-      { name: "Heading Regular", value: "var(--font-weight-heading, 600)" },
-      { name: "Heading Bold", value: "var(--font-weight-heading-bold, 700)" },
-      { name: "Display Regular", value: "var(--font-weight-display, 600)" },
-      { name: "Display Bold", value: "var(--font-weight-display-bold, 700)" },
-      { name: "Component Regular", value: "var(--font-weight-component, 400)" },
+      {
+        name: "Body Regular",
+        value: "var(--font-weight-body, 400)",
+      },
+      {
+        name: "Body Semibold",
+        value: "var(--font-weight-body-semibold, 600)",
+      },
+      {
+        name: "Body Bold",
+        value: "var(--font-weight-body-bold, 700)",
+      },
+      {
+        name: "Heading Regular",
+        value: "var(--font-weight-heading, 600)",
+      },
+      {
+        name: "Heading Bold",
+        value: "var(--font-weight-heading-bold, 700)",
+      },
+      {
+        name: "Display Regular",
+        value: "var(--font-weight-display, 600)",
+      },
+      {
+        name: "Display Bold",
+        value: "var(--font-weight-display-bold, 700)",
+      },
+      {
+        name: "Component Regular",
+        value: "var(--font-weight-component, 400)",
+      },
       {
         name: "Component Semibold",
         value: "var(--font-weight-component-semibold, 600)",
