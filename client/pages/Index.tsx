@@ -24,11 +24,20 @@ export default function Index() {
       {/* Navigation Header */}
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
         <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
-              <BarChart3 className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="text-xl font-bold text-foreground">IntuitPro</span>
+          <div className="flex items-center">
+            <svg
+              width="138"
+              height="28"
+              viewBox="0 0 691 139"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="text-primary"
+            >
+              <path
+                d="M354.425 80.3334C354.425 114.109 382.428 138.82 418.042 138.82C453.655 138.82 481.701 114.109 481.701 80.3334V2.69348H447.242V76.3146C447.242 94.5703 434.63 106.84 417.956 106.84C401.282 106.84 388.67 94.613 388.67 76.3146V2.69348H354.211L354.425 80.3334ZM573.749 33.7751H614.878V136.255H649.337V33.7751H690.465V2.65068H573.749V33.7751ZM551.474 2.65068H517.015V136.255H551.474V2.65068ZM215.22 33.7751H256.349V136.255H290.808V33.7751H331.894V2.65068H215.22V33.7751ZM34.4164 2.65068H0V136.255H34.4591V2.65068H34.4164ZM197.05 58.4865C197.05 24.7114 169.046 0 133.433 0C97.8195 0 69.7733 24.6686 69.7733 58.4865V136.297H104.232V62.6763C104.232 44.4634 116.845 32.1504 133.518 32.1504C150.192 32.1504 162.804 44.3779 162.804 62.6763V136.297H197.264L197.05 58.4865Z"
+                fill="currentColor"
+              />
+            </svg>
           </div>
 
           <nav className="hidden md:flex items-center space-x-6">
