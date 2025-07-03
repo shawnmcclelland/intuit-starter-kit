@@ -146,21 +146,16 @@ export function BrandSelector({
       <div className={cn("flex items-center gap-2", className)}>
         <span className="text-sm text-muted-foreground">Theme:</span>
         <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
-          <DropdownMenuTrigger asChild>
-            <Button
-              key={theme.id}
-              variant="ghost"
-              size="sm"
-              className="w-24 min-w-24 max-w-24 justify-center text-primary hover:bg-primary/10"
-              style={{
-                border: "2px solid rgb(var(--primary))",
-                background: "transparent",
-                outline: "none",
-                boxShadow: "none",
-              }}
-            >
-              {theme.brand}
-            </Button>
+          <DropdownMenuTrigger
+            className="w-24 min-w-24 max-w-24 h-8 px-3 text-sm font-medium justify-center inline-flex items-center rounded-md text-primary hover:bg-primary/10 transition-colors"
+            style={{
+              border: "2px solid rgb(var(--primary))",
+              background: "transparent",
+              outline: "none",
+              boxShadow: "none",
+            }}
+          >
+            {theme.brand}
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end" className="w-40">
             {brands.map((brand) => (
