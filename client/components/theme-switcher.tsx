@@ -150,8 +150,7 @@ export function BrandSelector({
             <Button
               variant="outline"
               size="sm"
-              className="w-24 min-w-24 max-w-24 justify-center border-primary"
-              style={{ borderWidth: "2px" }}
+              className="w-24 min-w-24 max-w-24 justify-center !border-2 !border-primary"
             >
               {theme.brand}
             </Button>
