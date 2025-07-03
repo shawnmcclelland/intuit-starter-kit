@@ -247,7 +247,7 @@ export default function Index() {
                   size="lg"
                   variant="secondary"
                   className="h-12 px-8"
-                  style={{ backgroundColor: "var(--color-icon-primary)" }}
+                  style={{ backgroundColor: "var(--color-icon-inverse)" }}
                 >
                   <span style={{ color: "var(--color-action-standard)" }}>
                     Start Free Trial
