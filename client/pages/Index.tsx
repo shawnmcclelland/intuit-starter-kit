@@ -249,8 +249,13 @@ export default function Index() {
                   className="h-12 px-8"
                   style={{ backgroundColor: "var(--color-action-passive)" }}
                 >
-                  Start Free Trial
-                  <ArrowRight className="w-4 h-4 ml-2" />
+                  <span style={{ color: "var(--color-action-standard)" }}>
+                    Start Free Trial
+                  </span>
+                  <ArrowRight
+                    className="w-4 h-4 ml-2"
+                    style={{ color: "var(--color-action-standard)" }}
+                  />
                 </Button>
                 <Button
                   size="lg"
