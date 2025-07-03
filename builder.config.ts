@@ -698,4 +698,6 @@ export const builderConfig: BuilderConfig = {
   ],
 };
 
+Builder.register('editor.settings', builderConfig)
+
 export default builderConfig;
