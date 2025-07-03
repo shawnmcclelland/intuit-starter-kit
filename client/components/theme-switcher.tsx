@@ -148,10 +148,9 @@ export function BrandSelector({
         <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
           <DropdownMenuTrigger asChild>
             <Button
-              variant="outline"
+              variant="ghost"
               size="sm"
-              className="w-24 min-w-24 max-w-24 justify-center"
-              style={{ borderColor: "rgb(var(--primary))", borderWidth: "2px" }}
+              className="w-24 min-w-24 max-w-24 justify-center border-2 border-primary bg-transparent text-primary hover:bg-primary/10"
             >
               {theme.brand}
             </Button>
