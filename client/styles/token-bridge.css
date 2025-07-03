@@ -163,6 +163,14 @@
   --destructive: 182 26 55; /* #B61A37 */
   --border: 226 233 237; /* #E2E9ED */
   --ring: 0 80 86; /* #005056 */
+
+  /* Mailchimp font family overrides */
+  --font-family-body: "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-component: "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-display:
+    "Means Web", "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-heading:
+    "Means Web", "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
 }
 
 [data-theme="mailchimp"][data-colorscheme="dark"] {
@@ -180,6 +188,14 @@
   --destructive-foreground: 36 28 21; /* #241C15 */
   --input: 40 40 40; /* #282828 */
   --ring: 113 210 255; /* #71D2FF */
+
+  /* Mailchimp font family overrides */
+  --font-family-body: "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-component: "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-display:
+    "Means Web", "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-heading:
+    "Means Web", "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
 }
 
 [data-theme="creditkarma"] {

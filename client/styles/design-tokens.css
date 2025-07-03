@@ -127,6 +127,74 @@
   font-display: swap;
 }
 
+/* Mailchimp - Graphik Web */
+@font-face {
+  font-family: "Graphik Web";
+  src: url("/fonts/mailchimp/graphik/1.0.0/GraphikMailchimp-Regular-Web.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "Graphik Web";
+  src: url("/fonts/mailchimp/graphik/1.0.0/GraphikMailchimp-Medium-Web.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "Graphik Web";
+  src: url("/fonts/mailchimp/graphik/1.0.0/GraphikMailchimp-RegularItalic-Web.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "Graphik Web";
+  src: url("/fonts/mailchimp/graphik/1.0.0/GraphikMailchimp-MediumItalic-Web.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mailchimp - Means Web */
+@font-face {
+  font-family: "Means Web";
+  src: url("/fonts/mailchimp/means/1.0.0/Means-Regular-Web.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Means Web";
+  src: url("/fonts/mailchimp/means/1.0.0/Means-RegularItalic-Web.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 /* Credit Karma - National2 */
 @font-face {
   font-family: "National2";
@@ -1577,19 +1645,17 @@
   --color-ui-primary-focus: #006771;
   --color-ui-primary-hover: #006771;
 
-  /* Mailchimp specific font families - using Avenir Next */
-  --font-family-body:
-    "Avenir Next forINTUIT", Avenir, Helvetica, Arial, sans-serif;
-  --font-family-component:
-    "Avenir Next forINTUIT", Avenir, Helvetica, Arial, sans-serif;
+  /* Mailchimp specific font families - using Graphik Web and Means Web */
+  --font-family-body: "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-component: "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
   --font-family-display:
-    "Avenir Next forINTUIT", Avenir, Helvetica, Arial, sans-serif;
+    "Means Web", "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
   --font-family-heading:
-    "Avenir Next forINTUIT", Avenir, Helvetica, Arial, sans-serif;
-  --font-name-body: "Avenir Next forINTUIT";
-  --font-name-component: "Avenir Next forINTUIT";
-  --font-name-display: "Avenir Next forINTUIT";
-  --font-name-heading: "Avenir Next forINTUIT";
+    "Means Web", "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
+  --font-name-body: "Graphik Web";
+  --font-name-component: "Graphik Web";
+  --font-name-display: "Means Web";
+  --font-name-heading: "Means Web";
 }
 
 /* Mailchimp Dark Theme */
@@ -1650,19 +1716,17 @@
   --color-ui-primary-focus: #34bfff;
   --color-ui-primary-hover: #000000;
 
-  /* Mailchimp specific font families - using Avenir Next */
-  --font-family-body:
-    "Avenir Next forINTUIT", Avenir, Helvetica, Arial, sans-serif;
-  --font-family-component:
-    "Avenir Next forINTUIT", Avenir, Helvetica, Arial, sans-serif;
+  /* Mailchimp specific font families - using Graphik Web and Means Web */
+  --font-family-body: "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
+  --font-family-component: "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
   --font-family-display:
-    "Avenir Next forINTUIT", Avenir, Helvetica, Arial, sans-serif;
+    "Means Web", "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
   --font-family-heading:
-    "Avenir Next forINTUIT", Avenir, Helvetica, Arial, sans-serif;
-  --font-name-body: "Avenir Next forINTUIT";
-  --font-name-component: "Avenir Next forINTUIT";
-  --font-name-display: "Avenir Next forINTUIT";
-  --font-name-heading: "Avenir Next forINTUIT";
+    "Means Web", "Graphik Web", Avenir, Helvetica, Arial, sans-serif;
+  --font-name-body: "Graphik Web";
+  --font-name-component: "Graphik Web";
+  --font-name-display: "Means Web";
+  --font-name-heading: "Means Web";
 }
 
 /* Credit Karma Light Theme */

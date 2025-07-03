@@ -15,6 +15,9 @@
     font-feature-settings:
       "rlig" 1,
       "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
   html {
@@ -30,6 +33,8 @@
     font-family: var(--font-family-heading);
     font-weight: var(--font-weight-heading);
     line-height: var(--line-height-heading);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1 {
@@ -68,4 +73,146 @@
       border-color 0.3s ease,
       color 0.3s ease;
   }
+}
+
+/* Fix for Mailchimp font rendering issues */
+[data-theme="mailchimp"] h1,
+[data-theme="mailchimp"] h2,
+[data-theme="mailchimp"] h3,
+[data-theme="mailchimp"] h4,
+[data-theme="mailchimp"] h5,
+[data-theme="mailchimp"] h6 {
+  text-shadow: none;
+  -webkit-text-stroke: 0;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
+  text-rendering: geometricPrecision;
+}
+
+[data-theme="mailchimp"][data-colorscheme="dark"] h1,
+[data-theme="mailchimp"][data-colorscheme="dark"] h2,
+[data-theme="mailchimp"][data-colorscheme="dark"] h3,
+[data-theme="mailchimp"][data-colorscheme="dark"] h4,
+[data-theme="mailchimp"][data-colorscheme="dark"] h5,
+[data-theme="mailchimp"][data-colorscheme="dark"] h6 {
+  text-shadow: none;
+  -webkit-text-stroke: 0;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
+  text-rendering: geometricPrecision;
+}
+
+/* Prevent layout shift during theme changes */
+nav a {
+  display: inline-block;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  text-rendering: optimizeSpeed;
+  flex-shrink: 0;
+}
+
+/* Stable navigation sizing - use grid to lock positions */
+header nav {
+  contain: layout style;
+  flex-shrink: 0;
+  width: 340px; /* Fixed width to accommodate all font variations */
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0;
+  place-items: center;
+}
+
+/* Override flex spacing since we're using grid */
+header nav > * {
+  margin: 0 !important;
+}
+
+/* Brand logo text stability */
+header span {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+/* Theme switcher stability */
+[data-radix-dropdown-content] {
+  min-width: 200px;
+}
+
+/* Navigation container stability */
+header > div {
+  /* contain: layout; - Removed as this clips Credit Karma logo */
+}
+
+/* Prevent font-based width changes */
+
+/* Fix Credit Karma logo clipping */
+header .flex.items-center {
+  overflow: visible !important;
+}
+
+header svg {
+  overflow: visible !important;
+}
+nav a,
+header span,
+button {
+  font-feature-settings:
+    "tnum" 1,
+    "kern" 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Dropdown menu consistency */
+[role="menuitem"] {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Stabilize all interactive elements */
+button,
+[role="button"] {
+  font-variant-numeric: tabular-nums;
+  text-rendering: optimizeSpeed;
+  will-change: auto;
+}
+
+/* Force fixed width on theme switcher button - override all inline styles */
+button[aria-haspopup="menu"][data-loc*="button.tsx"] {
+  width: 120px !important;
+  min-width: 120px !important;
+  max-width: 120px !important;
+  flex-shrink: 0 !important;
+  flex-grow: 0 !important;
+  flex-basis: 120px !important;
+}
+
+/* Additional override for any theme switcher buttons */
+button:has-text("Intuit"),
+button:has-text("QuickBooks"),
+button:has-text("TurboTax"),
+button:has-text("Mailchimp"),
+button:has-text("Credit Karma") {
+  width: 120px !important;
+  min-width: 120px !important;
+  max-width: 120px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Fix double border on dropdown trigger - complete reset */
+[data-radix-dropdown-trigger] {
+  border: 2px solid rgb(var(--primary)) !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Ensure only one border on theme switcher */
+button[aria-haspopup="menu"] {
+  border: 2px solid rgb(var(--primary)) !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
 }

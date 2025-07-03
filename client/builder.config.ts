@@ -1,4 +1,5 @@
 import type { BuilderConfig } from "@builder.io/react";
+import { Builder } from "@builder.io/react";
 
 // Intuit Design System Tokens Configuration for Builder.io
 export const builderConfig: BuilderConfig = {
@@ -47,7 +48,10 @@ export const builderConfig: BuilderConfig = {
       },
 
       // Passive/Secondary Actions
-      { name: "Action Passive", value: "var(--color-action-passive, #E3E5E8)" },
+      {
+        name: "Action Passive",
+        value: "var(--color-action-passive, #E3E5E8)",
+      },
       {
         name: "Action Passive Hover",
         value: "var(--color-action-passive-hover, #D4D7DC)",
@@ -58,21 +62,42 @@ export const builderConfig: BuilderConfig = {
       },
 
       // Text Colors
-      { name: "Text Primary", value: "var(--color-text-primary, #393A3D)" },
-      { name: "Text Secondary", value: "var(--color-text-secondary, #6B6C72)" },
-      { name: "Text Tertiary", value: "var(--color-text-tertiary, #8D9096)" },
+      {
+        name: "Text Primary",
+        value: "var(--color-text-primary, #393A3D)",
+      },
+      {
+        name: "Text Secondary",
+        value: "var(--color-text-secondary, #6B6C72)",
+      },
+      {
+        name: "Text Tertiary",
+        value: "var(--color-text-tertiary, #8D9096)",
+      },
       {
         name: "Text Quaternary",
         value: "var(--color-text-quaternary, #BABEC5)",
       },
-      { name: "Text Accent", value: "var(--color-text-accent, #0077C5)" },
+      {
+        name: "Text Accent",
+        value: "var(--color-text-accent, #0077C5)",
+      },
       {
         name: "Text Complementary",
         value: "var(--color-text-complementary, #6B6C72)",
       },
-      { name: "Text Inverse", value: "var(--color-text-inverse, #FFFFFF)" },
-      { name: "Text Disabled", value: "var(--color-text-disabled, #BABEC5)" },
-      { name: "Text Highlight", value: "var(--color-text-highlight, #0077C5)" },
+      {
+        name: "Text Inverse",
+        value: "var(--color-text-inverse, #FFFFFF)",
+      },
+      {
+        name: "Text Disabled",
+        value: "var(--color-text-disabled, #BABEC5)",
+      },
+      {
+        name: "Text Highlight",
+        value: "var(--color-text-highlight, #0077C5)",
+      },
 
       // Background Colors
       {
@@ -157,27 +182,66 @@ export const builderConfig: BuilderConfig = {
       },
 
       // Icon Colors
-      { name: "Icon Primary", value: "var(--color-icon-primary, #393A3D)" },
-      { name: "Icon Secondary", value: "var(--color-icon-secondary, #6B6C72)" },
-      { name: "Icon Accent", value: "var(--color-icon-accent, #0077C5)" },
+      {
+        name: "Icon Primary",
+        value: "var(--color-icon-primary, #393A3D)",
+      },
+      {
+        name: "Icon Secondary",
+        value: "var(--color-icon-secondary, #6B6C72)",
+      },
+      {
+        name: "Icon Accent",
+        value: "var(--color-icon-accent, #0077C5)",
+      },
       {
         name: "Icon Complementary",
         value: "var(--color-icon-complementary, #6B6C72)",
       },
-      { name: "Icon Inverse", value: "var(--color-icon-inverse, #FFFFFF)" },
-      { name: "Icon Disabled", value: "var(--color-icon-disabled, #BABEC5)" },
+      {
+        name: "Icon Inverse",
+        value: "var(--color-icon-inverse, #FFFFFF)",
+      },
+      {
+        name: "Icon Disabled",
+        value: "var(--color-icon-disabled, #BABEC5)",
+      },
 
       // Data Visualization Colors
-      { name: "Data Primary", value: "var(--color-data-primary, #0077C5)" },
-      { name: "Data Secondary", value: "var(--color-data-secondary, #00A6A4)" },
-      { name: "Data Tertiary", value: "var(--color-data-tertiary, #FF8000)" },
-      { name: "Data Positive", value: "var(--color-data-positive, #53B700)" },
-      { name: "Data Negative", value: "var(--color-data-negative, #E43834)" },
-      { name: "Data Neutral", value: "var(--color-data-neutral, #8D9096)" },
-      { name: "Data Attention", value: "var(--color-data-attention, #FF8000)" },
+      {
+        name: "Data Primary",
+        value: "var(--color-data-primary, #0077C5)",
+      },
+      {
+        name: "Data Secondary",
+        value: "var(--color-data-secondary, #00A6A4)",
+      },
+      {
+        name: "Data Tertiary",
+        value: "var(--color-data-tertiary, #FF8000)",
+      },
+      {
+        name: "Data Positive",
+        value: "var(--color-data-positive, #53B700)",
+      },
+      {
+        name: "Data Negative",
+        value: "var(--color-data-negative, #E43834)",
+      },
+      {
+        name: "Data Neutral",
+        value: "var(--color-data-neutral, #8D9096)",
+      },
+      {
+        name: "Data Attention",
+        value: "var(--color-data-attention, #FF8000)",
+      },
 
       // UI State Colors
-      { name: "UI Primary", value: "var(--color-ui-primary, #0077C5)" },
+      {
+        name: "UI Primary",
+        value: "var(--color-ui-primary, #0077C5)",
+      },
       {
         name: "UI Primary Hover",
         value: "var(--color-ui-primary-hover, #0066A9)",
@@ -186,13 +250,34 @@ export const builderConfig: BuilderConfig = {
         name: "UI Primary Active",
         value: "var(--color-ui-primary-active, #055393)",
       },
-      { name: "UI Secondary", value: "var(--color-ui-secondary, #6B6C72)" },
-      { name: "UI Tertiary", value: "var(--color-ui-tertiary, #8D9096)" },
-      { name: "UI Positive", value: "var(--color-ui-positive, #53B700)" },
-      { name: "UI Negative", value: "var(--color-ui-negative, #E43834)" },
-      { name: "UI Attention", value: "var(--color-ui-attention, #FF8000)" },
-      { name: "UI Info", value: "var(--color-ui-info, #0097E6)" },
-      { name: "UI Neutral", value: "var(--color-ui-neutral, #8D9096)" },
+      {
+        name: "UI Secondary",
+        value: "var(--color-ui-secondary, #6B6C72)",
+      },
+      {
+        name: "UI Tertiary",
+        value: "var(--color-ui-tertiary, #8D9096)",
+      },
+      {
+        name: "UI Positive",
+        value: "var(--color-ui-positive, #53B700)",
+      },
+      {
+        name: "UI Negative",
+        value: "var(--color-ui-negative, #E43834)",
+      },
+      {
+        name: "UI Attention",
+        value: "var(--color-ui-attention, #FF8000)",
+      },
+      {
+        name: "UI Info",
+        value: "var(--color-ui-info, #0097E6)",
+      },
+      {
+        name: "UI Neutral",
+        value: "var(--color-ui-neutral, #8D9096)",
+      },
     ],
 
     spacing: [
@@ -271,12 +356,27 @@ export const builderConfig: BuilderConfig = {
       },
 
       // Row and Column Gaps
-      { name: "Row Gap Small", value: "var(--space-row-gap-small, 8px)" },
-      { name: "Row Gap Medium", value: "var(--space-row-gap-medium, 16px)" },
-      { name: "Row Gap Large", value: "var(--space-row-gap-large, 24px)" },
-      { name: "Row Gap XL", value: "var(--space-row-gap-x-large, 32px)" },
+      {
+        name: "Row Gap Small",
+        value: "var(--space-row-gap-small, 8px)",
+      },
+      {
+        name: "Row Gap Medium",
+        value: "var(--space-row-gap-medium, 16px)",
+      },
+      {
+        name: "Row Gap Large",
+        value: "var(--space-row-gap-large, 24px)",
+      },
+      {
+        name: "Row Gap XL",
+        value: "var(--space-row-gap-x-large, 32px)",
+      },
 
-      { name: "Column Gap Small", value: "var(--space-column-gap-small, 8px)" },
+      {
+        name: "Column Gap Small",
+        value: "var(--space-column-gap-small, 8px)",
+      },
       {
         name: "Column Gap Medium",
         value: "var(--space-column-gap-medium, 16px)",
@@ -285,42 +385,114 @@ export const builderConfig: BuilderConfig = {
         name: "Column Gap Large",
         value: "var(--space-column-gap-large, 24px)",
       },
-      { name: "Column Gap XL", value: "var(--space-column-gap-x-large, 32px)" },
+      {
+        name: "Column Gap XL",
+        value: "var(--space-column-gap-x-large, 32px)",
+      },
 
       // General Spacing
-      { name: "Space XS", value: "var(--space-x-small, 4px)" },
-      { name: "Space Small", value: "var(--space-small, 8px)" },
-      { name: "Space Medium", value: "var(--space-medium, 16px)" },
-      { name: "Space Large", value: "var(--space-large, 24px)" },
-      { name: "Space XL", value: "var(--space-x-large, 32px)" },
+      {
+        name: "Space XS",
+        value: "var(--space-x-small, 4px)",
+      },
+      {
+        name: "Space Small",
+        value: "var(--space-small, 8px)",
+      },
+      {
+        name: "Space Medium",
+        value: "var(--space-medium, 16px)",
+      },
+      {
+        name: "Space Large",
+        value: "var(--space-large, 24px)",
+      },
+      {
+        name: "Space XL",
+        value: "var(--space-x-large, 32px)",
+      },
     ],
 
     fontSizes: [
       // Action/Button Text
-      { name: "Action XS", value: "var(--font-size-action-x-small, 12px)" },
-      { name: "Action Small", value: "var(--font-size-action-small, 14px)" },
-      { name: "Action Medium", value: "var(--font-size-action-medium, 16px)" },
-      { name: "Action Large", value: "var(--font-size-action-large, 18px)" },
+      {
+        name: "Action XS",
+        value: "var(--font-size-action-x-small, 12px)",
+      },
+      {
+        name: "Action Small",
+        value: "var(--font-size-action-small, 14px)",
+      },
+      {
+        name: "Action Medium",
+        value: "var(--font-size-action-medium, 16px)",
+      },
+      {
+        name: "Action Large",
+        value: "var(--font-size-action-large, 18px)",
+      },
 
       // Body Text
-      { name: "Body 1", value: "var(--font-size-body-1, 16px)" },
-      { name: "Body 2", value: "var(--font-size-body-2, 18px)" },
-      { name: "Body 3", value: "var(--font-size-body-3, 14px)" },
-      { name: "Body 4", value: "var(--font-size-body-4, 12px)" },
+      {
+        name: "Body 1",
+        value: "var(--font-size-body-1, 16px)",
+      },
+      {
+        name: "Body 2",
+        value: "var(--font-size-body-2, 18px)",
+      },
+      {
+        name: "Body 3",
+        value: "var(--font-size-body-3, 14px)",
+      },
+      {
+        name: "Body 4",
+        value: "var(--font-size-body-4, 12px)",
+      },
 
       // Headings
-      { name: "Heading 1", value: "var(--font-size-heading-1, 48px)" },
-      { name: "Heading 2", value: "var(--font-size-heading-2, 40px)" },
-      { name: "Heading 3", value: "var(--font-size-heading-3, 32px)" },
-      { name: "Heading 4", value: "var(--font-size-heading-4, 24px)" },
-      { name: "Heading 5", value: "var(--font-size-heading-5, 20px)" },
-      { name: "Heading 6", value: "var(--font-size-heading-6, 18px)" },
+      {
+        name: "Heading 1",
+        value: "var(--font-size-heading-1, 48px)",
+      },
+      {
+        name: "Heading 2",
+        value: "var(--font-size-heading-2, 40px)",
+      },
+      {
+        name: "Heading 3",
+        value: "var(--font-size-heading-3, 32px)",
+      },
+      {
+        name: "Heading 4",
+        value: "var(--font-size-heading-4, 24px)",
+      },
+      {
+        name: "Heading 5",
+        value: "var(--font-size-heading-5, 20px)",
+      },
+      {
+        name: "Heading 6",
+        value: "var(--font-size-heading-6, 18px)",
+      },
 
       // Display Text
-      { name: "Display 1", value: "var(--font-size-display-1, 64px)" },
-      { name: "Display 2", value: "var(--font-size-display-2, 56px)" },
-      { name: "Display 3", value: "var(--font-size-display-3, 48px)" },
-      { name: "Display 4", value: "var(--font-size-display-4, 40px)" },
+      {
+        name: "Display 1",
+        value: "var(--font-size-display-1, 64px)",
+      },
+      {
+        name: "Display 2",
+        value: "var(--font-size-display-2, 56px)",
+      },
+      {
+        name: "Display 3",
+        value: "var(--font-size-display-3, 48px)",
+      },
+      {
+        name: "Display 4",
+        value: "var(--font-size-display-4, 40px)",
+      },
 
       // Component Text
       {
@@ -345,19 +517,49 @@ export const builderConfig: BuilderConfig = {
       },
 
       // Input Text
-      { name: "Input Label", value: "var(--font-size-input-label, 14px)" },
-      { name: "Input Text", value: "var(--font-size-input-text, 16px)" },
+      {
+        name: "Input Label",
+        value: "var(--font-size-input-label, 14px)",
+      },
+      {
+        name: "Input Text",
+        value: "var(--font-size-input-text, 16px)",
+      },
     ],
 
     fontWeights: [
-      { name: "Body Regular", value: "var(--font-weight-body, 400)" },
-      { name: "Body Semibold", value: "var(--font-weight-body-semibold, 600)" },
-      { name: "Body Bold", value: "var(--font-weight-body-bold, 700)" },
-      { name: "Heading Regular", value: "var(--font-weight-heading, 600)" },
-      { name: "Heading Bold", value: "var(--font-weight-heading-bold, 700)" },
-      { name: "Display Regular", value: "var(--font-weight-display, 600)" },
-      { name: "Display Bold", value: "var(--font-weight-display-bold, 700)" },
-      { name: "Component Regular", value: "var(--font-weight-component, 400)" },
+      {
+        name: "Body Regular",
+        value: "var(--font-weight-body, 400)",
+      },
+      {
+        name: "Body Semibold",
+        value: "var(--font-weight-body-semibold, 600)",
+      },
+      {
+        name: "Body Bold",
+        value: "var(--font-weight-body-bold, 700)",
+      },
+      {
+        name: "Heading Regular",
+        value: "var(--font-weight-heading, 600)",
+      },
+      {
+        name: "Heading Bold",
+        value: "var(--font-weight-heading-bold, 700)",
+      },
+      {
+        name: "Display Regular",
+        value: "var(--font-weight-display, 600)",
+      },
+      {
+        name: "Display Bold",
+        value: "var(--font-weight-display-bold, 700)",
+      },
+      {
+        name: "Component Regular",
+        value: "var(--font-weight-component, 400)",
+      },
       {
         name: "Component Semibold",
         value: "var(--font-weight-component-semibold, 600)",
@@ -388,25 +590,64 @@ export const builderConfig: BuilderConfig = {
     ],
 
     lineHeights: [
-      { name: "Body", value: "var(--line-height-body, 1.5)" },
-      { name: "Heading", value: "var(--line-height-heading, 1.2)" },
-      { name: "Display", value: "var(--line-height-display, 1.1)" },
-      { name: "Component", value: "var(--line-height-component, 1.4)" },
+      {
+        name: "Body",
+        value: "var(--line-height-body, 1.5)",
+      },
+      {
+        name: "Heading",
+        value: "var(--line-height-heading, 1.2)",
+      },
+      {
+        name: "Display",
+        value: "var(--line-height-display, 1.1)",
+      },
+      {
+        name: "Component",
+        value: "var(--line-height-component, 1.4)",
+      },
     ],
 
     borderRadius: [
-      { name: "None", value: "var(--radius-none, 0px)" },
-      { name: "XS", value: "var(--radius-x-small, 2px)" },
-      { name: "Small", value: "var(--radius-small, 4px)" },
-      { name: "Medium", value: "var(--radius-medium, 6px)" },
-      { name: "Large", value: "var(--radius-large, 8px)" },
-      { name: "XL", value: "var(--radius-x-large, 12px)" },
-      { name: "Action", value: "var(--radius-action, 6px)" },
-      { name: "Full", value: "var(--radius-full, 9999px)" },
+      {
+        name: "None",
+        value: "var(--radius-none, 0px)",
+      },
+      {
+        name: "XS",
+        value: "var(--radius-x-small, 2px)",
+      },
+      {
+        name: "Small",
+        value: "var(--radius-small, 4px)",
+      },
+      {
+        name: "Medium",
+        value: "var(--radius-medium, 6px)",
+      },
+      {
+        name: "Large",
+        value: "var(--radius-large, 8px)",
+      },
+      {
+        name: "XL",
+        value: "var(--radius-x-large, 12px)",
+      },
+      {
+        name: "Action",
+        value: "var(--radius-action, 6px)",
+      },
+      {
+        name: "Full",
+        value: "var(--radius-full, 9999px)",
+      },
     ],
 
     shadows: [
-      { name: "None", value: "var(--elevation-level-0, none)" },
+      {
+        name: "None",
+        value: "var(--elevation-level-0, none)",
+      },
       {
         name: "Level 1",
         value:
@@ -475,5 +716,7 @@ export const builderConfig: BuilderConfig = {
     },
   ],
 };
+
+Builder.register("editor.settings", builderConfig);
 
 export default builderConfig;
