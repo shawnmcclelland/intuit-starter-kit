@@ -243,7 +243,14 @@ export default function Index() {
                 their finances and drive growth. Start your free trial today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" variant="secondary" className="h-12 px-8">
+                <Button
+                  size="lg"
+                  variant="secondary"
+                  className="h-12 px-8"
+                  style={{
+                    backgroundColor: "var(--color-action-complementary)",
+                  }}
+                >
                   Start Free Trial
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
