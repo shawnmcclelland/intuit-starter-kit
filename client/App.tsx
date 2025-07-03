@@ -1,4 +1,5 @@
 import "./global.css";
+import "./builder.config";
 
 import { Toaster } from "@/components/ui/toaster";
 import { createRoot } from "react-dom/client";
@@ -9,7 +10,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/components/theme-provider";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-
 
 const queryClient = new QueryClient();
 
