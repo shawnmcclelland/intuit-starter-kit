@@ -191,3 +191,15 @@ button:has-text("Credit Karma") {
   max-width: 120px !important;
   flex-shrink: 0 !important;
 }
+
+/* Fix double border on dropdown trigger */
+[data-radix-dropdown-trigger] {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Ensure only one border on theme switcher */
+button[aria-haspopup="menu"] {
+  outline: none !important;
+  box-shadow: none !important;
+}
