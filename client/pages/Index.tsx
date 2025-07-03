@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ThemeSwitcher } from "@/components/theme-switcher";
+import { useTheme } from "@/components/theme-provider";
 import {
   ArrowRight,
   BarChart3,
