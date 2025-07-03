@@ -150,7 +150,13 @@ export function BrandSelector({
             <Button
               variant="ghost"
               size="sm"
-              className="w-24 min-w-24 max-w-24 justify-center border-2 border-primary bg-transparent text-primary hover:bg-primary/10"
+              className="w-24 min-w-24 max-w-24 justify-center text-primary hover:bg-primary/10"
+              style={{
+                border: "2px solid rgb(var(--primary))",
+                background: "transparent",
+                outline: "none",
+                boxShadow: "none",
+              }}
             >
               {theme.brand}
             </Button>
