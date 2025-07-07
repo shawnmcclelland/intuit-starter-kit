@@ -284,132 +284,132 @@ export const builderConfig: BuilderConfig = {
       // Component Spacing
       {
         name: "Component Gap XS",
-        value: "var(--space-component-gap-x-small, 4px)",
+        value: "2px",
       },
       {
         name: "Component Gap Small",
-        value: "var(--space-component-gap-small, 8px)",
+        value: "4px",
       },
       {
         name: "Component Gap Medium",
-        value: "var(--space-component-gap-medium, 12px)",
+        value: "8px",
       },
       {
         name: "Component Gap Large",
-        value: "var(--space-component-gap-large, 16px)",
+        value: "12px",
       },
 
       // Container Padding
       {
         name: "Container Padding XXS",
-        value: "var(--space-container-padding-xx-small, 4px)",
+        value: "8px",
       },
       {
         name: "Container Padding XS",
-        value: "var(--space-container-padding-x-small, 8px)",
+        value: "12px",
       },
       {
         name: "Container Padding Small",
-        value: "var(--space-container-padding-small, 12px)",
+        value: "16px",
       },
       {
         name: "Container Padding Medium",
-        value: "var(--space-container-padding-medium, 16px)",
+        value: "20px",
       },
       {
         name: "Container Padding Large",
-        value: "var(--space-container-padding-large, 24px)",
+        value: "24px",
       },
       {
         name: "Container Padding XL",
-        value: "var(--space-container-padding-x-large, 32px)",
+        value: "32px",
       },
       {
         name: "Container Padding XXL",
-        value: "var(--space-container-padding-xx-large, 48px)",
+        value: "40px",
       },
       {
         name: "Container Padding XXXL",
-        value: "var(--space-container-padding-xxx-large, 64px)",
+        value: "60px",
       },
 
       // Component Inline Padding
       {
         name: "Component Inline Padding XS",
-        value: "var(--space-component-inline-padding-x-small, 8px)",
+        value: "4px",
       },
       {
         name: "Component Inline Padding Small",
-        value: "var(--space-component-inline-padding-small, 12px)",
+        value: "6px",
       },
       {
         name: "Component Inline Padding Medium",
-        value: "var(--space-component-inline-padding-medium, 16px)",
+        value: "8px",
       },
       {
         name: "Component Inline Padding Large",
-        value: "var(--space-component-inline-padding-large, 20px)",
+        value: "10px",
       },
       {
         name: "Component Inline Padding XL",
-        value: "var(--space-component-inline-padding-x-large, 24px)",
+        value: "12px",
       },
 
       // Row and Column Gaps
       {
         name: "Row Gap Small",
-        value: "var(--space-row-gap-small, 8px)",
+        value: "12px",
       },
       {
         name: "Row Gap Medium",
-        value: "var(--space-row-gap-medium, 16px)",
+        value: "20px",
       },
       {
         name: "Row Gap Large",
-        value: "var(--space-row-gap-large, 24px)",
+        value: "40px",
       },
       {
         name: "Row Gap XL",
-        value: "var(--space-row-gap-x-large, 32px)",
+        value: "60px",
       },
 
       {
         name: "Column Gap Small",
-        value: "var(--space-column-gap-small, 8px)",
+        value: "16px",
       },
       {
         name: "Column Gap Medium",
-        value: "var(--space-column-gap-medium, 16px)",
+        value: "20px",
       },
       {
         name: "Column Gap Large",
-        value: "var(--space-column-gap-large, 24px)",
+        value: "24px",
       },
       {
         name: "Column Gap XL",
-        value: "var(--space-column-gap-x-large, 32px)",
+        value: "40px",
       },
 
       // General Spacing
       {
         name: "Space XS",
-        value: "var(--space-x-small, 4px)",
+        value: "8px",
       },
       {
         name: "Space Small",
-        value: "var(--space-small, 8px)",
+        value: "12px",
       },
       {
         name: "Space Medium",
-        value: "var(--space-medium, 16px)",
+        value: "16px",
       },
       {
         name: "Space Large",
-        value: "var(--space-large, 24px)",
+        value: "24px",
       },
       {
         name: "Space XL",
-        value: "var(--space-x-large, 32px)",
+        value: "40px",
       },
     ],
 
@@ -624,62 +624,58 @@ export const builderConfig: BuilderConfig = {
     borderRadius: [
       {
         name: "None",
-        value: "var(--radius-none, 0px)",
+        value: "0px",
       },
       {
         name: "XS",
-        value: "var(--radius-x-small, 2px)",
+        value: "2px",
       },
       {
         name: "Small",
-        value: "var(--radius-small, 4px)",
+        value: "4px",
       },
       {
         name: "Medium",
-        value: "var(--radius-medium, 6px)",
+        value: "6px",
       },
       {
         name: "Large",
-        value: "var(--radius-large, 8px)",
+        value: "8px",
       },
       {
         name: "XL",
-        value: "var(--radius-x-large, 12px)",
+        value: "12px",
       },
       {
         name: "Action",
-        value: "var(--radius-action, 6px)",
+        value: "4px",
       },
       {
         name: "Full",
-        value: "var(--radius-full, 9999px)",
+        value: "9999px",
       },
     ],
 
     shadows: [
       {
         name: "None",
-        value: "var(--elevation-level-0, none)",
+        value: "none",
       },
       {
         name: "Level 1",
-        value:
-          "var(--elevation-level-1, 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1))",
+        value: "0 1px 4px 0 rgba(0, 0, 0, 0.2)",
       },
       {
         name: "Level 2",
-        value:
-          "var(--elevation-level-2, 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1))",
+        value: "0 2px 8px 0 rgba(0, 0, 0, 0.2)",
       },
       {
         name: "Level 3",
-        value:
-          "var(--elevation-level-3, 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1))",
+        value: "0 4px 16px 0 rgba(0, 0, 0, 0.2)",
       },
       {
         name: "Level 4",
-        value:
-          "var(--elevation-level-4, 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1))",
+        value: "0 6px 24px 0 rgba(0, 0, 0, 0.2)",
       },
     ],
   },
