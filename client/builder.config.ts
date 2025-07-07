@@ -210,73 +210,73 @@ export const builderConfig: BuilderConfig = {
       // Data Visualization Colors
       {
         name: "Data Primary",
-        value: "var(--color-data-primary, #0077C5)",
+        value: "#0097E6",
       },
       {
         name: "Data Secondary",
-        value: "var(--color-data-secondary, #00A6A4)",
+        value: "#00A6A4",
       },
       {
         name: "Data Tertiary",
-        value: "var(--color-data-tertiary, #FF8000)",
+        value: "#7A3DD8",
       },
       {
         name: "Data Positive",
-        value: "var(--color-data-positive, #53B700)",
+        value: "#2CA01C",
       },
       {
         name: "Data Negative",
-        value: "var(--color-data-negative, #E43834)",
+        value: "#E43834",
       },
       {
         name: "Data Neutral",
-        value: "var(--color-data-neutral, #8D9096)",
+        value: "#BABEC5",
       },
       {
         name: "Data Attention",
-        value: "var(--color-data-attention, #FF8000)",
+        value: "#FF8000",
       },
 
       // UI State Colors
       {
         name: "UI Primary",
-        value: "var(--color-ui-primary, #0077C5)",
+        value: "#0077C5",
       },
       {
         name: "UI Primary Hover",
-        value: "var(--color-ui-primary-hover, #0066A9)",
+        value: "#1067AA",
       },
       {
         name: "UI Primary Active",
-        value: "var(--color-ui-primary-active, #055393)",
+        value: "#055393",
       },
       {
         name: "UI Secondary",
-        value: "var(--color-ui-secondary, #6B6C72)",
+        value: "#393A3D",
       },
       {
         name: "UI Tertiary",
-        value: "var(--color-ui-tertiary, #8D9096)",
+        value: "#393A3D",
       },
       {
         name: "UI Positive",
-        value: "var(--color-ui-positive, #53B700)",
+        value: "#108000",
       },
       {
         name: "UI Negative",
-        value: "var(--color-ui-negative, #E43834)",
+        value: "#D52B1E",
       },
       {
         name: "UI Attention",
-        value: "var(--color-ui-attention, #FF8000)",
+        value: "#FF6A00",
       },
       {
         name: "UI Info",
-        value: "var(--color-ui-info, #0097E6)",
+        value: "#0077C5",
       },
       {
         name: "UI Neutral",
-        value: "var(--color-ui-neutral, #8D9096)",
+        value: "#6B6C72",
       },
     ],
 
