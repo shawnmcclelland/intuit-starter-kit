@@ -270,7 +270,7 @@ export function ThemeSwitcher({
 
 // Design token preview component for development
 export function DesignTokenPreview() {
-  const { theme, getTokenValue } = useTheme();
+  const { theme } = useTheme();
 
   const sampleTokens = [
     "color-action-standard",
@@ -289,10 +289,8 @@ export function DesignTokenPreview() {
         <div className="grid grid-cols-1 gap-2 text-xs">
           {sampleTokens.map((token) => (
             <div key={token} className="flex justify-between">
-              <span className="font-mono text-muted-foreground">
-                --{token}:
-              </span>
-              <span className="font-mono">{getTokenValue(token)}</span>
+              <span className="font-mono text-muted-foreground">--{token}</span>
+              <span className="font-mono text-muted-foreground">Available</span>
             </div>
           ))}
         </div>
