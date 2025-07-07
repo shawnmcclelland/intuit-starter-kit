@@ -120,91 +120,91 @@ export const builderConfig: BuilderConfig = {
       // Container Colors
       {
         name: "Container Background Primary",
-        value: "var(--color-container-background-primary, #FFFFFF)",
+        value: "#FFFFFF",
       },
       {
         name: "Container Background Secondary",
-        value: "var(--color-container-background-secondary, #F4F5F8)",
+        value: "#F4F5F8",
       },
       {
         name: "Container Background Tertiary",
-        value: "var(--color-container-background-tertiary, #E3E5E8)",
+        value: "#E3E5E8",
       },
       {
         name: "Container Background Accent",
-        value: "var(--color-container-background-accent, #F5FCFF)",
+        value: "#F5FCFF",
       },
       {
         name: "Container Background Positive",
-        value: "var(--color-container-background-positive, #D8FFDB)",
+        value: "#E5F4D9",
       },
       {
         name: "Container Background Negative",
-        value: "var(--color-container-background-negative, #FFD4D8)",
+        value: "#FAD7D6",
       },
       {
         name: "Container Background Attention",
-        value: "var(--color-container-background-attention, #FFEAC7)",
+        value: "#FFECD9",
       },
       {
         name: "Container Background Info",
-        value: "var(--color-container-background-info, #E0EDFF)",
+        value: "#D9EFFB",
       },
       {
         name: "Container Background Neutral",
-        value: "var(--color-container-background-neutral, #E2E9ED)",
+        value: "#EEEEEF",
       },
 
       // Border Colors
       {
         name: "Container Border Primary",
-        value: "var(--color-container-border-primary, #8D9096)",
+        value: "#D4D7DC",
       },
       {
         name: "Container Border Secondary",
-        value: "var(--color-container-border-secondary, #BABEC5)",
+        value: "#8D9096",
       },
       {
         name: "Container Border Tertiary",
-        value: "var(--color-container-border-tertiary, #D4D7DC)",
+        value: "#BABEC5",
       },
       {
         name: "Container Border Accent",
-        value: "var(--color-container-border-accent, #108000)",
+        value: "#0097E6",
       },
       {
         name: "Container Border Positive",
-        value: "var(--color-container-border-positive, #53B700)",
+        value: "#53B700",
       },
       {
         name: "Container Border Negative",
-        value: "var(--color-container-border-negative, #E43834)",
+        value: "#E43834",
       },
 
       // Icon Colors
       {
         name: "Icon Primary",
-        value: "var(--color-icon-primary, #393A3D)",
+        value: "#393A3D",
       },
       {
         name: "Icon Secondary",
-        value: "var(--color-icon-secondary, #6B6C72)",
+        value: "#6B6C72",
       },
       {
         name: "Icon Accent",
-        value: "var(--color-icon-accent, #0077C5)",
+        value: "#0077C5",
       },
       {
         name: "Icon Complementary",
-        value: "var(--color-icon-complementary, #6B6C72)",
+        value: "#FFFFFF",
       },
       {
         name: "Icon Inverse",
-        value: "var(--color-icon-inverse, #FFFFFF)",
+        value: "#FFFFFF",
       },
       {
         name: "Icon Disabled",
-        value: "var(--color-icon-disabled, #BABEC5)",
+        value: "#8D9096",
       },
 
       // Data Visualization Colors
