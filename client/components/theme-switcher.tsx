@@ -270,7 +270,7 @@ export function ThemeSwitcher({
 
 // Design token preview component for development
 export function DesignTokenPreview() {
-  const { theme, getTokenValue } = useTheme();
+  const { theme } = useTheme();
 
   const sampleTokens = [
     "color-action-standard",
