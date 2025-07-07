@@ -64,57 +64,57 @@ export const builderConfig: BuilderConfig = {
       // Text Colors
       {
         name: "Text Primary",
-        value: "var(--color-text-primary, #393A3D)",
+        value: "#393A3D",
       },
       {
         name: "Text Secondary",
-        value: "var(--color-text-secondary, #6B6C72)",
+        value: "#6B6C72",
       },
       {
         name: "Text Tertiary",
-        value: "var(--color-text-tertiary, #8D9096)",
+        value: "#8D9096",
       },
       {
         name: "Text Quaternary",
-        value: "var(--color-text-quaternary, #BABEC5)",
+        value: "#BABEC5",
       },
       {
         name: "Text Accent",
-        value: "var(--color-text-accent, #0077C5)",
+        value: "#0077C5",
       },
       {
         name: "Text Complementary",
-        value: "var(--color-text-complementary, #6B6C72)",
+        value: "#6B6C72",
       },
       {
         name: "Text Inverse",
-        value: "var(--color-text-inverse, #FFFFFF)",
+        value: "#FFFFFF",
       },
       {
         name: "Text Disabled",
-        value: "var(--color-text-disabled, #BABEC5)",
+        value: "#BABEC5",
       },
       {
         name: "Text Highlight",
-        value: "var(--color-text-highlight, #0077C5)",
+        value: "#0077C5",
       },
 
       // Background Colors
       {
         name: "Page Background Primary",
-        value: "var(--color-page-background-primary, #FFFFFF)",
+        value: "#FFFFFF",
       },
       {
         name: "Page Background Secondary",
-        value: "var(--color-page-background-secondary, #F4F5F8)",
+        value: "#F4F5F8",
       },
       {
         name: "Page Background Tertiary",
-        value: "var(--color-page-background-tertiary, #ECEEF1)",
+        value: "#ECEEF1",
       },
       {
         name: "Page Background Accent",
-        value: "var(--color-page-background-accent, #F5FCFF)",
+        value: "#F5FCFF",
       },
 
       // Container Colors
