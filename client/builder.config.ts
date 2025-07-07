@@ -8,57 +8,57 @@ export const builderConfig: BuilderConfig = {
       // Primary Action Colors
       {
         name: "Action Standard",
-        value: "var(--color-action-standard, #0077C5)",
+        value: "#0077C5",
       },
       {
         name: "Action Standard Hover",
-        value: "var(--color-action-standard-hover, #0066A9)",
+        value: "#0066A9",
       },
       {
         name: "Action Standard Active",
-        value: "var(--color-action-standard-active, #055393)",
+        value: "#055393",
       },
       {
         name: "Action Standard Focus",
-        value: "var(--color-action-standard-focus, #0077C5)",
+        value: "#0077C5",
       },
 
       // Negative/Error Colors
       {
         name: "Action Negative",
-        value: "var(--color-action-negative, #D52B1E)",
+        value: "#D52B1E",
       },
       {
         name: "Action Negative Hover",
-        value: "var(--color-action-negative-hover, #C6160F)",
+        value: "#C6160F",
       },
       {
         name: "Action Negative Active",
-        value: "var(--color-action-negative-active, #B80000)",
+        value: "#B80000",
       },
 
       // Special Use Colors
       {
         name: "Action Special Use",
-        value: "var(--color-action-special-use, #0077C5)",
+        value: "#FF6A00",
       },
       {
         name: "Action Special Use Hover",
-        value: "var(--color-action-special-use-hover, #0066A9)",
+        value: "#FC6000",
       },
 
       // Passive/Secondary Actions
       {
         name: "Action Passive",
-        value: "var(--color-action-passive, #E3E5E8)",
+        value: "#E3E5E8",
       },
       {
         name: "Action Passive Hover",
-        value: "var(--color-action-passive-hover, #D4D7DC)",
+        value: "#D4D7DC",
       },
       {
         name: "Action Complementary",
-        value: "var(--color-action-complementary, #6B6C72)",
+        value: "#6B6C72",
       },
 
       // Text Colors
