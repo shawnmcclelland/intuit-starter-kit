@@ -1,8 +1,7 @@
-import type { BuilderConfig } from "@builder.io/react";
 import { Builder } from "@builder.io/react";
 
 // Intuit Design System Tokens Configuration for Builder.io
-export const builderConfig: BuilderConfig = {
+export const builderConfig = {
   designTokens: {
     colors: [
       // Primary Action Colors
