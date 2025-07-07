@@ -417,194 +417,207 @@ export const builderConfig: BuilderConfig = {
       // Action/Button Text
       {
         name: "Action XS",
-        value: "var(--font-size-action-x-small, 12px)",
+        value: "12px",
       },
       {
         name: "Action Small",
-        value: "var(--font-size-action-small, 14px)",
+        value: "14px",
       },
       {
         name: "Action Medium",
-        value: "var(--font-size-action-medium, 16px)",
+        value: "16px",
       },
       {
         name: "Action Large",
-        value: "var(--font-size-action-large, 18px)",
+        value: "20px",
       },
 
       // Body Text
       {
         name: "Body 1",
-        value: "var(--font-size-body-1, 16px)",
+        value: "20px",
       },
       {
         name: "Body 2",
-        value: "var(--font-size-body-2, 18px)",
+        value: "16px",
       },
       {
         name: "Body 3",
-        value: "var(--font-size-body-3, 14px)",
+        value: "14px",
       },
       {
         name: "Body 4",
-        value: "var(--font-size-body-4, 12px)",
+        value: "12px",
       },
 
       // Headings
       {
         name: "Heading 1",
-        value: "var(--font-size-heading-1, 48px)",
+        value: "48px",
       },
       {
         name: "Heading 2",
-        value: "var(--font-size-heading-2, 40px)",
+        value: "40px",
       },
       {
         name: "Heading 3",
-        value: "var(--font-size-heading-3, 32px)",
+        value: "34px",
       },
       {
         name: "Heading 4",
-        value: "var(--font-size-heading-4, 24px)",
+        value: "28px",
       },
       {
         name: "Heading 5",
-        value: "var(--font-size-heading-5, 20px)",
+        value: "24px",
       },
       {
         name: "Heading 6",
-        value: "var(--font-size-heading-6, 18px)",
+        value: "20px",
       },
 
       // Display Text
       {
         name: "Display 1",
-        value: "var(--font-size-display-1, 64px)",
+        value: "84px",
       },
       {
         name: "Display 2",
-        value: "var(--font-size-display-2, 56px)",
+        value: "72px",
       },
       {
         name: "Display 3",
-        value: "var(--font-size-display-3, 48px)",
+        value: "60px",
       },
       {
         name: "Display 4",
-        value: "var(--font-size-display-4, 40px)",
+        value: "48px",
       },
 
       // Component Text
       {
         name: "Component XS",
-        value: "var(--font-size-component-x-small, 12px)",
+        value: "12px",
       },
       {
         name: "Component Small",
-        value: "var(--font-size-component-small, 14px)",
+        value: "14px",
       },
       {
         name: "Component Medium",
-        value: "var(--font-size-component-medium, 16px)",
+        value: "16px",
       },
       {
         name: "Component Large",
-        value: "var(--font-size-component-large, 18px)",
+        value: "20px",
       },
       {
         name: "Component XL",
-        value: "var(--font-size-component-x-large, 20px)",
+        value: "24px",
       },
 
       // Input Text
       {
         name: "Input Label",
-        value: "var(--font-size-input-label, 14px)",
+        value: "14px",
       },
       {
         name: "Input Text",
-        value: "var(--font-size-input-text, 16px)",
+        value: "16px",
       },
     ],
 
     fontWeights: [
       {
         name: "Body Regular",
-        value: "var(--font-weight-body, 400)",
+        value: "400",
       },
       {
         name: "Body Semibold",
-        value: "var(--font-weight-body-semibold, 600)",
+        value: "500",
       },
       {
         name: "Body Bold",
-        value: "var(--font-weight-body-bold, 700)",
+        value: "600",
       },
       {
         name: "Heading Regular",
-        value: "var(--font-weight-heading, 600)",
+        value: "600",
       },
       {
         name: "Heading Bold",
-        value: "var(--font-weight-heading-bold, 700)",
+        value: "800",
       },
       {
         name: "Display Regular",
-        value: "var(--font-weight-display, 600)",
+        value: "700",
       },
       {
         name: "Display Bold",
-        value: "var(--font-weight-display-bold, 700)",
+        value: "900",
       },
       {
         name: "Component Regular",
-        value: "var(--font-weight-component, 400)",
+        value: "400",
       },
       {
         name: "Component Semibold",
-        value: "var(--font-weight-component-semibold, 600)",
+        value: "500",
       },
       {
         name: "Component Bold",
-        value: "var(--font-weight-component-bold, 700)",
+        value: "600",
       },
     ],
 
     fontFamilies: [
       {
         name: "Body",
-        value: "var(--font-family-body, 'system-ui, sans-serif')",
+        value: "'Avenir Next forINTUIT', Avenir, Helvetica, Arial, sans-serif",
       },
       {
         name: "Heading",
-        value: "var(--font-family-heading, 'system-ui, sans-serif')",
+        value: "'Avenir Next forINTUIT', Avenir, Helvetica, Arial, sans-serif",
       },
       {
         name: "Display",
-        value: "var(--font-family-display, 'system-ui, sans-serif')",
+        value: "'Avenir Next forINTUIT', Avenir, Helvetica, Arial, sans-serif",
       },
       {
         name: "Component",
-        value: "var(--font-family-component, 'system-ui, sans-serif')",
+        value: "'Avenir Next forINTUIT', Avenir, Helvetica, Arial, sans-serif",
+      },
+      {
+        name: "Graphik Web (Mailchimp)",
+        value: "'Graphik Web', Avenir, Helvetica, Arial, sans-serif",
+      },
+      {
+        name: "Means Web (Mailchimp Headings)",
+        value:
+          "'Means Web', 'Graphik Web', Avenir, Helvetica, Arial, sans-serif",
+      },
+      {
+        name: "National2 (Credit Karma)",
+        value: "'National2', Avenir, Helvetica, Arial, sans-serif",
       },
     ],
 
     lineHeights: [
       {
         name: "Body",
-        value: "var(--line-height-body, 1.5)",
+        value: "1.5",
       },
       {
         name: "Heading",
-        value: "var(--line-height-heading, 1.2)",
+        value: "1.3",
       },
       {
         name: "Display",
-        value: "var(--line-height-display, 1.1)",
+        value: "1.3",
       },
       {
         name: "Component",
-        value: "var(--line-height-component, 1.4)",
+        value: "1.3",
       },
     ],
 
